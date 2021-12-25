@@ -208,10 +208,10 @@ Partial Class Settings
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(21, 23)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(319, 75)
+        Me.Label3.Size = New System.Drawing.Size(319, 105)
         Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Activation: Not Needed" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Homeshell Desktop Enviorment Public Build 1 Milestone 3" &
-    " " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Using the MIT Licence or the Open Source Homeshell EULA"
+        Me.Label3.Text = "Activation: Not Needed for this Product/Activated" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Using the MIT Licenc" &
+    "e or the Open Source Homeshell EULA"
         '
         'TabPage4
         '
