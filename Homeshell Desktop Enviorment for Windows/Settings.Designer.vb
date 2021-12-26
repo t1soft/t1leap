@@ -34,28 +34,38 @@ Partial Class Settings
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(21, 132)
+        Me.TextBox1.Location = New System.Drawing.Point(20, 142)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.PlaceholderText = "New Account Name"
         Me.TextBox1.Size = New System.Drawing.Size(180, 23)
@@ -63,7 +73,7 @@ Partial Class Settings
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(21, 161)
+        Me.TextBox2.Location = New System.Drawing.Point(20, 166)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.PlaceholderText = "Enter Password to Comfirm"
         Me.TextBox2.Size = New System.Drawing.Size(180, 23)
@@ -71,7 +81,7 @@ Partial Class Settings
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(21, 237)
+        Me.TextBox3.Location = New System.Drawing.Point(20, 231)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.PlaceholderText = "Old Password"
         Me.TextBox3.Size = New System.Drawing.Size(180, 23)
@@ -79,7 +89,7 @@ Partial Class Settings
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(21, 266)
+        Me.TextBox4.Location = New System.Drawing.Point(20, 255)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.PlaceholderText = "New Password"
         Me.TextBox4.Size = New System.Drawing.Size(180, 23)
@@ -87,7 +97,7 @@ Partial Class Settings
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(21, 295)
+        Me.TextBox5.Location = New System.Drawing.Point(20, 279)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.PlaceholderText = "Comfirm Password"
         Me.TextBox5.Size = New System.Drawing.Size(180, 23)
@@ -95,18 +105,18 @@ Partial Class Settings
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(207, 132)
+        Me.Button1.Location = New System.Drawing.Point(206, 142)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(68, 53)
+        Me.Button1.Size = New System.Drawing.Size(68, 48)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "Rename"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(207, 235)
+        Me.Button2.Location = New System.Drawing.Point(206, 231)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(68, 82)
+        Me.Button2.Size = New System.Drawing.Size(68, 71)
         Me.Button2.TabIndex = 6
         Me.Button2.Text = "Change"
         Me.Button2.UseVisualStyleBackColor = True
@@ -146,16 +156,9 @@ Partial Class Settings
         '
         'TabPage2
         '
-        Me.TabPage2.Controls.Add(Me.CheckBox2)
-        Me.TabPage2.Controls.Add(Me.CheckBox1)
+        Me.TabPage2.Controls.Add(Me.Panel2)
+        Me.TabPage2.Controls.Add(Me.Panel1)
         Me.TabPage2.Controls.Add(Me.Label1)
-        Me.TabPage2.Controls.Add(Me.Button2)
-        Me.TabPage2.Controls.Add(Me.TextBox1)
-        Me.TabPage2.Controls.Add(Me.Button1)
-        Me.TabPage2.Controls.Add(Me.TextBox2)
-        Me.TabPage2.Controls.Add(Me.TextBox5)
-        Me.TabPage2.Controls.Add(Me.TextBox3)
-        Me.TabPage2.Controls.Add(Me.TextBox4)
         Me.TabPage2.Location = New System.Drawing.Point(4, 24)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
@@ -164,10 +167,75 @@ Partial Class Settings
         Me.TabPage2.Text = "Account Settings"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.Panel2.Controls.Add(Me.Label11)
+        Me.Panel2.Controls.Add(Me.Label9)
+        Me.Panel2.Controls.Add(Me.Label8)
+        Me.Panel2.Controls.Add(Me.Button2)
+        Me.Panel2.Controls.Add(Me.TextBox4)
+        Me.Panel2.Controls.Add(Me.TextBox3)
+        Me.Panel2.Controls.Add(Me.TextBox5)
+        Me.Panel2.Controls.Add(Me.TextBox2)
+        Me.Panel2.Controls.Add(Me.Button1)
+        Me.Panel2.Controls.Add(Me.TextBox1)
+        Me.Panel2.Location = New System.Drawing.Point(21, 19)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(400, 334)
+        Me.Panel2.TabIndex = 11
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(20, 19)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(256, 45)
+        Me.Label11.TabIndex = 14
+        Me.Label11.Text = "Your Account Settings" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Change your Username or your Password Here."
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(20, 213)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(101, 15)
+        Me.Label9.TabIndex = 13
+        Me.Label9.Text = "Change Password"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(20, 124)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(104, 15)
+        Me.Label8.TabIndex = 12
+        Me.Label8.Text = "Change Username"
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.Panel1.Controls.Add(Me.Label10)
+        Me.Panel1.Controls.Add(Me.CheckBox2)
+        Me.Panel1.Controls.Add(Me.CheckBox1)
+        Me.Panel1.Location = New System.Drawing.Point(489, 98)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(231, 255)
+        Me.Panel1.TabIndex = 10
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(14, 19)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(130, 75)
+        Me.Label10.TabIndex = 14
+        Me.Label10.Text = "Other Accounts" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "You can Enable/Disable" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Accounts for Guests or" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "for Children"
+        '
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(379, 172)
+        Me.CheckBox2.Location = New System.Drawing.Point(14, 204)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(134, 19)
         Me.CheckBox2.TabIndex = 9
@@ -177,7 +245,7 @@ Partial Class Settings
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(379, 134)
+        Me.CheckBox1.Location = New System.Drawing.Point(14, 158)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(142, 19)
         Me.CheckBox1.TabIndex = 8
@@ -187,14 +255,17 @@ Partial Class Settings
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(21, 32)
+        Me.Label1.Location = New System.Drawing.Point(489, 19)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(297, 60)
+        Me.Label1.Size = New System.Drawing.Size(230, 75)
         Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Account Settings" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Use this Page to Change your Username, and Password" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label1.Text = "Account Settings" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Use this Page to Change Your Account, or " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Other Special Acco" &
+    "unts" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'TabPage3
         '
+        Me.TabPage3.Controls.Add(Me.Button3)
+        Me.TabPage3.Controls.Add(Me.PictureBox2)
         Me.TabPage3.Controls.Add(Me.Label3)
         Me.TabPage3.Location = New System.Drawing.Point(4, 24)
         Me.TabPage3.Name = "TabPage3"
@@ -203,21 +274,30 @@ Partial Class Settings
         Me.TabPage3.Text = "Activation"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(18, 74)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(52, 50)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 14
+        Me.PictureBox2.TabStop = False
+        '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(21, 23)
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label3.Location = New System.Drawing.Point(76, 92)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(319, 105)
-        Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Activation: Not Needed for this Product/Activated" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Using the MIT Licenc" &
-    "e or the Open Source Homeshell EULA"
+        Me.Label3.Size = New System.Drawing.Size(431, 32)
+        Me.Label3.TabIndex = 12
+        Me.Label3.Text = "Activation Not Needed: HDE Home M3"
         '
         'TabPage4
         '
         Me.TabPage4.Controls.Add(Me.PictureBox1)
         Me.TabPage4.Controls.Add(Me.Label4)
-        Me.TabPage4.Controls.Add(Me.Label5)
         Me.TabPage4.Controls.Add(Me.Label7)
         Me.TabPage4.Controls.Add(Me.Label6)
         Me.TabPage4.Location = New System.Drawing.Point(4, 24)
@@ -230,7 +310,7 @@ Partial Class Settings
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(24, 160)
+        Me.PictureBox1.Location = New System.Drawing.Point(23, 105)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(52, 50)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -240,27 +320,18 @@ Partial Class Settings
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(24, 304)
+        Me.Label4.Location = New System.Drawing.Point(23, 185)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(319, 75)
+        Me.Label4.Size = New System.Drawing.Size(319, 90)
         Me.Label4.TabIndex = 2
-        Me.Label4.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Homeshell Desktop Enviorment Public Build 1 Milestone 3 " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Using the MIT Lic" &
-    "ence or the Open Source Homeshell EULA"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(24, 237)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(112, 45)
-        Me.Label5.TabIndex = 10
-        Me.Label5.Text = "Preview Build. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(c) 2021 T1 Software"
+        Me.Label4.Text = "Homeshell Desktop Enviorment Public Build 1 Milestone 3 " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Using the MIT Licence" &
+    " or the Open Source Homeshell EULA" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(c) 2021 T1 Software"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label7.Location = New System.Drawing.Point(95, 160)
+        Me.Label7.Location = New System.Drawing.Point(94, 105)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(441, 32)
         Me.Label7.TabIndex = 8
@@ -269,11 +340,20 @@ Partial Class Settings
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(97, 192)
+        Me.Label6.Location = New System.Drawing.Point(96, 137)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(108, 15)
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "For Windows 10/11"
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(319, 294)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 15
+        Me.Button3.Text = "Activate"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Settings
         '
@@ -289,8 +369,13 @@ Partial Class Settings
         Me.TabPage1.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage4.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -314,10 +399,17 @@ Partial Class Settings
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label5 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Button3 As Button
 End Class
