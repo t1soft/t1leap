@@ -35,7 +35,7 @@ Partial Class Dialog1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(91, 31)
+        Me.Label1.Location = New System.Drawing.Point(93, 29)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(441, 32)
         Me.Label1.TabIndex = 0
@@ -44,7 +44,7 @@ Partial Class Dialog1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(93, 63)
+        Me.Label2.Location = New System.Drawing.Point(95, 61)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(108, 15)
         Me.Label2.TabIndex = 1
@@ -53,7 +53,7 @@ Partial Class Dialog1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(20, 108)
+        Me.Label3.Location = New System.Drawing.Point(22, 110)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(112, 45)
         Me.Label3.TabIndex = 2
@@ -71,7 +71,7 @@ Partial Class Dialog1
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(20, 31)
+        Me.PictureBox1.Location = New System.Drawing.Point(22, 29)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(52, 50)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage

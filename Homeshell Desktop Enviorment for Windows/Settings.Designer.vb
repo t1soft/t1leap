@@ -44,6 +44,7 @@ Partial Class Settings
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
@@ -51,7 +52,6 @@ Partial Class Settings
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -180,7 +180,7 @@ Partial Class Settings
         Me.Panel2.Controls.Add(Me.TextBox2)
         Me.Panel2.Controls.Add(Me.Button1)
         Me.Panel2.Controls.Add(Me.TextBox1)
-        Me.Panel2.Location = New System.Drawing.Point(21, 19)
+        Me.Panel2.Location = New System.Drawing.Point(21, 39)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(400, 334)
         Me.Panel2.TabIndex = 11
@@ -218,7 +218,7 @@ Partial Class Settings
         Me.Panel1.Controls.Add(Me.Label10)
         Me.Panel1.Controls.Add(Me.CheckBox2)
         Me.Panel1.Controls.Add(Me.CheckBox1)
-        Me.Panel1.Location = New System.Drawing.Point(489, 98)
+        Me.Panel1.Location = New System.Drawing.Point(489, 118)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(231, 255)
         Me.Panel1.TabIndex = 10
@@ -255,7 +255,7 @@ Partial Class Settings
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(489, 19)
+        Me.Label1.Location = New System.Drawing.Point(489, 39)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(230, 75)
         Me.Label1.TabIndex = 7
@@ -273,6 +273,15 @@ Partial Class Settings
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Activation"
         Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(18, 359)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(224, 23)
+        Me.Button3.TabIndex = 15
+        Me.Button3.Text = "Activated (test button)"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'PictureBox2
         '
@@ -333,9 +342,9 @@ Partial Class Settings
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label7.Location = New System.Drawing.Point(94, 105)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(441, 32)
+        Me.Label7.Size = New System.Drawing.Size(593, 32)
         Me.Label7.TabIndex = 8
-        Me.Label7.Text = "Homeshell Desktop Enviorment Preview"
+        Me.Label7.Text = "Homeshell Desktop Enviorment Codename ""snowball"""
         '
         'Label6
         '
@@ -345,15 +354,6 @@ Partial Class Settings
         Me.Label6.Size = New System.Drawing.Size(108, 15)
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "For Windows 10/11"
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(319, 294)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 15
-        Me.Button3.Text = "Activate"
-        Me.Button3.UseVisualStyleBackColor = True
         '
         'Settings
         '

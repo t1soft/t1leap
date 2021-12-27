@@ -47,7 +47,7 @@ Partial Class Start
         Me.Button6.Size = New System.Drawing.Size(215, 140)
         Me.Button6.TabIndex = 16
         Me.Button6.Text = "Apps"
-        Me.Button6.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.Button6.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.Button6.UseVisualStyleBackColor = False
         '
         'Button5
@@ -73,7 +73,7 @@ Partial Class Start
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(256, 146)
         Me.Button4.TabIndex = 14
-        Me.Button4.Text = "       WebBox"
+        Me.Button4.Text = "WebBox"
         Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.Button4.UseVisualStyleBackColor = False
         '
@@ -87,7 +87,7 @@ Partial Class Start
         Me.Button3.Size = New System.Drawing.Size(215, 76)
         Me.Button3.TabIndex = 13
         Me.Button3.Text = "TData"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Button2
@@ -100,7 +100,7 @@ Partial Class Start
         Me.Button2.Size = New System.Drawing.Size(215, 70)
         Me.Button2.TabIndex = 12
         Me.Button2.Text = "TDoc"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Button1
