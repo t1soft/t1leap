@@ -1,5 +1,6 @@
 ﻿Public Class Desktop
 
+    Dim menu As Integer
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles Me.Load
         Form1.Close()
@@ -19,6 +20,7 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Start.Show()
+        AnimationTimer.Start()
+
     End Sub
 End Class
