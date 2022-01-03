@@ -44,7 +44,7 @@ Partial Class Start
         Me.Button6.BackColor = System.Drawing.Color.Turquoise
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button6.Location = New System.Drawing.Point(284, 153)
+        Me.Button6.Location = New System.Drawing.Point(279, 153)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(256, 141)
         Me.Button6.TabIndex = 16
@@ -57,7 +57,7 @@ Partial Class Start
         Me.Button5.BackColor = System.Drawing.Color.Gold
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button5.Location = New System.Drawing.Point(424, 293)
+        Me.Button5.Location = New System.Drawing.Point(419, 293)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(116, 145)
         Me.Button5.TabIndex = 15
@@ -71,7 +71,7 @@ Partial Class Start
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.Location = New System.Drawing.Point(29, 293)
+        Me.Button4.Location = New System.Drawing.Point(24, 293)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(256, 145)
         Me.Button4.TabIndex = 14
@@ -84,7 +84,7 @@ Partial Class Start
         Me.Button3.BackColor = System.Drawing.Color.YellowGreen
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button3.Location = New System.Drawing.Point(29, 222)
+        Me.Button3.Location = New System.Drawing.Point(24, 222)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(150, 76)
         Me.Button3.TabIndex = 13
@@ -97,7 +97,7 @@ Partial Class Start
         Me.Button2.BackColor = System.Drawing.Color.CornflowerBlue
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.Location = New System.Drawing.Point(29, 153)
+        Me.Button2.Location = New System.Drawing.Point(24, 153)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(150, 70)
         Me.Button2.TabIndex = 12
@@ -130,7 +130,7 @@ Partial Class Start
         Me.Button7.BackColor = System.Drawing.Color.Cyan
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button7.Location = New System.Drawing.Point(178, 153)
+        Me.Button7.Location = New System.Drawing.Point(173, 153)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(107, 141)
         Me.Button7.TabIndex = 19
@@ -143,7 +143,7 @@ Partial Class Start
         Me.Button9.BackColor = System.Drawing.Color.SlateBlue
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button9.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button9.Location = New System.Drawing.Point(284, 293)
+        Me.Button9.Location = New System.Drawing.Point(279, 293)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(141, 51)
         Me.Button9.TabIndex = 20
@@ -156,7 +156,7 @@ Partial Class Start
         Me.Button10.BackColor = System.Drawing.Color.SlateBlue
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button10.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button10.Location = New System.Drawing.Point(284, 343)
+        Me.Button10.Location = New System.Drawing.Point(279, 343)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(141, 52)
         Me.Button10.TabIndex = 21
@@ -169,7 +169,7 @@ Partial Class Start
         Me.Button11.BackColor = System.Drawing.Color.SlateBlue
         Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button11.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button11.Location = New System.Drawing.Point(284, 391)
+        Me.Button11.Location = New System.Drawing.Point(279, 391)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(141, 47)
         Me.Button11.TabIndex = 22
@@ -179,7 +179,7 @@ Partial Class Start
         '
         'Button12
         '
-        Me.Button12.Location = New System.Drawing.Point(252, 463)
+        Me.Button12.Location = New System.Drawing.Point(24, 463)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(141, 23)
         Me.Button12.TabIndex = 23
@@ -189,7 +189,7 @@ Partial Class Start
         '
         'Button13
         '
-        Me.Button13.Location = New System.Drawing.Point(399, 463)
+        Me.Button13.Location = New System.Drawing.Point(394, 463)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(141, 23)
         Me.Button13.TabIndex = 24
