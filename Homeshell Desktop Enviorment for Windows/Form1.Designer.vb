@@ -146,6 +146,7 @@ Partial Class Form1
         '
         'Panel1
         '
+        Me.Panel1.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.Panel1.Controls.Add(Me.ClockText)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Button2)
