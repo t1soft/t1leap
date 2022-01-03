@@ -52,21 +52,11 @@ Partial Class Desktop
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label12 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.AnimationTimer = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -327,133 +317,12 @@ Partial Class Desktop
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.Panel2.Controls.Add(Me.Button8)
-        Me.Panel2.Controls.Add(Me.Button6)
-        Me.Panel2.Controls.Add(Me.Button5)
-        Me.Panel2.Controls.Add(Me.Button4)
-        Me.Panel2.Controls.Add(Me.Button3)
-        Me.Panel2.Controls.Add(Me.Button7)
-        Me.Panel2.Controls.Add(Me.Button9)
-        Me.Panel2.Controls.Add(Me.PictureBox1)
-        Me.Panel2.Controls.Add(Me.Label12)
         Me.Panel2.Controls.Add(Me.Button2)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(0, 320)
+        Me.Panel2.Location = New System.Drawing.Point(0, 659)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(955, 376)
+        Me.Panel2.Size = New System.Drawing.Size(955, 37)
         Me.Panel2.TabIndex = 27
-        '
-        'Button8
-        '
-        Me.Button8.BackColor = System.Drawing.Color.Aquamarine
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button8.Location = New System.Drawing.Point(242, 275)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(130, 70)
-        Me.Button8.TabIndex = 27
-        Me.Button8.Text = "Settings"
-        Me.Button8.TextAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button8.UseVisualStyleBackColor = False
-        '
-        'Button6
-        '
-        Me.Button6.BackColor = System.Drawing.Color.Turquoise
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button6.Location = New System.Drawing.Point(372, 205)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(215, 140)
-        Me.Button6.TabIndex = 26
-        Me.Button6.Text = "Apps"
-        Me.Button6.TextAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button6.UseVisualStyleBackColor = False
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.Gold
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button5.Location = New System.Drawing.Point(116, 205)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(256, 70)
-        Me.Button5.TabIndex = 25
-        Me.Button5.Text = "File Interface"
-        Me.Button5.TextAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button5.UseVisualStyleBackColor = False
-        '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.Location = New System.Drawing.Point(116, 59)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(256, 146)
-        Me.Button4.TabIndex = 24
-        Me.Button4.Text = "WebBox"
-        Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button4.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.YellowGreen
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button3.Location = New System.Drawing.Point(372, 129)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(215, 76)
-        Me.Button3.TabIndex = 23
-        Me.Button3.Text = "TData"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Button7
-        '
-        Me.Button7.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button7.Location = New System.Drawing.Point(372, 59)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(215, 70)
-        Me.Button7.TabIndex = 22
-        Me.Button7.Text = "TDoc"
-        Me.Button7.TextAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button7.UseVisualStyleBackColor = False
-        '
-        'Button9
-        '
-        Me.Button9.BackColor = System.Drawing.Color.OrangeRed
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button9.Location = New System.Drawing.Point(116, 275)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(127, 70)
-        Me.Button9.TabIndex = 21
-        Me.Button9.Text = "Log Out"
-        Me.Button9.TextAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button9.UseVisualStyleBackColor = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 77)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(43, 43)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 20
-        Me.PictureBox1.TabStop = False
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label12.Location = New System.Drawing.Point(12, 123)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(81, 32)
-        Me.Label12.TabIndex = 19
-        Me.Label12.Text = "User 1"
         '
         'Button2
         '
@@ -488,8 +357,6 @@ Partial Class Desktop
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -522,14 +389,5 @@ Partial Class Desktop
     Friend WithEvents Label8 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Button2 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label12 As Label
     Friend WithEvents AnimationTimer As Timer
 End Class
