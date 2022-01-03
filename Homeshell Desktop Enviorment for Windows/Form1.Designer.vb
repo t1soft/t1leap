@@ -99,7 +99,7 @@ Partial Class Form1
         Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(199, 98)
+        Me.Label4.Location = New System.Drawing.Point(22, 89)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(135, 25)
         Me.Label4.TabIndex = 7
@@ -110,7 +110,7 @@ Partial Class Form1
         Me.ClockText.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.ClockText.AutoSize = True
         Me.ClockText.Font = New System.Drawing.Font("Segoe UI Light", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.ClockText.Location = New System.Drawing.Point(23, 78)
+        Me.ClockText.Location = New System.Drawing.Point(12, 39)
         Me.ClockText.Name = "ClockText"
         Me.ClockText.Size = New System.Drawing.Size(170, 50)
         Me.ClockText.TabIndex = 6
@@ -146,7 +146,7 @@ Partial Class Form1
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Panel1.BackColor = System.Drawing.Color.SteelBlue
         Me.Panel1.Controls.Add(Me.ClockText)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Button2)
@@ -158,6 +158,7 @@ Partial Class Form1
         '
         'Panel2
         '
+        Me.Panel2.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.Panel2.Controls.Add(Me.TextBox1)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.Label6)
