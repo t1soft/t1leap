@@ -18,18 +18,23 @@
         Me.Close()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Form4.WindowState = FormWindowState.Normal
-        Form4.Show()
-        Me.Close()
-    End Sub
+
 
     Private Sub Start_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
-    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        Settings.WindowState = FormWindowState.Normal
         Settings.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        Form4.WindowState = FormWindowState.Normal
+        Form4.Show()
         Me.Close()
     End Sub
 End Class

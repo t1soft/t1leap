@@ -53,6 +53,7 @@ Partial Class Desktop
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.AnimationTimer = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -318,9 +319,9 @@ Partial Class Desktop
         Me.Panel2.BackColor = System.Drawing.Color.CornflowerBlue
         Me.Panel2.Controls.Add(Me.Button2)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(0, 658)
+        Me.Panel2.Location = New System.Drawing.Point(0, 659)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(955, 38)
+        Me.Panel2.Size = New System.Drawing.Size(955, 37)
         Me.Panel2.TabIndex = 27
         '
         'Button2
@@ -335,6 +336,10 @@ Partial Class Desktop
         Me.Button2.Text = "Menu"
         Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button2.UseVisualStyleBackColor = True
+        '
+        'AnimationTimer
+        '
+        Me.AnimationTimer.Interval = 1
         '
         'Desktop
         '
@@ -384,4 +389,5 @@ Partial Class Desktop
     Friend WithEvents Label8 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Button2 As Button
+    Friend WithEvents AnimationTimer As Timer
 End Class
