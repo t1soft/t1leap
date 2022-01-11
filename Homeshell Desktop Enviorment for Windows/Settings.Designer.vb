@@ -23,12 +23,9 @@ Partial Class Settings
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Settings))
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
@@ -37,7 +34,6 @@ Partial Class Settings
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
@@ -63,25 +59,9 @@ Partial Class Settings
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(20, 142)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.PlaceholderText = "New Account Name"
-        Me.TextBox1.Size = New System.Drawing.Size(180, 23)
-        Me.TextBox1.TabIndex = 0
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(20, 166)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PlaceholderText = "Enter Password to Comfirm"
-        Me.TextBox2.Size = New System.Drawing.Size(180, 23)
-        Me.TextBox2.TabIndex = 1
-        '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(20, 231)
+        Me.TextBox3.Location = New System.Drawing.Point(20, 146)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.PlaceholderText = "Old Password"
         Me.TextBox3.Size = New System.Drawing.Size(180, 23)
@@ -89,7 +69,7 @@ Partial Class Settings
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(20, 255)
+        Me.TextBox4.Location = New System.Drawing.Point(20, 170)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.PlaceholderText = "New Password"
         Me.TextBox4.Size = New System.Drawing.Size(180, 23)
@@ -97,24 +77,15 @@ Partial Class Settings
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(20, 279)
+        Me.TextBox5.Location = New System.Drawing.Point(20, 194)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.PlaceholderText = "Comfirm Password"
         Me.TextBox5.Size = New System.Drawing.Size(180, 23)
         Me.TextBox5.TabIndex = 4
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(206, 142)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(68, 48)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Rename"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(206, 231)
+        Me.Button2.Location = New System.Drawing.Point(206, 146)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(68, 71)
         Me.Button2.TabIndex = 6
@@ -172,17 +143,13 @@ Partial Class Settings
         Me.Panel2.BackColor = System.Drawing.Color.LightSkyBlue
         Me.Panel2.Controls.Add(Me.Label11)
         Me.Panel2.Controls.Add(Me.Label9)
-        Me.Panel2.Controls.Add(Me.Label8)
         Me.Panel2.Controls.Add(Me.Button2)
         Me.Panel2.Controls.Add(Me.TextBox4)
         Me.Panel2.Controls.Add(Me.TextBox3)
         Me.Panel2.Controls.Add(Me.TextBox5)
-        Me.Panel2.Controls.Add(Me.TextBox2)
-        Me.Panel2.Controls.Add(Me.Button1)
-        Me.Panel2.Controls.Add(Me.TextBox1)
-        Me.Panel2.Location = New System.Drawing.Point(21, 39)
+        Me.Panel2.Location = New System.Drawing.Point(22, 118)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(400, 334)
+        Me.Panel2.Size = New System.Drawing.Size(404, 255)
         Me.Panel2.TabIndex = 11
         '
         'Label11
@@ -197,20 +164,11 @@ Partial Class Settings
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(20, 213)
+        Me.Label9.Location = New System.Drawing.Point(20, 112)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(101, 15)
+        Me.Label9.Size = New System.Drawing.Size(194, 15)
         Me.Label9.TabIndex = 13
-        Me.Label9.Text = "Change Password"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(20, 124)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(104, 15)
-        Me.Label8.TabIndex = 12
-        Me.Label8.Text = "Change Username"
+        Me.Label9.Text = "Change Password for Locked Mode"
         '
         'Panel1
         '
@@ -329,12 +287,12 @@ Partial Class Settings
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(23, 185)
+        Me.Label4.Location = New System.Drawing.Point(23, 187)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(319, 90)
+        Me.Label4.Size = New System.Drawing.Size(316, 105)
         Me.Label4.TabIndex = 2
-        Me.Label4.Text = "Homeshell Desktop Enviorment Public Build 1 Milestone 3 " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Using the MIT Licence" &
-    " or the Open Source Homeshell EULA" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(c) 2021 T1 Software"
+        Me.Label4.Text = "Homeshell Desktop Enviorment Public Build 1 Milestone 3 " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Uses the MIT LIcense " &
+    "(MIT)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(c) 2021 T1 Software" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label7
         '
@@ -382,13 +340,9 @@ Partial Class Settings
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents TabPage1 As TabPage
@@ -408,7 +362,6 @@ Partial Class Settings
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label11 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents Label8 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label10 As Label
     Friend WithEvents Button3 As Button

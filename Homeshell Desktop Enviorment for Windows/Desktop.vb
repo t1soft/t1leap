@@ -34,4 +34,9 @@
         End If
 
     End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Start.Hide()
+        menu = 0
+    End Sub
 End Class

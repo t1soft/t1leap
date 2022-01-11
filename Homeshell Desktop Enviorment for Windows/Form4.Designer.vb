@@ -28,6 +28,10 @@ Partial Class Form4
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
@@ -36,7 +40,7 @@ Partial Class Form4
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Location = New System.Drawing.Point(12, 41)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(160, 95)
+        Me.Button1.Size = New System.Drawing.Size(158, 59)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Close Enviorment"
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomLeft
@@ -46,9 +50,9 @@ Partial Class Form4
         '
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(12, 136)
+        Me.Button2.Location = New System.Drawing.Point(169, 41)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(160, 95)
+        Me.Button2.Size = New System.Drawing.Size(151, 175)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Lock"
         Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomLeft
@@ -58,9 +62,9 @@ Partial Class Form4
         '
         Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(172, 41)
+        Me.Button3.Location = New System.Drawing.Point(12, 99)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(160, 95)
+        Me.Button3.Size = New System.Drawing.Size(158, 59)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Log Out"
         Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomLeft
@@ -78,30 +82,69 @@ Partial Class Form4
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(-2, 246)
+        Me.Label2.Location = New System.Drawing.Point(12, 280)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(353, 45)
+        Me.Label2.Size = New System.Drawing.Size(244, 15)
         Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Note: Someone can Close the Enviorment while locked. Save your" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Work before Locki" &
-    "ng." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label2.Text = "Set a Lock Password for this Desktop Session."
         '
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Location = New System.Drawing.Point(172, 136)
+        Me.Button4.Location = New System.Drawing.Point(12, 157)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(160, 95)
+        Me.Button4.Size = New System.Drawing.Size(158, 59)
         Me.Button4.TabIndex = 5
         Me.Button4.Text = "Cancel"
         Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.Button4.UseVisualStyleBackColor = False
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(12, 310)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.PlaceholderText = "Password"
+        Me.TextBox1.Size = New System.Drawing.Size(244, 23)
+        Me.TextBox1.TabIndex = 6
+        '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Location = New System.Drawing.Point(289, 280)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(32, 15)
+        Me.LinkLabel1.TabIndex = 9
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "Help"
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(262, 310)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(58, 23)
+        Me.Button5.TabIndex = 10
+        Me.Button5.Text = "Set"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(12, 336)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(34, 15)
+        Me.Label3.TabIndex = 11
+        Me.Label3.Text = "none"
+        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(350, 291)
+        Me.ClientSize = New System.Drawing.Size(333, 378)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.LinkLabel1)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -124,4 +167,8 @@ Partial Class Form4
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Button4 As Button
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Label3 As Label
 End Class

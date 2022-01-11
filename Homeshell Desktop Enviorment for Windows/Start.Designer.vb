@@ -108,7 +108,7 @@ Partial Class Start
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(260, 28)
+        Me.PictureBox1.Location = New System.Drawing.Point(24, 63)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(43, 43)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -119,7 +119,7 @@ Partial Class Start
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(243, 74)
+        Me.Label1.Location = New System.Drawing.Point(73, 74)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(81, 32)
         Me.Label1.TabIndex = 9
@@ -179,7 +179,7 @@ Partial Class Start
         '
         'Button12
         '
-        Me.Button12.Location = New System.Drawing.Point(24, 463)
+        Me.Button12.Location = New System.Drawing.Point(394, 62)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(141, 23)
         Me.Button12.TabIndex = 23
@@ -189,7 +189,7 @@ Partial Class Start
         '
         'Button13
         '
-        Me.Button13.Location = New System.Drawing.Point(394, 463)
+        Me.Button13.Location = New System.Drawing.Point(394, 84)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(141, 23)
         Me.Button13.TabIndex = 24
@@ -202,7 +202,7 @@ Partial Class Start
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.ClientSize = New System.Drawing.Size(562, 507)
+        Me.ClientSize = New System.Drawing.Size(560, 462)
         Me.Controls.Add(Me.Button13)
         Me.Controls.Add(Me.Button12)
         Me.Controls.Add(Me.Button11)

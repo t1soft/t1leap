@@ -90,7 +90,7 @@ Partial Class Desktop
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.Panel1.BackColor = System.Drawing.Color.PowderBlue
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Controls.Add(Me.Label10)

@@ -36,7 +36,7 @@ Partial Class AppLoader
         Me.Button1.Location = New System.Drawing.Point(48, 124)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(207, 121)
+        Me.Button1.Size = New System.Drawing.Size(207, 431)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Open Homeshell Compatable Applications"
         Me.Button1.UseVisualStyleBackColor = False
@@ -45,7 +45,7 @@ Partial Class AppLoader
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei Light", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(48, 36)
+        Me.Label1.Location = New System.Drawing.Point(48, 59)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(76, 35)

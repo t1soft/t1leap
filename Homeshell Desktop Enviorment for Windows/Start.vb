@@ -21,7 +21,7 @@
 
 
     Private Sub Start_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Label1.Text = Environment.UserName
     End Sub
 
 
@@ -37,4 +37,11 @@
         Form4.Show()
         Me.Close()
     End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Organizer.Show()
+    End Sub
+
+
+
 End Class

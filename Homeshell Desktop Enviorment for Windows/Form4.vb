@@ -1,4 +1,11 @@
-﻿Public Class Form4
+﻿Imports System.IO
+Imports System.Text
+
+Public Class Form4
+
+    Dim path As String = Environment.SpecialFolder.ApplicationData & "\T1_HsDesktop"
+    Dim lockPin As String = "\password.txt"
+    Dim TempPass As String = path And lockPin
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Application.Exit()
         End
@@ -32,5 +39,11 @@
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Me.Close()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        My.Computer.FileSystem.CreateDirectory(path)
+        Dim fs As FileStream = File.Create(path & lockPin)
+        My.Computer.FileSystem.WriteAllText(TempPass, TextBox1.Text, True)
     End Sub
 End Class
