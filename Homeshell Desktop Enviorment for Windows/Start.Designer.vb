@@ -24,16 +24,12 @@ Partial Class Start
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Start))
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
         Me.Button13 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -44,26 +40,13 @@ Partial Class Start
         Me.Button6.BackColor = System.Drawing.Color.Turquoise
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button6.Location = New System.Drawing.Point(279, 153)
+        Me.Button6.Location = New System.Drawing.Point(279, 293)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(256, 141)
+        Me.Button6.Size = New System.Drawing.Size(256, 145)
         Me.Button6.TabIndex = 16
         Me.Button6.Text = "Apps"
         Me.Button6.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.Button6.UseVisualStyleBackColor = False
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.Gold
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button5.Location = New System.Drawing.Point(419, 293)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(116, 145)
-        Me.Button5.TabIndex = 15
-        Me.Button5.Text = "File Interface"
-        Me.Button5.TextAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button5.UseVisualStyleBackColor = False
         '
         'Button4
         '
@@ -86,7 +69,7 @@ Partial Class Start
         Me.Button3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button3.Location = New System.Drawing.Point(24, 222)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(150, 76)
+        Me.Button3.Size = New System.Drawing.Size(256, 76)
         Me.Button3.TabIndex = 13
         Me.Button3.Text = "TData"
         Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomLeft
@@ -99,7 +82,7 @@ Partial Class Start
         Me.Button2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button2.Location = New System.Drawing.Point(24, 153)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(150, 70)
+        Me.Button2.Size = New System.Drawing.Size(256, 70)
         Me.Button2.TabIndex = 12
         Me.Button2.Text = "TDoc"
         Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomLeft
@@ -130,52 +113,13 @@ Partial Class Start
         Me.Button7.BackColor = System.Drawing.Color.Cyan
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button7.Location = New System.Drawing.Point(173, 153)
+        Me.Button7.Location = New System.Drawing.Point(279, 153)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(107, 141)
+        Me.Button7.Size = New System.Drawing.Size(256, 141)
         Me.Button7.TabIndex = 19
         Me.Button7.Text = "Organizer"
         Me.Button7.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.Button7.UseVisualStyleBackColor = False
-        '
-        'Button9
-        '
-        Me.Button9.BackColor = System.Drawing.Color.SlateBlue
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button9.Location = New System.Drawing.Point(279, 293)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(141, 51)
-        Me.Button9.TabIndex = 20
-        Me.Button9.Text = "Documents"
-        Me.Button9.TextAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button9.UseVisualStyleBackColor = False
-        '
-        'Button10
-        '
-        Me.Button10.BackColor = System.Drawing.Color.SlateBlue
-        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button10.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button10.Location = New System.Drawing.Point(279, 343)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(141, 52)
-        Me.Button10.TabIndex = 21
-        Me.Button10.Text = "Music"
-        Me.Button10.TextAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button10.UseVisualStyleBackColor = False
-        '
-        'Button11
-        '
-        Me.Button11.BackColor = System.Drawing.Color.SlateBlue
-        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button11.Location = New System.Drawing.Point(279, 391)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(141, 47)
-        Me.Button11.TabIndex = 22
-        Me.Button11.Text = "Photos"
-        Me.Button11.TextAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button11.UseVisualStyleBackColor = False
         '
         'Button12
         '
@@ -205,12 +149,8 @@ Partial Class Start
         Me.ClientSize = New System.Drawing.Size(560, 462)
         Me.Controls.Add(Me.Button13)
         Me.Controls.Add(Me.Button12)
-        Me.Controls.Add(Me.Button11)
-        Me.Controls.Add(Me.Button10)
-        Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -228,16 +168,12 @@ Partial Class Start
 
     End Sub
     Friend WithEvents Button6 As Button
-    Friend WithEvents Button5 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Button7 As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button10 As Button
-    Friend WithEvents Button11 As Button
     Friend WithEvents Button12 As Button
     Friend WithEvents Button13 As Button
 End Class

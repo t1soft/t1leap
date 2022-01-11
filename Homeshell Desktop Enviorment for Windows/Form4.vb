@@ -23,16 +23,30 @@ Public Class Form4
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Form1.Hide()
-        frmMain.Hide()
-        Start.Hide()
-        Tonline.Hide()
-        WebBrowser.Hide()
-        AppLoader.Hide()
-        Dialog1.Hide()
-        Desktop.Hide()
-        Form1.Show()
-        Me.Close()
+        If Label3.Text = "none" Then
+            Form1.Hide()
+            frmMain.Hide()
+            Start.Hide()
+            Tonline.Hide()
+            WebBrowser.Hide()
+            AppLoader.Hide()
+            Dialog1.Hide()
+            Desktop.Hide()
+            LockNo.Show()
+            Me.Hide()
+        Else
+            Form1.Hide()
+            frmMain.Hide()
+            Start.Hide()
+            Tonline.Hide()
+            WebBrowser.Hide()
+            AppLoader.Hide()
+            Dialog1.Hide()
+            Desktop.Hide()
+            LockKey.Show()
+            Me.Hide()
+        End If
+
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
@@ -40,6 +54,15 @@ Public Class Form4
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        If TextBox1.Text = "none" Then
+            MsgBox("Password cannot be the word 'none'.", MsgBoxStyle.Critical, "HDEM4 - Error")
+        Else
+            Label3.Text = TextBox1.Text
+        End If
+    End Sub
 
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Label3.Text = "none"
+        TextBox1.Text = ""
     End Sub
 End Class

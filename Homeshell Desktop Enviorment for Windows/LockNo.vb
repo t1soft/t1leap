@@ -1,18 +1,18 @@
-﻿Public Class Form1
+﻿Public Class LockNo
     Dim thisHour = DateTime.Now.TimeOfDay.Hours
 
 
     'Changes the Greeting based on Local Time, and Greets you by grabbing the Current Windows Username
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Private Sub LockNo_Load(sender As Object, e As EventArgs) Handles Me.Load
         If thisHour < 13 Then
-            Greeting.Text = "Good Morning,"
+            Label2.Text = "Good Morning,"
         ElseIf thisHour > 12 And thisHour < 8 Then
-            Greeting.Text = "Good Afternoon,"
+            Label2.Text = "Good Afternoon,"
         ElseIf thisHour > 7 Then
-            Greeting.Text = "Good Evening,"
+            Label2.Text = "Good Evening,"
         End If
 
-        UserText.Text = Environment.UserName
+        Label1.Text = Environment.UserName
     End Sub
 
 
@@ -43,6 +43,6 @@
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         ClockText.Text = DateTime.Now.ToString("hh:mm tt")
-        DateText.Text = DateTime.Now.ToString("MMMM d, yyyy")
+        Label4.Text = DateTime.Now.ToString("MMMM d, yyyy")
     End Sub
 End Class

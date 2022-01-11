@@ -32,6 +32,7 @@ Partial Class Form4
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -105,8 +106,9 @@ Partial Class Form4
         Me.TextBox1.Location = New System.Drawing.Point(12, 310)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.PlaceholderText = "Password"
-        Me.TextBox1.Size = New System.Drawing.Size(244, 23)
+        Me.TextBox1.Size = New System.Drawing.Size(180, 23)
         Me.TextBox1.TabIndex = 6
+        Me.TextBox1.UseSystemPasswordChar = True
         '
         'LinkLabel1
         '
@@ -120,7 +122,7 @@ Partial Class Form4
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(262, 310)
+        Me.Button5.Location = New System.Drawing.Point(198, 310)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(58, 23)
         Me.Button5.TabIndex = 10
@@ -137,11 +139,21 @@ Partial Class Form4
         Me.Label3.Text = "none"
         Me.Label3.Visible = False
         '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(262, 310)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(58, 23)
+        Me.Button6.TabIndex = 12
+        Me.Button6.Text = "Clear"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(333, 378)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.LinkLabel1)
@@ -172,4 +184,5 @@ Partial Class Form4
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Button5 As Button
     Friend WithEvents Label3 As Label
+    Friend WithEvents Button6 As Button
 End Class
