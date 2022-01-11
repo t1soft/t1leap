@@ -135,6 +135,7 @@ Partial Class Form4
         Me.Label3.Size = New System.Drawing.Size(34, 15)
         Me.Label3.TabIndex = 11
         Me.Label3.Text = "none"
+        Me.Label3.Visible = False
         '
         'Form4
         '
