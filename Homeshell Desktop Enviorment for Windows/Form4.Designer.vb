@@ -43,7 +43,7 @@ Partial Class Form4
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(158, 59)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Close Enviorment"
+        Me.Button1.Text = "Close Environment"
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.Button1.UseVisualStyleBackColor = False
         '
@@ -76,9 +76,9 @@ Partial Class Form4
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(12, 12)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(256, 15)
+        Me.Label1.Size = New System.Drawing.Size(263, 15)
         Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Options - Log Out, Lock, and Close Enviorment"
+        Me.Label1.Text = "Options - Log Out, Lock, and Close Environment"
         '
         'Label2
         '

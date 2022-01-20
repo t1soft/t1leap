@@ -80,20 +80,20 @@ Partial Class LockKey
         Me.Label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Label6.Location = New System.Drawing.Point(350, 625)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(363, 25)
+        Me.Label6.Size = New System.Drawing.Size(373, 25)
         Me.Label6.TabIndex = 12
-        Me.Label6.Text = "Homeshell Desktop Enviorment Milestone 4" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label6.Text = "Homeshell Desktop Environment Milestone 4" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Button2
         '
         Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(951, 627)
+        Me.Button2.Location = New System.Drawing.Point(832, 627)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(112, 24)
+        Me.Button2.Size = New System.Drawing.Size(231, 24)
         Me.Button2.TabIndex = 13
-        Me.Button2.Text = " Exit Enviorment"
+        Me.Button2.Text = " Exit Enviorment (requires password)"
         Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -120,10 +120,10 @@ Partial Class LockKey
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(36, 409)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(496, 15)
+        Me.Label3.Size = New System.Drawing.Size(496, 45)
         Me.Label3.TabIndex = 16
         Me.Label3.Text = "This Desktop Session is Locked. Please Enter the password you have set on the log" &
-    "-out screen"
+    "-out screen" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "You must also enter the password here to Exit the Enviornment"
         '
         'Button1
         '

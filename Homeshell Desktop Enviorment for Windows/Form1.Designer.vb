@@ -66,9 +66,9 @@ Partial Class Form1
         Me.Label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Label6.Location = New System.Drawing.Point(350, 625)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(363, 25)
+        Me.Label6.Size = New System.Drawing.Size(373, 25)
         Me.Label6.TabIndex = 19
-        Me.Label6.Text = "Homeshell Desktop Enviorment Milestone 4" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label6.Text = "Homeshell Desktop Environment Milestone 4" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'UserText
         '

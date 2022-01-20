@@ -23,17 +23,10 @@ Partial Class Settings
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Settings))
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
@@ -51,46 +44,12 @@ Partial Class Settings
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
-        Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(20, 146)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.PlaceholderText = "Old Password"
-        Me.TextBox3.Size = New System.Drawing.Size(180, 23)
-        Me.TextBox3.TabIndex = 2
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(20, 170)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.PlaceholderText = "New Password"
-        Me.TextBox4.Size = New System.Drawing.Size(180, 23)
-        Me.TextBox4.TabIndex = 3
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(20, 194)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.PlaceholderText = "Comfirm Password"
-        Me.TextBox5.Size = New System.Drawing.Size(180, 23)
-        Me.TextBox5.TabIndex = 4
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(206, 146)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(68, 71)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Change"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'TabControl1
         '
@@ -120,14 +79,13 @@ Partial Class Settings
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(18, 33)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(344, 45)
+        Me.Label2.Size = New System.Drawing.Size(351, 45)
         Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Welcome to the Settings for the Homeshell Desktop Enviorment" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Note: This is jus" &
-    "t a Placeholder. It does not work yet." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label2.Text = "Welcome to the Settings for the Homeshell Desktop Environment" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Note: This is ju" &
+    "st a Placeholder. It does not work yet." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'TabPage2
         '
-        Me.TabPage2.Controls.Add(Me.Panel2)
         Me.TabPage2.Controls.Add(Me.Panel1)
         Me.TabPage2.Controls.Add(Me.Label1)
         Me.TabPage2.Location = New System.Drawing.Point(4, 24)
@@ -138,47 +96,15 @@ Partial Class Settings
         Me.TabPage2.Text = "Account Settings"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.LightSkyBlue
-        Me.Panel2.Controls.Add(Me.Label11)
-        Me.Panel2.Controls.Add(Me.Label9)
-        Me.Panel2.Controls.Add(Me.Button2)
-        Me.Panel2.Controls.Add(Me.TextBox4)
-        Me.Panel2.Controls.Add(Me.TextBox3)
-        Me.Panel2.Controls.Add(Me.TextBox5)
-        Me.Panel2.Location = New System.Drawing.Point(22, 118)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(404, 255)
-        Me.Panel2.TabIndex = 11
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(20, 19)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(256, 45)
-        Me.Label11.TabIndex = 14
-        Me.Label11.Text = "Your Account Settings" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Change your Username or your Password Here."
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(20, 112)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(194, 15)
-        Me.Label9.TabIndex = 13
-        Me.Label9.Text = "Change Password for Locked Mode"
-        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.LightSkyBlue
         Me.Panel1.Controls.Add(Me.Label10)
         Me.Panel1.Controls.Add(Me.CheckBox2)
         Me.Panel1.Controls.Add(Me.CheckBox1)
-        Me.Panel1.Location = New System.Drawing.Point(489, 118)
+        Me.Panel1.Location = New System.Drawing.Point(34, 119)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(231, 255)
+        Me.Panel1.Size = New System.Drawing.Size(229, 255)
         Me.Panel1.TabIndex = 10
         '
         'Label10
@@ -186,9 +112,9 @@ Partial Class Settings
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(14, 19)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(130, 75)
+        Me.Label10.Size = New System.Drawing.Size(130, 105)
         Me.Label10.TabIndex = 14
-        Me.Label10.Text = "Other Accounts" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "You can Enable/Disable" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Accounts for Guests or" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "for Children"
+        Me.Label10.Text = "Other Accounts" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "You can Enable/Disable" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Accounts for Guests or" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "for Children" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(this is a placeholder)"
         '
         'CheckBox2
         '
@@ -213,7 +139,7 @@ Partial Class Settings
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(489, 39)
+        Me.Label1.Location = New System.Drawing.Point(34, 40)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(230, 75)
         Me.Label1.TabIndex = 7
@@ -244,7 +170,7 @@ Partial Class Settings
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(18, 74)
+        Me.PictureBox2.Location = New System.Drawing.Point(18, 166)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(52, 50)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -255,7 +181,7 @@ Partial Class Settings
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(76, 92)
+        Me.Label3.Location = New System.Drawing.Point(76, 184)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(431, 32)
         Me.Label3.TabIndex = 12
@@ -300,9 +226,9 @@ Partial Class Settings
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label7.Location = New System.Drawing.Point(94, 105)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(593, 32)
+        Me.Label7.Size = New System.Drawing.Size(607, 32)
         Me.Label7.TabIndex = 8
-        Me.Label7.Text = "Homeshell Desktop Enviorment Codename ""snowball"""
+        Me.Label7.Text = "Homeshell Desktop Environment Codename ""snowball"""
         '
         'Label6
         '
@@ -327,8 +253,6 @@ Partial Class Settings
         Me.TabPage1.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
@@ -340,10 +264,6 @@ Partial Class Settings
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Button2 As Button
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents TabPage2 As TabPage
@@ -359,9 +279,6 @@ Partial Class Settings
     Friend WithEvents Label6 As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label9 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label10 As Label
     Friend WithEvents Button3 As Button

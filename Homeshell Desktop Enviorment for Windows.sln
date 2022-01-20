@@ -3,18 +3,30 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Homeshell Desktop Enviorment for Windows", "Homeshell Desktop Enviorment for Windows\Homeshell Desktop Enviorment for Windows.vbproj", "{05AA9CC8-13E4-4CA0-969E-07C77EA6ACB4}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Homeshell Desktop Enviorment for Windows", "Homeshell Desktop Enviorment for Windows\Homeshell Desktop Enviorment for Windows.vbproj", "{05AA9CC8-13E4-4CA0-969E-07C77EA6ACB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{05AA9CC8-13E4-4CA0-969E-07C77EA6ACB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{05AA9CC8-13E4-4CA0-969E-07C77EA6ACB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05AA9CC8-13E4-4CA0-969E-07C77EA6ACB4}.Debug|x64.ActiveCfg = Debug|x64
+		{05AA9CC8-13E4-4CA0-969E-07C77EA6ACB4}.Debug|x64.Build.0 = Debug|x64
+		{05AA9CC8-13E4-4CA0-969E-07C77EA6ACB4}.Debug|x86.ActiveCfg = Debug|x86
+		{05AA9CC8-13E4-4CA0-969E-07C77EA6ACB4}.Debug|x86.Build.0 = Debug|x86
 		{05AA9CC8-13E4-4CA0-969E-07C77EA6ACB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05AA9CC8-13E4-4CA0-969E-07C77EA6ACB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05AA9CC8-13E4-4CA0-969E-07C77EA6ACB4}.Release|x64.ActiveCfg = Release|x64
+		{05AA9CC8-13E4-4CA0-969E-07C77EA6ACB4}.Release|x64.Build.0 = Release|x64
+		{05AA9CC8-13E4-4CA0-969E-07C77EA6ACB4}.Release|x86.ActiveCfg = Release|x86
+		{05AA9CC8-13E4-4CA0-969E-07C77EA6ACB4}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

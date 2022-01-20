@@ -71,7 +71,7 @@ Partial Class Start
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(256, 76)
         Me.Button3.TabIndex = 13
-        Me.Button3.Text = "TData"
+        Me.Button3.Text = "TData      (Placeholder)"
         Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.Button3.UseVisualStyleBackColor = False
         '
@@ -117,7 +117,7 @@ Partial Class Start
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(256, 141)
         Me.Button7.TabIndex = 19
-        Me.Button7.Text = "Organizer"
+        Me.Button7.Text = "Organizer     (Non-Functional)"
         Me.Button7.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.Button7.UseVisualStyleBackColor = False
         '
@@ -146,7 +146,7 @@ Partial Class Start
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.ClientSize = New System.Drawing.Size(560, 462)
+        Me.ClientSize = New System.Drawing.Size(560, 465)
         Me.Controls.Add(Me.Button13)
         Me.Controls.Add(Me.Button12)
         Me.Controls.Add(Me.Button7)

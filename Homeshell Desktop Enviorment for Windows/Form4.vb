@@ -23,7 +23,7 @@ Public Class Form4
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        If Label3.Text = "none" Then
+        If Label3.Text = "none" Or Label3.Text = " " Then
             Form1.Hide()
             frmMain.Hide()
             Start.Hide()

@@ -27,8 +27,13 @@ Public Class LockKey
 
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Application.Exit()
-        End
+        If TextBox1.Text = TempPass Then
+            Application.Exit()
+            End
+        Else
+            MsgBox("Incorrect Session Password.", MsgBoxStyle.Information, "HDEM4 - Authentification Error")
+        End If
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -42,8 +47,12 @@ Public Class LockKey
 
     Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox1.KeyPress
         If e.KeyChar = Microsoft.VisualBasic.ChrW(Keys.Return) Then
-            Desktop.Show()
-            Me.Hide()
+            If TextBox1.Text = TempPass Then
+                Desktop.Show()
+                Me.Hide()
+            Else
+                MsgBox("Incorrect Session Password.", MsgBoxStyle.Information, "HDEM4 - Authentification Error")
+            End If
         End If
     End Sub
 
@@ -51,6 +60,8 @@ Public Class LockKey
         ClockText.Text = DateTime.Now.ToString("hh:mm tt")
         DateText.Text = DateTime.Now.ToString("MMMM d, yyyy")
     End Sub
+
+
 End Class
 
 

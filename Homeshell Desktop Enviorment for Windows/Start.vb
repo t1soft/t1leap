@@ -9,7 +9,6 @@
         frmMain.WindowState = FormWindowState.Normal
         frmMain.Show()
         Me.Close()
-
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
@@ -30,6 +29,7 @@
         Settings.WindowState = FormWindowState.Normal
         Settings.Show()
         Me.Close()
+
     End Sub
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
@@ -39,7 +39,9 @@
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Organizer.WindowState = FormWindowState.Normal
         Organizer.Show()
+        Me.Close()
     End Sub
 
 
