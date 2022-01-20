@@ -1,5 +1,28 @@
 ﻿Public Class Form1
     Dim thisHour = DateTime.Now.TimeOfDay.Hours
+    Dim timeElapse = 0
+
+    Function Secret()
+        If timeElapse = 10 Then
+            Label6.Text = "Welcome to Homeshell!"
+        ElseIf timeElapse = 15 Then
+            Label6.Text = "Your Productive"
+        ElseIf timeElapse = 17 Then
+            Label6.Text = "Creative"
+        ElseIf timeElapse = 19 Then
+            Label6.Text = "Inspiring"
+        ElseIf timeElapse = 21 Then
+            Label6.Text = "Optimistic"
+        ElseIf timeElapse = 23 Then
+            Label6.Text = "And Ready!"
+        ElseIf timeElapse = 25 Then
+            Label6.Text = "Love Snowball"
+        ElseIf timeElapse = 27 Then
+            Label6.Text = "From T1 Software"
+        ElseIf timeElapse = 29 Then
+            Label6.Text = "Homeshell Desktop Environment Milestone 4"
+        End If
+    End Function
 
 
     'Changes the Greeting based on Local Time, and Greets you by grabbing the Current Windows Username
@@ -42,6 +65,8 @@
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        timeElapse = timeElapse + 1
+        Secret()
         ClockText.Text = DateTime.Now.ToString("hh:mm tt")
         DateText.Text = DateTime.Now.ToString("MMMM d, yyyy")
     End Sub

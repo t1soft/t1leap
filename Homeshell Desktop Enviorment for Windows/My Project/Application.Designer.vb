@@ -34,5 +34,10 @@ Namespace My
         Protected Overrides Sub OnCreateMainForm()
             Me.MainForm = Global.Homeshell_Desktop_Enviorment_for_Windows.Form1
         End Sub
+        
+        <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
+        Protected Overrides Sub OnCreateSplashScreen()
+            Me.SplashScreen = Global.Homeshell_Desktop_Enviorment_for_Windows.SplashScreen1
+        End Sub
     End Class
 End Namespace

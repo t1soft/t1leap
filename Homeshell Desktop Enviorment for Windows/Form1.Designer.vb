@@ -107,7 +107,7 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.Button1.Location = New System.Drawing.Point(36, 365)
+        Me.Button1.Location = New System.Drawing.Point(37, 368)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(289, 23)
         Me.Button1.TabIndex = 14
