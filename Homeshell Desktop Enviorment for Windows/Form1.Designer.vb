@@ -64,7 +64,7 @@ Partial Class Form1
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Label6.Location = New System.Drawing.Point(350, 625)
+        Me.Label6.Location = New System.Drawing.Point(350, 624)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(373, 25)
         Me.Label6.TabIndex = 19

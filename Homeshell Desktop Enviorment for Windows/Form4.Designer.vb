@@ -33,6 +33,7 @@ Partial Class Form4
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
@@ -132,7 +133,7 @@ Partial Class Form4
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 336)
+        Me.Label3.Location = New System.Drawing.Point(12, 424)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(34, 15)
         Me.Label3.TabIndex = 11
@@ -148,11 +149,22 @@ Partial Class Form4
         Me.Button6.Text = "Clear"
         Me.Button6.UseVisualStyleBackColor = True
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(12, 336)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(287, 30)
+        Me.Label4.TabIndex = 13
+        Me.Label4.Text = "If you do set one, you will have to enter the password" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "you set here on the lock " &
+    "screen."
+        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(333, 378)
+        Me.ClientSize = New System.Drawing.Size(333, 448)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button5)
@@ -185,4 +197,5 @@ Partial Class Form4
     Friend WithEvents Button5 As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Button6 As Button
+    Friend WithEvents Label4 As Label
 End Class

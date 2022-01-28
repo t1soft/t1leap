@@ -1,4 +1,4 @@
-﻿Public Class DocWorks
+﻿Public Class SheetWorks
 
     'Homeshell Officeworks
 
@@ -18,10 +18,61 @@
 #Region "Form/Control Settings"
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles Me.Load
 
+        Dim sbTaRtf As New System.Text.StringBuilder
+        sbTaRtf.Append("{\rtf1")
+        For index As Integer = 0 To 1000
+            sbTaRtf.Append("\trowd")
+            sbTaRtf.Append("\cellx1000") 'set that cell width to 1000
+            sbTaRtf.Append("\cellx2000")
+            sbTaRtf.Append("\cellx3000")
+            sbTaRtf.Append("\cellx4000")
+            sbTaRtf.Append("\cellx5000")
+            sbTaRtf.Append("\cellx6000")
+            sbTaRtf.Append("\cellx7000")
+            sbTaRtf.Append("\cellx8000")
+            sbTaRtf.Append("\cellx9000")
+            sbTaRtf.Append("\cellx10000")
+            sbTaRtf.Append("\cellx11000")
+            sbTaRtf.Append("\cellx12000")
+            sbTaRtf.Append("\cellx13000")
+            sbTaRtf.Append("\cellx14000")
+            sbTaRtf.Append("\cellx15000")
+            sbTaRtf.Append("\cellx16000")
+            sbTaRtf.Append("\cellx17000")
+            sbTaRtf.Append("\cellx18000")
+            sbTaRtf.Append("\cellx19000")
+            sbTaRtf.Append("\cellx20000")
+            sbTaRtf.Append("\cellx21000")
+            sbTaRtf.Append("\cellx22000")
+            sbTaRtf.Append("\cellx23000")
+            sbTaRtf.Append("\cellx24000")
+            sbTaRtf.Append("\cellx25000")
+            sbTaRtf.Append("\cellx26000")
+            sbTaRtf.Append("\cellx27000")
+            sbTaRtf.Append("\cellx28000")
+            sbTaRtf.Append("\cellx29000")
+            sbTaRtf.Append("\cellx30000")
+            sbTaRtf.Append("\cellx31000")
+            sbTaRtf.Append("\cellx32000")
+            sbTaRtf.Append("\cellx33000")
+            sbTaRtf.Append("\cellx34000")
+            sbTaRtf.Append("\cellx35000")
+            sbTaRtf.Append("\cellx36000")
+            sbTaRtf.Append("\cellx37000")
+            sbTaRtf.Append("\cellx38000")
+            sbTaRtf.Append("\cellx39000")
+            sbTaRtf.Append("\cellx40000")
+            sbTaRtf.Append("\intbl \cell \row")
+        Next
+        sbTaRtf.Append("\pard")
+        sbTaRtf.Append("}")
+        rtbContent.Rtf = sbTaRtf.ToString()
+
         'Set the document to not dirty
         dirty = False
 
     End Sub
+
 
     Private Sub frmMain_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
 
@@ -196,7 +247,8 @@
 
     Private Sub SaveAsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveAsToolStripMenuItem.Click
 
-        saveFile.Filter = "TWrite Documents|*.twdf"
+        'Change the file filter
+        saveFile.Filter = "TData Spreadsheet File|*.tdsf"
 
         'Open the save file dialog
         If saveFile.ShowDialog = Windows.Forms.DialogResult.OK Then
@@ -209,7 +261,7 @@
             filename = saveFile.FileName
 
             'Set the form's title to the filename
-            Me.Text = "TWrite - " & IO.Path.GetFileName(filename)
+            Me.Text = "TData - " & IO.Path.GetFileName(filename)
 
         End If
 
@@ -265,8 +317,62 @@
         'Setup the new text box
         filename = ""
         dirty = False
-        Me.Text = "TWrite - New Document"
+        Me.Text = "TData - New Document"
         rtbContent.ResetText()
+
+
+        Dim sbTaRtf As New System.Text.StringBuilder
+        sbTaRtf.Append("{\rtf1")
+        For index As Integer = 0 To 1000
+            sbTaRtf.Append("\trowd")
+            sbTaRtf.Append("\cellx1000") 'set that cell width to 1000
+            sbTaRtf.Append("\cellx2000")
+            sbTaRtf.Append("\cellx3000")
+            sbTaRtf.Append("\cellx4000")
+            sbTaRtf.Append("\cellx5000")
+            sbTaRtf.Append("\cellx6000")
+            sbTaRtf.Append("\cellx7000")
+            sbTaRtf.Append("\cellx8000")
+            sbTaRtf.Append("\cellx9000")
+            sbTaRtf.Append("\cellx10000")
+            sbTaRtf.Append("\cellx11000")
+            sbTaRtf.Append("\cellx12000")
+            sbTaRtf.Append("\cellx13000")
+            sbTaRtf.Append("\cellx14000")
+            sbTaRtf.Append("\cellx15000")
+            sbTaRtf.Append("\cellx16000")
+            sbTaRtf.Append("\cellx17000")
+            sbTaRtf.Append("\cellx18000")
+            sbTaRtf.Append("\cellx19000")
+            sbTaRtf.Append("\cellx20000")
+            sbTaRtf.Append("\cellx21000")
+            sbTaRtf.Append("\cellx22000")
+            sbTaRtf.Append("\cellx23000")
+            sbTaRtf.Append("\cellx24000")
+            sbTaRtf.Append("\cellx25000")
+            sbTaRtf.Append("\cellx26000")
+            sbTaRtf.Append("\cellx27000")
+            sbTaRtf.Append("\cellx28000")
+            sbTaRtf.Append("\cellx29000")
+            sbTaRtf.Append("\cellx30000")
+            sbTaRtf.Append("\cellx31000")
+            sbTaRtf.Append("\cellx32000")
+            sbTaRtf.Append("\cellx33000")
+            sbTaRtf.Append("\cellx34000")
+            sbTaRtf.Append("\cellx35000")
+            sbTaRtf.Append("\cellx36000")
+            sbTaRtf.Append("\cellx37000")
+            sbTaRtf.Append("\cellx38000")
+            sbTaRtf.Append("\cellx39000")
+            sbTaRtf.Append("\cellx40000")
+            sbTaRtf.Append("\intbl \cell \row")
+        Next
+        sbTaRtf.Append("\pard")
+        sbTaRtf.Append("}")
+        rtbContent.Rtf = sbTaRtf.ToString()
+
+        'Set the document to not dirty
+        dirty = False
 
     End Sub
 
@@ -275,7 +381,7 @@
         CheckDirty()
 
         'Change the file filter
-        openFile.Filter = "TWrite Documents|*.twdf"
+        openFile.Filter = "TData Spreadsheet File|*.tdsf"
 
         'Show open file dialog
         If openFile.ShowDialog = Windows.Forms.DialogResult.OK Then
@@ -284,7 +390,7 @@
             rtbContent.LoadFile(openFile.FileName)
             dirty = False
             filename = openFile.FileName
-            Me.Text = "TWrite - " & IO.Path.GetFileName(filename)
+            Me.Text = "TData - " & IO.Path.GetFileName(filename)
 
         End If
 
@@ -355,7 +461,6 @@
 
 #Region "Help/About"
     Private Sub AboutOfficeworksToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutOfficeworksToolStripMenuItem.Click
-
     End Sub
 
     Private Sub FeedbackToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FeedbackToolStripMenuItem.Click

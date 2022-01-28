@@ -352,7 +352,7 @@ Partial Class Desktop
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Desktop"
-        Me.Text = "Form2"
+        Me.Text = "Homeshell Desktop - Desktop"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)

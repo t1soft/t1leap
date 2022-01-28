@@ -52,13 +52,13 @@ Partial Class SplashScreen1
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(12, 278)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(181, 15)
+        Me.Label1.Size = New System.Drawing.Size(163, 15)
         Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Homeshell Desktop Enviornment"
+        Me.Label1.Text = "Homeshell Premium Packege"
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(273, 159)
+        Me.ProgressBar1.Location = New System.Drawing.Point(273, 165)
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(262, 23)
         Me.ProgressBar1.TabIndex = 4

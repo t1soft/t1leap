@@ -11,7 +11,8 @@ Public Class Form4
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Form1.Close()
-        frmMain.Close()
+        DocWorks.Close()
+        SheetWorks.Close()
         Start.Close()
         Tonline.Close()
         WebBrowser.Close()
@@ -25,7 +26,8 @@ Public Class Form4
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         If Label3.Text = "none" Or Label3.Text = " " Then
             Form1.Hide()
-            frmMain.Hide()
+            DocWorks.Hide()
+            SheetWorks.Close()
             Start.Hide()
             Tonline.Hide()
             WebBrowser.Hide()
@@ -36,7 +38,8 @@ Public Class Form4
             Me.Hide()
         Else
             Form1.Hide()
-            frmMain.Hide()
+            DocWorks.Hide()
+            SheetWorks.Close()
             Start.Hide()
             Tonline.Hide()
             WebBrowser.Hide()
@@ -58,11 +61,15 @@ Public Class Form4
             MsgBox("Password cannot be the word 'none'.", MsgBoxStyle.Critical, "HDEM4 - Error")
         Else
             Label3.Text = TextBox1.Text
+            Button5.Text = "Key Set!"
+            Button6.Text = "Clear"
         End If
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Label3.Text = "none"
         TextBox1.Text = ""
+        Button5.Text = "Set"
+        Button6.Text = "Cleared!"
     End Sub
 End Class

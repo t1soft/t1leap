@@ -30,11 +30,12 @@ Partial Class LockKey
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.UserText = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -100,7 +101,7 @@ Partial Class LockKey
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Panel2.Controls.Add(Me.Label3)
+        Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Controls.Add(Me.Button1)
         Me.Panel2.Controls.Add(Me.TextBox1)
         Me.Panel2.Controls.Add(Me.DateText)
@@ -114,16 +115,6 @@ Partial Class LockKey
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1075, 663)
         Me.Panel2.TabIndex = 14
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(36, 409)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(496, 45)
-        Me.Label3.TabIndex = 16
-        Me.Label3.Text = "This Desktop Session is Locked. Please Enter the password you have set on the log" &
-    "-out screen" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "You must also enter the password here to Exit the Enviornment"
         '
         'Button1
         '
@@ -159,6 +150,21 @@ Partial Class LockKey
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 1000
         '
+        'NotifyIcon1
+        '
+        Me.NotifyIcon1.Text = "NotifyIcon1"
+        Me.NotifyIcon1.Visible = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(36, 415)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(434, 15)
+        Me.Label1.TabIndex = 16
+        Me.Label1.Text = "This Session has been locked with the password you have set. Please Enter it here" &
+    "."
+        '
         'LockKey
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -183,8 +189,9 @@ Partial Class LockKey
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Button2 As Button
     Friend WithEvents UserText As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents NotifyIcon1 As NotifyIcon
+    Friend WithEvents Label1 As Label
 End Class

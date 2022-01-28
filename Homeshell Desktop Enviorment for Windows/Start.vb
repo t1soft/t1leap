@@ -6,8 +6,8 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        frmMain.WindowState = FormWindowState.Normal
-        frmMain.Show()
+        DocWorks.WindowState = FormWindowState.Normal
+        DocWorks.Show()
         Me.Close()
     End Sub
 
@@ -44,6 +44,9 @@
         Me.Close()
     End Sub
 
-
-
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        SheetWorks.WindowState = FormWindowState.Normal
+        SheetWorks.Show()
+        Me.Close()
+    End Sub
 End Class

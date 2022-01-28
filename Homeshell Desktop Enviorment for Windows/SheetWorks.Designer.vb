@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class DocWorks
+Partial Class SheetWorks
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class DocWorks
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DocWorks))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SheetWorks))
         Me.tsMain = New System.Windows.Forms.ToolStrip()
         Me.tsbNew = New System.Windows.Forms.ToolStripButton()
         Me.tsbOpen = New System.Windows.Forms.ToolStripButton()
@@ -72,7 +72,6 @@ Partial Class DocWorks
         Me.FeedbackToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.msMain = New System.Windows.Forms.MenuStrip()
         Me.tsMain.SuspendLayout()
-        Me.TableLayoutPanel1.SuspendLayout()
         Me.msMain.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -81,7 +80,7 @@ Partial Class DocWorks
         Me.tsMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNew, Me.tsbOpen, Me.tsbSave, Me.ToolStripSeparator1, Me.tsbBold, Me.tsbItalic, Me.tsbUnderline, Me.tsbStrikeout, Me.tscSize, Me.ToolStripSeparator2, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripSeparator8, Me.ToolStripLabel1, Me.ToolStripSeparator7, Me.ToolStripLabel2, Me.ToolStripSeparator4, Me.ToolStripLabel3, Me.ToolStripSeparator6, Me.ToolStripLabel4, Me.ToolStripSeparator5, Me.ToolStripLabel5, Me.ToolStripSeparator3})
         Me.tsMain.Location = New System.Drawing.Point(0, 24)
         Me.tsMain.Name = "tsMain"
-        Me.tsMain.Size = New System.Drawing.Size(913, 40)
+        Me.tsMain.Size = New System.Drawing.Size(874, 40)
         Me.tsMain.TabIndex = 1
         Me.tsMain.Text = "ToolStrip1"
         '
@@ -269,12 +268,13 @@ Partial Class DocWorks
         '
         Me.rtbContent.Dock = System.Windows.Forms.DockStyle.Fill
         Me.rtbContent.EnableAutoDragDrop = True
-        Me.rtbContent.Location = New System.Drawing.Point(58, 35)
+        Me.rtbContent.Location = New System.Drawing.Point(0, 64)
         Me.rtbContent.Margin = New System.Windows.Forms.Padding(2)
         Me.rtbContent.Name = "rtbContent"
-        Me.rtbContent.Size = New System.Drawing.Size(796, 636)
+        Me.rtbContent.Size = New System.Drawing.Size(874, 649)
         Me.rtbContent.TabIndex = 5
         Me.rtbContent.Text = " "
+        Me.rtbContent.WordWrap = False
         '
         'openFile
         '
@@ -294,15 +294,13 @@ Partial Class DocWorks
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 800.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.rtbContent, 1, 1)
-        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 64)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 2
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 95.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(913, 673)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(800, 0)
         Me.TableLayoutPanel1.TabIndex = 3
         '
         'FileToolStripMenuItem
@@ -432,28 +430,28 @@ Partial Class DocWorks
         Me.msMain.Location = New System.Drawing.Point(0, 0)
         Me.msMain.Name = "msMain"
         Me.msMain.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.msMain.Size = New System.Drawing.Size(913, 24)
+        Me.msMain.Size = New System.Drawing.Size(874, 24)
         Me.msMain.TabIndex = 0
         Me.msMain.Text = "MenuStrip1"
         '
-        'DocWorks
+        'SheetWorks
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(913, 737)
+        Me.ClientSize = New System.Drawing.Size(874, 713)
+        Me.Controls.Add(Me.rtbContent)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.tsMain)
         Me.Controls.Add(Me.msMain)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.msMain
         Me.Margin = New System.Windows.Forms.Padding(2)
-        Me.Name = "DocWorks"
+        Me.Name = "SheetWorks"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "TWrite - New Document"
+        Me.Text = "TData - New Document"
         Me.TopMost = True
         Me.tsMain.ResumeLayout(False)
         Me.tsMain.PerformLayout()
-        Me.TableLayoutPanel1.ResumeLayout(False)
         Me.msMain.ResumeLayout(False)
         Me.msMain.PerformLayout()
         Me.ResumeLayout(False)

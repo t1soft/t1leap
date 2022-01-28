@@ -4,21 +4,21 @@
 
     Function Secret()
         If timeElapse = 10 Then
-            Label6.Text = "Welcome to Homeshell!"
+            Label6.Text = "Welcome to Homeshell Desktop!"
         ElseIf timeElapse = 15 Then
-            Label6.Text = "Your Productive"
+            Label6.Text = "Designed for Focus"
         ElseIf timeElapse = 17 Then
-            Label6.Text = "Creative"
+            Label6.Text = "Simple, Elegant"
         ElseIf timeElapse = 19 Then
-            Label6.Text = "Inspiring"
+            Label6.Text = "For Hard Workers"
         ElseIf timeElapse = 21 Then
-            Label6.Text = "Optimistic"
+            Label6.Text = "With Safety in Mind"
         ElseIf timeElapse = 23 Then
-            Label6.Text = "And Ready!"
+            Label6.Text = "Getting Ready for the Next Generation"
         ElseIf timeElapse = 25 Then
-            Label6.Text = "Love Snowball"
+            Label6.Text = "With Homeshell Desktrop <3"
         ElseIf timeElapse = 27 Then
-            Label6.Text = "From T1 Software"
+            Label6.Text = "From T1 Software!"
         ElseIf timeElapse = 29 Then
             Label6.Text = "Homeshell Desktop Environment Milestone 4"
         End If
