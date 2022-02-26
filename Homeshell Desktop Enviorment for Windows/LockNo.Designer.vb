@@ -65,11 +65,11 @@ Partial Class LockNo
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Label6.Location = New System.Drawing.Point(350, 625)
+        Me.Label6.Location = New System.Drawing.Point(12, 9)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(373, 25)
+        Me.Label6.Size = New System.Drawing.Size(187, 25)
         Me.Label6.TabIndex = 18
-        Me.Label6.Text = "Homeshell Desktop Environment Milestone 4" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label6.Text = "LeapDesk Milestone 4"
         '
         'Label1
         '

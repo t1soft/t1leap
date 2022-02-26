@@ -12,8 +12,6 @@
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        AppLoader.WindowState = FormWindowState.Normal
-        AppLoader.Show()
         Me.Close()
     End Sub
 

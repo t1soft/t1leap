@@ -16,7 +16,7 @@ Public Class Form4
         Start.Close()
         Tonline.Close()
         WebBrowser.Close()
-        AppLoader.Close()
+
         Dialog1.Close()
         Desktop.Close()
         Form1.Show()
@@ -27,11 +27,11 @@ Public Class Form4
         If Label3.Text = "none" Or Label3.Text = " " Then
             Form1.Hide()
             DocWorks.Hide()
-            SheetWorks.Close()
+            SheetWorks.Hide()
             Start.Hide()
             Tonline.Hide()
             WebBrowser.Hide()
-            AppLoader.Hide()
+
             Dialog1.Hide()
             Desktop.Hide()
             LockNo.Show()
@@ -39,11 +39,11 @@ Public Class Form4
         Else
             Form1.Hide()
             DocWorks.Hide()
-            SheetWorks.Close()
+            SheetWorks.Hide()
             Start.Hide()
             Tonline.Hide()
             WebBrowser.Hide()
-            AppLoader.Hide()
+
             Dialog1.Hide()
             Desktop.Hide()
             LockKey.Show()

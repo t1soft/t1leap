@@ -80,7 +80,7 @@ Partial Class Desktop
         '
         Me.Label12.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(736, 12)
+        Me.Label12.Location = New System.Drawing.Point(82, 14)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(13, 15)
         Me.Label12.TabIndex = 1
@@ -101,10 +101,12 @@ Partial Class Desktop
         '
         Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.Button2.Location = New System.Drawing.Point(0, 0)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(74, 38)
+        Me.Button2.Size = New System.Drawing.Size(76, 38)
         Me.Button2.TabIndex = 0
         Me.Button2.Text = "Menu"
         Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -125,7 +127,7 @@ Partial Class Desktop
         '
         'RichTextBox1
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(14, 206)
+        Me.RichTextBox1.Location = New System.Drawing.Point(14, 205)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(174, 159)
         Me.RichTextBox1.TabIndex = 3
@@ -134,19 +136,20 @@ Partial Class Desktop
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI Light", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Light", 28.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label3.Location = New System.Drawing.Point(14, 92)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(170, 50)
+        Me.Label3.Size = New System.Drawing.Size(176, 51)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "00:00 AM"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label4.Location = New System.Drawing.Point(23, 142)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(86, 15)
+        Me.Label4.Size = New System.Drawing.Size(98, 19)
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "January 1, 2020"
         '
@@ -238,36 +241,40 @@ Partial Class Desktop
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(16, 185)
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label5.Location = New System.Drawing.Point(14, 183)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(53, 15)
+        Me.Label5.Size = New System.Drawing.Size(60, 19)
         Me.Label5.TabIndex = 20
         Me.Label5.Text = "NotePad"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(16, 390)
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label6.Location = New System.Drawing.Point(16, 392)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(60, 15)
+        Me.Label6.Size = New System.Drawing.Size(67, 19)
         Me.Label6.TabIndex = 21
         Me.Label6.Text = "To-Do List"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label7.Location = New System.Drawing.Point(24, 68)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(37, 15)
+        Me.Label7.Size = New System.Drawing.Size(41, 19)
         Me.Label7.TabIndex = 22
         Me.Label7.Text = "Clock"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(2, 161)
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label8.Location = New System.Drawing.Point(0, 161)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(192, 15)
+        Me.Label8.Size = New System.Drawing.Size(231, 19)
         Me.Label8.TabIndex = 23
         Me.Label8.Text = "_____________________________________"
         '

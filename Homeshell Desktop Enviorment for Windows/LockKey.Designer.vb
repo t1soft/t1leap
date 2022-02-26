@@ -30,12 +30,12 @@ Partial Class LockKey
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.UserText = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -79,11 +79,11 @@ Partial Class LockKey
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Label6.Location = New System.Drawing.Point(350, 625)
+        Me.Label6.Location = New System.Drawing.Point(12, 9)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(373, 25)
+        Me.Label6.Size = New System.Drawing.Size(187, 25)
         Me.Label6.TabIndex = 12
-        Me.Label6.Text = "Homeshell Desktop Environment Milestone 4" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label6.Text = "LeapDesk Milestone 4" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Button2
         '
@@ -115,6 +115,16 @@ Partial Class LockKey
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1075, 663)
         Me.Panel2.TabIndex = 14
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(36, 415)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(434, 15)
+        Me.Label1.TabIndex = 16
+        Me.Label1.Text = "This Session has been locked with the password you have set. Please Enter it here" &
+    "."
         '
         'Button1
         '
@@ -154,16 +164,6 @@ Partial Class LockKey
         '
         Me.NotifyIcon1.Text = "NotifyIcon1"
         Me.NotifyIcon1.Visible = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(36, 415)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(434, 15)
-        Me.Label1.TabIndex = 16
-        Me.Label1.Text = "This Session has been locked with the password you have set. Please Enter it here" &
-    "."
         '
         'LockKey
         '
