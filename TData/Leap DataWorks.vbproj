@@ -6,8 +6,7 @@
     <StartupObject>Sub Main</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
-    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
-    <ApplicationIcon>tdocicon.ico</ApplicationIcon>
+    <ApplicationIcon>pixil-frame-0 (3).ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>

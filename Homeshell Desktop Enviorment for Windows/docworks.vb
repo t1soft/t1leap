@@ -196,7 +196,7 @@
 
     Private Sub SaveAsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveAsToolStripMenuItem.Click
 
-        saveFile.Filter = "TWrite Documents|*.twdf"
+        saveFile.Filter = "T1Leap DocWorks Documents|*.twdf"
 
         'Open the save file dialog
         If saveFile.ShowDialog = Windows.Forms.DialogResult.OK Then
@@ -209,7 +209,7 @@
             filename = saveFile.FileName
 
             'Set the form's title to the filename
-            Me.Text = "TWrite - " & IO.Path.GetFileName(filename)
+            Me.Text = "T1Leap DocWorks - " & IO.Path.GetFileName(filename)
 
         End If
 
@@ -265,7 +265,7 @@
         'Setup the new text box
         filename = ""
         dirty = False
-        Me.Text = "TWrite - New Document"
+        Me.Text = "T1Leap DocWorks - New Document"
         rtbContent.ResetText()
 
     End Sub
@@ -275,7 +275,7 @@
         CheckDirty()
 
         'Change the file filter
-        openFile.Filter = "TWrite Documents|*.twdf"
+        openFile.Filter = "T1Leap DocWorks Documents|*.twdf"
 
         'Show open file dialog
         If openFile.ShowDialog = Windows.Forms.DialogResult.OK Then
@@ -284,7 +284,7 @@
             rtbContent.LoadFile(openFile.FileName)
             dirty = False
             filename = openFile.FileName
-            Me.Text = "TWrite - " & IO.Path.GetFileName(filename)
+            Me.Text = "T1Leap DocWorks - " & IO.Path.GetFileName(filename)
 
         End If
 
@@ -330,19 +330,19 @@
 
 
     Private Sub ToolStripLabel1_Click(sender As Object, e As EventArgs) Handles ToolStripLabel1.Click
-        rtbContent.SelectionFont = New Font("Segoe UI", 12)
+        rtbContent.SelectionFont = New Font("Segoe UI", 10)
     End Sub
 
     Private Sub ToolStripLabel2_Click(sender As Object, e As EventArgs) Handles ToolStripLabel2.Click
-        rtbContent.SelectionFont = New Font("Segoe UI Semibold", 16, FontStyle.Bold)
-    End Sub
-
-    Private Sub ToolStripLabel3_Click(sender As Object, e As EventArgs) Handles ToolStripLabel3.Click
         rtbContent.SelectionFont = New Font("Segoe UI Semibold", 14, FontStyle.Bold)
     End Sub
 
+    Private Sub ToolStripLabel3_Click(sender As Object, e As EventArgs) Handles ToolStripLabel3.Click
+        rtbContent.SelectionFont = New Font("Segoe UI Semibold", 12, FontStyle.Bold)
+    End Sub
+
     Private Sub ToolStripLabel4_Click(sender As Object, e As EventArgs) Handles ToolStripLabel4.Click
-        rtbContent.SelectionFont = New Font("Segoe UI Light", 20)
+        rtbContent.SelectionFont = New Font("Segoe UI Light", 16)
     End Sub
 
     Private Sub ToolStripLabel5_Click(sender As Object, e As EventArgs) Handles ToolStripLabel5.Click

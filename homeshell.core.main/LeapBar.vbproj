@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <RootNamespace>homeshell.core.main</RootNamespace>
     <StartupObject>Sub Main</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
-    <ApplicationIcon>pixil-frame-12.ico</ApplicationIcon>
+    <ApplicationIcon>pixil-frame-0 (5).ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>

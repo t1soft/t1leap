@@ -84,7 +84,7 @@ Partial Class DocWorks
         Me.tsMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNew, Me.tsbOpen, Me.tsbSave, Me.ToolStripSeparator1, Me.tsbBold, Me.tsbItalic, Me.tsbUnderline, Me.tsbStrikeout, Me.tscSize, Me.ToolStripSeparator2, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripSeparator8, Me.ToolStripLabel1, Me.ToolStripSeparator7, Me.ToolStripLabel2, Me.ToolStripSeparator4, Me.ToolStripLabel3, Me.ToolStripSeparator6, Me.ToolStripLabel4, Me.ToolStripSeparator5, Me.ToolStripLabel5, Me.ToolStripSeparator3})
         Me.tsMain.Location = New System.Drawing.Point(0, 24)
         Me.tsMain.Name = "tsMain"
-        Me.tsMain.Size = New System.Drawing.Size(844, 40)
+        Me.tsMain.Size = New System.Drawing.Size(844, 33)
         Me.tsMain.TabIndex = 1
         Me.tsMain.Text = "ToolStrip1"
         '
@@ -94,7 +94,7 @@ Partial Class DocWorks
         Me.tsbNew.Image = CType(resources.GetObject("tsbNew.Image"), System.Drawing.Image)
         Me.tsbNew.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbNew.Name = "tsbNew"
-        Me.tsbNew.Size = New System.Drawing.Size(23, 37)
+        Me.tsbNew.Size = New System.Drawing.Size(23, 30)
         Me.tsbNew.Text = "New Document"
         '
         'tsbOpen
@@ -103,7 +103,7 @@ Partial Class DocWorks
         Me.tsbOpen.Image = CType(resources.GetObject("tsbOpen.Image"), System.Drawing.Image)
         Me.tsbOpen.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbOpen.Name = "tsbOpen"
-        Me.tsbOpen.Size = New System.Drawing.Size(23, 37)
+        Me.tsbOpen.Size = New System.Drawing.Size(23, 30)
         Me.tsbOpen.Text = "Open Document"
         '
         'tsbSave
@@ -112,13 +112,13 @@ Partial Class DocWorks
         Me.tsbSave.Image = CType(resources.GetObject("tsbSave.Image"), System.Drawing.Image)
         Me.tsbSave.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbSave.Name = "tsbSave"
-        Me.tsbSave.Size = New System.Drawing.Size(23, 37)
+        Me.tsbSave.Size = New System.Drawing.Size(23, 30)
         Me.tsbSave.Text = "Save Document"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 40)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 33)
         '
         'tsbBold
         '
@@ -128,7 +128,7 @@ Partial Class DocWorks
         Me.tsbBold.Image = CType(resources.GetObject("tsbBold.Image"), System.Drawing.Image)
         Me.tsbBold.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbBold.Name = "tsbBold"
-        Me.tsbBold.Size = New System.Drawing.Size(23, 37)
+        Me.tsbBold.Size = New System.Drawing.Size(23, 30)
         Me.tsbBold.Text = "B"
         '
         'tsbItalic
@@ -139,7 +139,7 @@ Partial Class DocWorks
         Me.tsbItalic.Image = CType(resources.GetObject("tsbItalic.Image"), System.Drawing.Image)
         Me.tsbItalic.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbItalic.Name = "tsbItalic"
-        Me.tsbItalic.Size = New System.Drawing.Size(23, 37)
+        Me.tsbItalic.Size = New System.Drawing.Size(23, 30)
         Me.tsbItalic.Text = "I"
         '
         'tsbUnderline
@@ -150,7 +150,7 @@ Partial Class DocWorks
         Me.tsbUnderline.Image = CType(resources.GetObject("tsbUnderline.Image"), System.Drawing.Image)
         Me.tsbUnderline.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbUnderline.Name = "tsbUnderline"
-        Me.tsbUnderline.Size = New System.Drawing.Size(23, 37)
+        Me.tsbUnderline.Size = New System.Drawing.Size(23, 30)
         Me.tsbUnderline.Text = "U"
         '
         'tsbStrikeout
@@ -161,20 +161,20 @@ Partial Class DocWorks
         Me.tsbStrikeout.Image = CType(resources.GetObject("tsbStrikeout.Image"), System.Drawing.Image)
         Me.tsbStrikeout.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbStrikeout.Name = "tsbStrikeout"
-        Me.tsbStrikeout.Size = New System.Drawing.Size(23, 37)
+        Me.tsbStrikeout.Size = New System.Drawing.Size(23, 30)
         Me.tsbStrikeout.Text = "S"
         '
         'tscSize
         '
         Me.tscSize.Items.AddRange(New Object() {"2", "4", "6", "7.8", "8", "9", "10", "14", "18", "20", "22", "26", "32", "38", "46", "58", "68", "72"})
         Me.tscSize.Name = "tscSize"
-        Me.tscSize.Size = New System.Drawing.Size(87, 40)
-        Me.tscSize.Text = "9"
+        Me.tscSize.Size = New System.Drawing.Size(87, 33)
+        Me.tscSize.Text = "10"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 40)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 33)
         '
         'ToolStripButton1
         '
@@ -182,7 +182,7 @@ Partial Class DocWorks
         Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
         Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(23, 37)
+        Me.ToolStripButton1.Size = New System.Drawing.Size(23, 30)
         Me.ToolStripButton1.Text = "left align test"
         '
         'ToolStripButton2
@@ -191,7 +191,7 @@ Partial Class DocWorks
         Me.ToolStripButton2.Image = CType(resources.GetObject("ToolStripButton2.Image"), System.Drawing.Image)
         Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton2.Name = "ToolStripButton2"
-        Me.ToolStripButton2.Size = New System.Drawing.Size(23, 37)
+        Me.ToolStripButton2.Size = New System.Drawing.Size(23, 30)
         Me.ToolStripButton2.Text = "ToolStripButton2"
         '
         'ToolStripButton3
@@ -200,85 +200,86 @@ Partial Class DocWorks
         Me.ToolStripButton3.Image = CType(resources.GetObject("ToolStripButton3.Image"), System.Drawing.Image)
         Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton3.Name = "ToolStripButton3"
-        Me.ToolStripButton3.Size = New System.Drawing.Size(23, 37)
+        Me.ToolStripButton3.Size = New System.Drawing.Size(23, 30)
         Me.ToolStripButton3.Text = "ToolStripButton3"
         '
         'ToolStripSeparator8
         '
         Me.ToolStripSeparator8.Name = "ToolStripSeparator8"
-        Me.ToolStripSeparator8.Size = New System.Drawing.Size(6, 40)
+        Me.ToolStripSeparator8.Size = New System.Drawing.Size(6, 33)
         '
         'ToolStripLabel1
         '
-        Me.ToolStripLabel1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ToolStripLabel1.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ToolStripLabel1.Name = "ToolStripLabel1"
-        Me.ToolStripLabel1.Size = New System.Drawing.Size(63, 37)
+        Me.ToolStripLabel1.Size = New System.Drawing.Size(54, 30)
         Me.ToolStripLabel1.Text = "Normal"
         '
         'ToolStripSeparator7
         '
         Me.ToolStripSeparator7.Name = "ToolStripSeparator7"
-        Me.ToolStripSeparator7.Size = New System.Drawing.Size(6, 40)
+        Me.ToolStripSeparator7.Size = New System.Drawing.Size(6, 33)
         '
         'ToolStripLabel2
         '
-        Me.ToolStripLabel2.Font = New System.Drawing.Font("Segoe UI Semibold", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ToolStripLabel2.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.ToolStripLabel2.Name = "ToolStripLabel2"
-        Me.ToolStripLabel2.Size = New System.Drawing.Size(112, 37)
+        Me.ToolStripLabel2.Size = New System.Drawing.Size(97, 30)
         Me.ToolStripLabel2.Text = "Heading 1"
         '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 40)
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 33)
         '
         'ToolStripLabel3
         '
-        Me.ToolStripLabel3.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ToolStripLabel3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.ToolStripLabel3.Name = "ToolStripLabel3"
-        Me.ToolStripLabel3.Size = New System.Drawing.Size(100, 37)
+        Me.ToolStripLabel3.Size = New System.Drawing.Size(85, 30)
         Me.ToolStripLabel3.Text = "Heading 2"
         '
         'ToolStripSeparator6
         '
         Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
-        Me.ToolStripSeparator6.Size = New System.Drawing.Size(6, 40)
+        Me.ToolStripSeparator6.Size = New System.Drawing.Size(6, 33)
         '
         'ToolStripLabel4
         '
-        Me.ToolStripLabel4.Font = New System.Drawing.Font("Segoe UI Light", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ToolStripLabel4.Font = New System.Drawing.Font("Segoe UI Light", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ToolStripLabel4.Name = "ToolStripLabel4"
-        Me.ToolStripLabel4.Size = New System.Drawing.Size(65, 37)
+        Me.ToolStripLabel4.Size = New System.Drawing.Size(52, 30)
         Me.ToolStripLabel4.Text = "Title"
         '
         'ToolStripSeparator5
         '
         Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
-        Me.ToolStripSeparator5.Size = New System.Drawing.Size(6, 40)
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(6, 33)
         '
         'ToolStripLabel5
         '
         Me.ToolStripLabel5.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
         Me.ToolStripLabel5.Name = "ToolStripLabel5"
-        Me.ToolStripLabel5.Size = New System.Drawing.Size(59, 37)
+        Me.ToolStripLabel5.Size = New System.Drawing.Size(59, 30)
         Me.ToolStripLabel5.Text = "subnote"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 40)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 33)
         '
         'rtbContent
         '
         Me.rtbContent.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.rtbContent.Dock = System.Windows.Forms.DockStyle.Fill
         Me.rtbContent.EnableAutoDragDrop = True
-        Me.rtbContent.Location = New System.Drawing.Point(19, 2)
+        Me.rtbContent.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.rtbContent.Location = New System.Drawing.Point(19, 42)
         Me.rtbContent.Margin = New System.Windows.Forms.Padding(2)
         Me.rtbContent.Name = "rtbContent"
-        Me.rtbContent.Size = New System.Drawing.Size(746, 630)
+        Me.rtbContent.Size = New System.Drawing.Size(746, 596)
         Me.rtbContent.TabIndex = 5
-        Me.rtbContent.Text = " "
+        Me.rtbContent.Text = ""
         '
         'openFile
         '
@@ -450,12 +451,12 @@ Partial Class DocWorks
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel3, 1, 1)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 64)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 57)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 2
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 95.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(844, 673)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(844, 680)
         Me.TableLayoutPanel2.TabIndex = 6
         '
         'TableLayoutPanel3
@@ -465,13 +466,14 @@ Partial Class DocWorks
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 750.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.Controls.Add(Me.rtbContent, 1, 0)
+        Me.TableLayoutPanel3.Controls.Add(Me.rtbContent, 1, 1)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(30, 36)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(30, 37)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
-        Me.TableLayoutPanel3.RowCount = 1
+        Me.TableLayoutPanel3.RowCount = 2
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40.0!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(784, 634)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(784, 640)
         Me.TableLayoutPanel3.TabIndex = 0
         '
         'DocWorks
@@ -488,7 +490,7 @@ Partial Class DocWorks
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "DocWorks"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "LeapDoc - New Document"
+        Me.Text = "T1Leap DocWorks - New Document"
         Me.tsMain.ResumeLayout(False)
         Me.tsMain.PerformLayout()
         Me.msMain.ResumeLayout(False)

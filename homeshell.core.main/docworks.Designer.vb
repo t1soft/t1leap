@@ -417,13 +417,13 @@ Partial Class frmMain
         'AboutOfficeworksToolStripMenuItem
         '
         Me.AboutOfficeworksToolStripMenuItem.Name = "AboutOfficeworksToolStripMenuItem"
-        Me.AboutOfficeworksToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AboutOfficeworksToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
         Me.AboutOfficeworksToolStripMenuItem.Text = "About Officeworks"
         '
         'FeedbackToolStripMenuItem
         '
         Me.FeedbackToolStripMenuItem.Name = "FeedbackToolStripMenuItem"
-        Me.FeedbackToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FeedbackToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
         Me.FeedbackToolStripMenuItem.Text = "Feedback"
         '
         'msMain

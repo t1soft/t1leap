@@ -35,9 +35,9 @@ Partial Class Form1
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label1.Location = New System.Drawing.Point(12, 127)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(143, 45)
+        Me.Label1.Size = New System.Drawing.Size(275, 45)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "LeapDoc"
+        Me.Label1.Text = "T1Leap DocWorks"
         '
         'Label2
         '

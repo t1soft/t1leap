@@ -22,6 +22,7 @@ Partial Class SplashScreen1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SplashScreen1))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -34,7 +35,7 @@ Partial Class SplashScreen1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei Light", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(13, 264)
+        Me.Label1.Location = New System.Drawing.Point(11, 269)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(113, 35)
@@ -43,9 +44,9 @@ Partial Class SplashScreen1
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackgroundImage = Global.homeshell.core.main.My.Resources.Resources.pixil_frame_12
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(277, 138)
+        Me.PictureBox1.Location = New System.Drawing.Point(156, -1)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(373, 342)
@@ -56,7 +57,7 @@ Partial Class SplashScreen1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(410, 9)
+        Me.Label2.Location = New System.Drawing.Point(11, 9)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(95, 21)
@@ -67,12 +68,12 @@ Partial Class SplashScreen1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(13, 299)
+        Me.Label3.Location = New System.Drawing.Point(11, 304)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(262, 21)
+        Me.Label3.Size = New System.Drawing.Size(105, 21)
         Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Public Beta 7 - Releace Canidate 1"
+        Me.Label3.Text = "Public Beta 8"
         '
         'Label4
         '
@@ -90,7 +91,7 @@ Partial Class SplashScreen1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(518, 334)
+        Me.ClientSize = New System.Drawing.Size(528, 341)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)

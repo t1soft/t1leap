@@ -103,7 +103,7 @@ Partial Class AboutBox1
         Me.LabelProductName.Name = "LabelProductName"
         Me.LabelProductName.Size = New System.Drawing.Size(300, 20)
         Me.LabelProductName.TabIndex = 0
-        Me.LabelProductName.Text = "LeapData "
+        Me.LabelProductName.Text = "T1Leap DataWorks"
         Me.LabelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TableLayoutPanel

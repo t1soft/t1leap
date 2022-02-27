@@ -119,25 +119,25 @@ Partial Class Form1
         'OpenToolStripMenuItem
         '
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.OpenToolStripMenuItem.Text = "Open"
         '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'UpdatesToolStripMenuItem
         '
         Me.UpdatesToolStripMenuItem.Name = "UpdatesToolStripMenuItem"
-        Me.UpdatesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UpdatesToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.UpdatesToolStripMenuItem.Text = "Updates"
         '
         'FeedbackToolStripMenuItem
         '
         Me.FeedbackToolStripMenuItem.Name = "FeedbackToolStripMenuItem"
-        Me.FeedbackToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FeedbackToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.FeedbackToolStripMenuItem.Text = "Feedback"
         '
         'Timer1

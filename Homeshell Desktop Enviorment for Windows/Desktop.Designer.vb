@@ -80,7 +80,7 @@ Partial Class Desktop
         '
         Me.Label12.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(82, 14)
+        Me.Label12.Location = New System.Drawing.Point(82, 13)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(13, 15)
         Me.Label12.TabIndex = 1

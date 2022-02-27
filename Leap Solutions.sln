@@ -7,9 +7,9 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "LeapDesk", "Homeshell Deskt
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "LeapBar", "homeshell.core.main\LeapBar.vbproj", "{94AF532E-7EFD-41AC-94F9-924158E308BF}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "LeapData", "TData\LeapData.vbproj", "{00B652CC-A856-44C0-AB13-E9C0B1B98BFA}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Leap DataWorks", "TData\Leap DataWorks.vbproj", "{00B652CC-A856-44C0-AB13-E9C0B1B98BFA}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "LeapDoc", "TWrite\LeapDoc.vbproj", "{A6F09BE4-7BF9-4F22-A89C-90CDD7722CB5}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Leap DocWorks", "TWrite\Leap DocWorks.vbproj", "{A6F09BE4-7BF9-4F22-A89C-90CDD7722CB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

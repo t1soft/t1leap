@@ -34,9 +34,9 @@ Partial Class About
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(624, 32)
+        Me.Label1.Size = New System.Drawing.Size(612, 32)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Homeshell Desktop Environment Codenamed ""Snowball"""
+        Me.Label1.Text = "LeapDesk Desktop Environment Codenamed ""Snowball"""
         '
         'Label2
         '

@@ -9,7 +9,7 @@
     <MyType>WindowsForms</MyType>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
     <Platforms>AnyCPU;x86;x64</Platforms>
-    <ApplicationIcon>Picture1.ico</ApplicationIcon>
+    <ApplicationIcon>pixil-frame-0 (1).ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
