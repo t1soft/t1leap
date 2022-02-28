@@ -46,8 +46,25 @@ Public Class LockKey
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If TextBox1.Text = TempPass Then
+            For Each form In My.Application.OpenForms
+                If (form.name = DocWorks.Name) Then
+                    DocWorks.Show()
+                End If
+            Next
+            For Each form In My.Application.OpenForms
+                If (form.name = SheetWorks.Name) Then
+                    SheetWorks.Show()
+
+                End If
+            Next
+            For Each form In My.Application.OpenForms
+                If (form.name = WebBrowser.Name) Then
+                    WebBrowser.Show()
+                End If
+            Next
+
             Desktop.Show()
-            Me.Hide()
+            Me.Close()
         Else
             Label1.Text = "The Password is Incorrect. You will need to enter it to log back into the environment."
         End If
@@ -56,8 +73,25 @@ Public Class LockKey
     Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox1.KeyPress
         If e.KeyChar = Microsoft.VisualBasic.ChrW(Keys.Return) Then
             If TextBox1.Text = TempPass Then
+                For Each form In My.Application.OpenForms
+                    If (form.name = DocWorks.Name) Then
+                        DocWorks.Show()
+                    End If
+                Next
+                For Each form In My.Application.OpenForms
+                    If (form.name = SheetWorks.Name) Then
+                        SheetWorks.Show()
+
+                    End If
+                Next
+                For Each form In My.Application.OpenForms
+                    If (form.name = WebBrowser.Name) Then
+                        WebBrowser.Show()
+                    End If
+                Next
+
                 Desktop.Show()
-                Me.Hide()
+                Me.Close()
             Else
                 Label1.Text = "The Password is Incorrect. You will need to enter it to log back into the environment."
             End If

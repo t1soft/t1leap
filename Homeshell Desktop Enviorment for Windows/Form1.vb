@@ -4,7 +4,7 @@
 
     Function Secret()
         If timeElapse = 10 Then
-            Label6.Text = "Welcome to Homeshell Desktop!"
+            Label6.Text = "Welcome to T1 LeapDesk!"
         ElseIf timeElapse = 15 Then
             Label6.Text = "Designed for Focus"
         ElseIf timeElapse = 17 Then
@@ -16,11 +16,11 @@
         ElseIf timeElapse = 23 Then
             Label6.Text = "Getting Ready for the Next Generation"
         ElseIf timeElapse = 25 Then
-            Label6.Text = "With Homeshell Desktrop <3"
+            Label6.Text = "With T1Leap <3"
         ElseIf timeElapse = 27 Then
             Label6.Text = "From T1 Software!"
         ElseIf timeElapse = 29 Then
-            Label6.Text = "Homeshell Desktop Environment Milestone 4"
+            Label6.Text = "LeapDesk"
         End If
     End Function
 

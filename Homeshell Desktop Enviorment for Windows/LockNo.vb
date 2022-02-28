@@ -23,8 +23,25 @@
 
     Private Sub Form1_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = Microsoft.VisualBasic.ChrW(Keys.Return) Then
+            For Each form In My.Application.OpenForms
+                If (form.name = DocWorks.Name) Then
+                    DocWorks.Show()
+                End If
+            Next
+            For Each form In My.Application.OpenForms
+                If (form.name = SheetWorks.Name) Then
+                    SheetWorks.Show()
+
+                End If
+            Next
+            For Each form In My.Application.OpenForms
+                If (form.name = WebBrowser.Name) Then
+                    WebBrowser.Show()
+                End If
+            Next
+
             Desktop.Show()
-            Me.Hide()
+            Me.Close()
         End If
 
     End Sub
@@ -32,8 +49,25 @@
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        For Each form In My.Application.OpenForms
+            If (form.name = DocWorks.Name) Then
+                DocWorks.Show()
+            End If
+        Next
+        For Each form In My.Application.OpenForms
+            If (form.name = SheetWorks.Name) Then
+                SheetWorks.Show()
+
+            End If
+        Next
+        For Each form In My.Application.OpenForms
+            If (form.name = WebBrowser.Name) Then
+                WebBrowser.Show()
+            End If
+        Next
+
         Desktop.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
