@@ -33,9 +33,9 @@ Partial Class Dialog1
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label1.Location = New System.Drawing.Point(12, 18)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(384, 25)
+        Me.Label1.Size = New System.Drawing.Size(258, 25)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "T1LeapDesk - Switched to Windows Desktop"
+        Me.Label1.Text = "T1LeapDesk - Desktop Switch"
         '
         'Label3
         '
@@ -44,7 +44,8 @@ Partial Class Dialog1
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(272, 30)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "You have Switched Back to the Windows Desktop. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Click ""Switch Back"" to Go Back."
+        Me.Label3.Text = "You have Switched Back to the Windows Desktop. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Click ""Switch Back"" to Go Back t" &
+    "o T1LeapDesk."
         '
         'Button1
         '
@@ -52,7 +53,7 @@ Partial Class Dialog1
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(102, 71)
         Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Switch Back"
+        Me.Button1.Text = "Go Back to T1LeapDesk"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Dialog1

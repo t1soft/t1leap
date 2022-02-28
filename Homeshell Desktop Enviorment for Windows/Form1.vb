@@ -36,7 +36,24 @@
         End If
 
         UserText.Text = Environment.UserName
+
+        Dim MatchingNames As System.Diagnostics.Process()
+
+        Dim TargetName As String
+
+        TargetName = System.Diagnostics.Process.GetCurrentProcess.ProcessName
+
+        MatchingNames = System.Diagnostics.Process.GetProcessesByName(TargetName)
+
+        If (MatchingNames.Length = 1) Then
+
+        Else
+            MsgBox("T1LeapDesk is Already Running. Try to check for a Desktop Switch Prompt.")
+            Application.Exit()
+            End
+        End If
     End Sub
+
 
 
 
