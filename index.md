@@ -1,37 +1,67 @@
-## Welcome to GitHub Pages
+# T1-Leap-Software-Suite
 
-You can use the [editor on GitHub](https://github.com/t1soft/T1-Leap-Software-Suite/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+The T1Leap Software Suite is a Family of Programs which help boost productivity and make work done quickly.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+## The Software Included in the Suite 
 
-# Header 1
-## Header 2
-### Header 3
+**T1Leap DocWorks:**
+A Easy Word Processor which helps you Write Documents without all of the Advanced or Uninportant Features.
 
-- Bulleted
-- List
+**T1Leap DataWorks:**
+A Data Sheet Editor to Visualize and Organize Data from Expirments or Surveys.
 
-1. Numbered
-2. List
+**T1LeapBar:**
+A Sidebar with Quick Shortcuts to a Note App, a Browser to Search Quickly, and to Socialize if you want to.
 
-**Bold** and _Italic_ and `Code` text
+**T1LeapDesk:**
+A Full Blown Desktop Enviornment to Get Rid of Distractions and Create a New and Always Clean Workspace.
 
-[Link](url) and ![Image](src)
+
+
+
+## Why Use Leap?
+
+T1Leap is a Suite that helps you get work done quickly and efficiantly. During Projects or Essays, you Might want to do the following...
+
+
 ```
+Beginning Stage (Researching and Planning)
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Use T1LeapBar to:
+Research and Take Notes
 
-### Jekyll Themes
+Use T1Leap DocWorks to:
+Plan Out a Plan for your Essay/Report/Project/Expiriment/Etc
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/t1soft/T1-Leap-Software-Suite/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+Middle Stage (Typing a Draft/Experiment/Test)
+
+Use T1Leap DocWorks to: 
+Write the Draft of your Essay/Report/Project/Etc
+
+Use T1Leap DataWorks to: 
+Put the Data you got from a experiment in a Simplified Table.
+
+
+
+Ending Stage (Revising/Reflecting/Concluding/Reporting)
+
+Use T1Leap DocWorks to:
+Revise your Essay/Report/Project/Etc before Finishing it up in Docs, Word, Etc.
+Type a Report of the Data you got from a Experiment 
+Type a Conclusion from a Experiment 
+
+
+
+In Any of the Stages
+
+Use T1LeapDesk to:
+Work, Research, and Record Data in a Distraction Free Desktop Environment
+
+
+```
