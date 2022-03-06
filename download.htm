@@ -1,0 +1,73 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+<script language="JavaScript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'images/button22.jpg',/*url*/'images/button21.jpg',/*url*/'images/button25.jpg',/*url*/'images/button24.jpg',/*url*/'images/button28.jpg',/*url*/'images/button27.jpg')">
+
+<p align="center">&nbsp;</p>
+<p align="center"><b><font face="Microsoft JhengHei UI" size="5">T1Leap</font><font face="Microsoft JhengHei UI" size="2">
+</font></b><font face="Microsoft JhengHei UI" size="2">&nbsp;from T1Software&nbsp;&nbsp;
+</font></p><hr>
+<p align="center"><font face="Microsoft JhengHei UI"><a href="index.htm">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="support.htm">Support</a>&nbsp;&nbsp;&nbsp;&nbsp; Download</font></p><hr>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><b><font size="7" face="Microsoft JhengHei UI">Ready to Take 
+the Leap Forward?</font></b></p>
+<p align="center"><b><font size="7" face="Microsoft JhengHei UI">
+<img border="0" id="img1" src="images/button20.jpg" height="20" width="300" alt="Download the Latest T1Leap Beta Here" fp-style="fp-btn: Border Left 2; fp-font: Microsoft JhengHei UI; fp-proportional: 0; fp-orig: 0" fp-title="Download the Latest T1Leap Beta Here" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'images/button21.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'images/button20.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'images/button22.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'images/button21.jpg')"></font></b></p>
+<p align="center"><font face="Microsoft JhengHei UI">
+<img border="0" id="img4" src="images/button23.jpg" height="20" width="300" alt="Download Older T1Leap Versions Here" fp-style="fp-btn: Border Left 3; fp-font: Microsoft JhengHei UI; fp-proportional: 0; fp-orig: 0" fp-title="Download Older T1Leap Versions Here" onmouseover="FP_swapImg(1,0,/*id*/'img4',/*url*/'images/button24.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img4',/*url*/'images/button23.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img4',/*url*/'images/button25.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img4',/*url*/'images/button24.jpg')"></font></p>
+<p align="center"><font face="Microsoft JhengHei UI">
+<img border="0" id="img5" src="images/button26.jpg" height="20" width="300" alt="Download/View Source Code Here" fp-style="fp-btn: Border Left 1; fp-font: Microsoft JhengHei UI; fp-proportional: 0; fp-orig: 0" fp-title="Download/View Source Code Here" onmouseover="FP_swapImg(1,0,/*id*/'img5',/*url*/'images/button27.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img5',/*url*/'images/button26.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img5',/*url*/'images/button28.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img5',/*url*/'images/button27.jpg')"></font></p>
+<p align="center">&nbsp;</p>
+<p align="center"><b><font face="Microsoft JhengHei UI" size="5">System 
+Requirements</font></b></p>
+<p align="center"><font face="Microsoft JhengHei UI"><b>64-bit Version </b>of<b> 
+Windows 7, 8, 8.1, 10, or 11</b></font></p>
+<p align="center"><font face="Microsoft JhengHei UI"><b>Microsoft .NET Desktop 
+Runtime 6 </b>Installed</font></p>
+<p align="center"><font face="Microsoft JhengHei UI"><b>Microsoft Edge WebView2 
+Runtime </b>Installed</font></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p class="MsoNormal" align="center" style="margin: 0in 0in 10pt; font-size: 11pt; font-family: &quot;Microsoft JhengHei&quot;, sans-serif; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: center;">
+©2022 T1Software</p>
+<p class="MsoNormal" align="center" style="margin: 0in 0in 10pt; font-size: 11pt; font-family: &quot;Microsoft JhengHei&quot;, sans-serif; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: center;">
+Open-Source Software. Uses the MIT License</p>
+<p class="MsoNormal" align="center" style="margin: 0in 0in 10pt; font-size: 11pt; font-family: &quot;Microsoft JhengHei&quot;, sans-serif; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: center;">
+Web Page Hosted on GitHub (GitHub Pages)</p>
+<p class="MsoNormal" style="margin: 0in 0in 10pt; font-size: 11pt; font-family: &quot;Microsoft JhengHei&quot;, sans-serif; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+&nbsp;</p>
+<p align="center">&nbsp;</p>
+
+</body>
+
+</html>
