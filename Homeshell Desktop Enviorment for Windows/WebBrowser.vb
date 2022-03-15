@@ -62,7 +62,6 @@ Public Class WebBrowser
 #End Region
     'This is for the WebBox Browser Controls (Go Back, Go Forward, Refresh, and Navigate) For Tab 1
 
-
 #Region "Tab2"
 
     Private Sub ToolStripButton5_Click(sender As Object, e As EventArgs) Handles ToolStripButton5.Click

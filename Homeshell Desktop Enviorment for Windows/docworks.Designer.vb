@@ -38,6 +38,22 @@ Partial Class DocWorks
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
+        Me.RedToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OrangeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.YellowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GreenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BlueToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PurpleToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BlackDefaultColorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripDropDownButton2 = New System.Windows.Forms.ToolStripDropDownButton()
+        Me.PinkToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OrangeToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GreenToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.YellowToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NoHighlightToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator9 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
@@ -48,6 +64,7 @@ Partial Class DocWorks
         Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripLabel5 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripLabel6 = New System.Windows.Forms.ToolStripLabel()
         Me.rtbContent = New System.Windows.Forms.RichTextBox()
         Me.openFile = New System.Windows.Forms.OpenFileDialog()
         Me.saveFile = New System.Windows.Forms.SaveFileDialog()
@@ -81,10 +98,10 @@ Partial Class DocWorks
         '
         'tsMain
         '
-        Me.tsMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNew, Me.tsbOpen, Me.tsbSave, Me.ToolStripSeparator1, Me.tsbBold, Me.tsbItalic, Me.tsbUnderline, Me.tsbStrikeout, Me.tscSize, Me.ToolStripSeparator2, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripSeparator8, Me.ToolStripLabel1, Me.ToolStripSeparator7, Me.ToolStripLabel2, Me.ToolStripSeparator4, Me.ToolStripLabel3, Me.ToolStripSeparator6, Me.ToolStripLabel4, Me.ToolStripSeparator5, Me.ToolStripLabel5, Me.ToolStripSeparator3})
+        Me.tsMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNew, Me.tsbOpen, Me.tsbSave, Me.ToolStripSeparator1, Me.tsbBold, Me.tsbItalic, Me.tsbUnderline, Me.tsbStrikeout, Me.tscSize, Me.ToolStripSeparator2, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripSeparator8, Me.ToolStripDropDownButton1, Me.ToolStripDropDownButton2, Me.ToolStripButton4, Me.ToolStripSeparator9, Me.ToolStripLabel1, Me.ToolStripSeparator7, Me.ToolStripLabel2, Me.ToolStripSeparator4, Me.ToolStripLabel3, Me.ToolStripSeparator6, Me.ToolStripLabel4, Me.ToolStripSeparator5, Me.ToolStripLabel5, Me.ToolStripSeparator3, Me.ToolStripLabel6})
         Me.tsMain.Location = New System.Drawing.Point(0, 24)
         Me.tsMain.Name = "tsMain"
-        Me.tsMain.Size = New System.Drawing.Size(844, 33)
+        Me.tsMain.Size = New System.Drawing.Size(972, 33)
         Me.tsMain.TabIndex = 1
         Me.tsMain.Text = "ToolStrip1"
         '
@@ -208,6 +225,112 @@ Partial Class DocWorks
         Me.ToolStripSeparator8.Name = "ToolStripSeparator8"
         Me.ToolStripSeparator8.Size = New System.Drawing.Size(6, 33)
         '
+        'ToolStripDropDownButton1
+        '
+        Me.ToolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RedToolStripMenuItem, Me.OrangeToolStripMenuItem, Me.YellowToolStripMenuItem, Me.GreenToolStripMenuItem, Me.BlueToolStripMenuItem, Me.PurpleToolStripMenuItem, Me.BlackDefaultColorToolStripMenuItem})
+        Me.ToolStripDropDownButton1.Image = CType(resources.GetObject("ToolStripDropDownButton1.Image"), System.Drawing.Image)
+        Me.ToolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
+        Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(29, 30)
+        Me.ToolStripDropDownButton1.Text = "ToolStripDropDownButton1"
+        '
+        'RedToolStripMenuItem
+        '
+        Me.RedToolStripMenuItem.Name = "RedToolStripMenuItem"
+        Me.RedToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.RedToolStripMenuItem.Text = "Red"
+        '
+        'OrangeToolStripMenuItem
+        '
+        Me.OrangeToolStripMenuItem.Name = "OrangeToolStripMenuItem"
+        Me.OrangeToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.OrangeToolStripMenuItem.Text = "Orange"
+        '
+        'YellowToolStripMenuItem
+        '
+        Me.YellowToolStripMenuItem.Name = "YellowToolStripMenuItem"
+        Me.YellowToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.YellowToolStripMenuItem.Text = "Yellow"
+        '
+        'GreenToolStripMenuItem
+        '
+        Me.GreenToolStripMenuItem.Name = "GreenToolStripMenuItem"
+        Me.GreenToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.GreenToolStripMenuItem.Text = "Green"
+        '
+        'BlueToolStripMenuItem
+        '
+        Me.BlueToolStripMenuItem.Name = "BlueToolStripMenuItem"
+        Me.BlueToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.BlueToolStripMenuItem.Text = "Blue"
+        '
+        'PurpleToolStripMenuItem
+        '
+        Me.PurpleToolStripMenuItem.Name = "PurpleToolStripMenuItem"
+        Me.PurpleToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.PurpleToolStripMenuItem.Text = "Purple"
+        '
+        'BlackDefaultColorToolStripMenuItem
+        '
+        Me.BlackDefaultColorToolStripMenuItem.Name = "BlackDefaultColorToolStripMenuItem"
+        Me.BlackDefaultColorToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.BlackDefaultColorToolStripMenuItem.Text = "Black (Default Color)"
+        '
+        'ToolStripDropDownButton2
+        '
+        Me.ToolStripDropDownButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripDropDownButton2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PinkToolStripMenuItem, Me.OrangeToolStripMenuItem1, Me.GreenToolStripMenuItem1, Me.YellowToolStripMenuItem1, Me.NoHighlightToolStripMenuItem})
+        Me.ToolStripDropDownButton2.Image = CType(resources.GetObject("ToolStripDropDownButton2.Image"), System.Drawing.Image)
+        Me.ToolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripDropDownButton2.Name = "ToolStripDropDownButton2"
+        Me.ToolStripDropDownButton2.Size = New System.Drawing.Size(29, 30)
+        Me.ToolStripDropDownButton2.Text = "ToolStripDropDownButton2"
+        '
+        'PinkToolStripMenuItem
+        '
+        Me.PinkToolStripMenuItem.Name = "PinkToolStripMenuItem"
+        Me.PinkToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
+        Me.PinkToolStripMenuItem.Text = "Pink"
+        '
+        'OrangeToolStripMenuItem1
+        '
+        Me.OrangeToolStripMenuItem1.Name = "OrangeToolStripMenuItem1"
+        Me.OrangeToolStripMenuItem1.Size = New System.Drawing.Size(143, 22)
+        Me.OrangeToolStripMenuItem1.Text = "Orange"
+        '
+        'GreenToolStripMenuItem1
+        '
+        Me.GreenToolStripMenuItem1.Name = "GreenToolStripMenuItem1"
+        Me.GreenToolStripMenuItem1.Size = New System.Drawing.Size(143, 22)
+        Me.GreenToolStripMenuItem1.Text = "Green"
+        '
+        'YellowToolStripMenuItem1
+        '
+        Me.YellowToolStripMenuItem1.Name = "YellowToolStripMenuItem1"
+        Me.YellowToolStripMenuItem1.Size = New System.Drawing.Size(143, 22)
+        Me.YellowToolStripMenuItem1.Text = "Yellow"
+        '
+        'NoHighlightToolStripMenuItem
+        '
+        Me.NoHighlightToolStripMenuItem.Name = "NoHighlightToolStripMenuItem"
+        Me.NoHighlightToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
+        Me.NoHighlightToolStripMenuItem.Text = "No Highlight"
+        '
+        'ToolStripButton4
+        '
+        Me.ToolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton4.Image = CType(resources.GetObject("ToolStripButton4.Image"), System.Drawing.Image)
+        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton4.Name = "ToolStripButton4"
+        Me.ToolStripButton4.Size = New System.Drawing.Size(23, 30)
+        Me.ToolStripButton4.Text = "ToolStripButton4"
+        '
+        'ToolStripSeparator9
+        '
+        Me.ToolStripSeparator9.Name = "ToolStripSeparator9"
+        Me.ToolStripSeparator9.Size = New System.Drawing.Size(6, 33)
+        '
         'ToolStripLabel1
         '
         Me.ToolStripLabel1.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
@@ -268,6 +391,12 @@ Partial Class DocWorks
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
         Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 33)
         '
+        'ToolStripLabel6
+        '
+        Me.ToolStripLabel6.Name = "ToolStripLabel6"
+        Me.ToolStripLabel6.Size = New System.Drawing.Size(96, 30)
+        Me.ToolStripLabel6.Text = "DocWorks Beta 3"
+        '
         'rtbContent
         '
         Me.rtbContent.BorderStyle = System.Windows.Forms.BorderStyle.None
@@ -277,6 +406,7 @@ Partial Class DocWorks
         Me.rtbContent.Location = New System.Drawing.Point(19, 42)
         Me.rtbContent.Margin = New System.Windows.Forms.Padding(2)
         Me.rtbContent.Name = "rtbContent"
+        Me.rtbContent.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical
         Me.rtbContent.Size = New System.Drawing.Size(746, 596)
         Me.rtbContent.TabIndex = 5
         Me.rtbContent.Text = ""
@@ -438,7 +568,7 @@ Partial Class DocWorks
         Me.msMain.Location = New System.Drawing.Point(0, 0)
         Me.msMain.Name = "msMain"
         Me.msMain.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.msMain.Size = New System.Drawing.Size(844, 24)
+        Me.msMain.Size = New System.Drawing.Size(972, 24)
         Me.msMain.TabIndex = 0
         Me.msMain.Text = "MenuStrip1"
         '
@@ -456,11 +586,14 @@ Partial Class DocWorks
         Me.TableLayoutPanel2.RowCount = 2
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 95.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(844, 680)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(972, 680)
         Me.TableLayoutPanel2.TabIndex = 6
         '
         'TableLayoutPanel3
         '
+        Me.TableLayoutPanel3.AutoScroll = True
+        Me.TableLayoutPanel3.AutoSize = True
+        Me.TableLayoutPanel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.TableLayoutPanel3.BackColor = System.Drawing.Color.White
         Me.TableLayoutPanel3.ColumnCount = 3
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -468,7 +601,7 @@ Partial Class DocWorks
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel3.Controls.Add(Me.rtbContent, 1, 1)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(30, 37)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(94, 37)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 2
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40.0!))
@@ -480,7 +613,7 @@ Partial Class DocWorks
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(844, 737)
+        Me.ClientSize = New System.Drawing.Size(972, 737)
         Me.Controls.Add(Me.TableLayoutPanel2)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.tsMain)
@@ -488,6 +621,7 @@ Partial Class DocWorks
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.msMain
         Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.MinimumSize = New System.Drawing.Size(767, 0)
         Me.Name = "DocWorks"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "T1Leap DocWorks - New Document"
@@ -497,6 +631,7 @@ Partial Class DocWorks
         Me.msMain.ResumeLayout(False)
         Me.msMain.PerformLayout()
         Me.TableLayoutPanel2.ResumeLayout(False)
+        Me.TableLayoutPanel2.PerformLayout()
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -506,7 +641,6 @@ Partial Class DocWorks
     Friend WithEvents rtbContent As System.Windows.Forms.RichTextBox
     Friend WithEvents openFile As System.Windows.Forms.OpenFileDialog
     Friend WithEvents saveFile As System.Windows.Forms.SaveFileDialog
-    Friend WithEvents tsbNew As System.Windows.Forms.ToolStripButton
     Friend WithEvents tsbOpen As System.Windows.Forms.ToolStripButton
     Friend WithEvents tsbSave As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
@@ -552,4 +686,22 @@ Partial Class DocWorks
     Friend WithEvents FeedbackToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
+    Friend WithEvents tsbNew As ToolStripButton
+    Friend WithEvents ToolStripDropDownButton1 As ToolStripDropDownButton
+    Friend WithEvents RedToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents OrangeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents YellowToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GreenToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BlueToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PurpleToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripButton4 As ToolStripButton
+    Friend WithEvents ToolStripSeparator9 As ToolStripSeparator
+    Friend WithEvents BlackDefaultColorToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripDropDownButton2 As ToolStripDropDownButton
+    Friend WithEvents PinkToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents OrangeToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents GreenToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents YellowToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents NoHighlightToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripLabel6 As ToolStripLabel
 End Class

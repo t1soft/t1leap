@@ -2,7 +2,7 @@
 
     'Homeshell Officeworks
 
-
+    Dim StatusBullet As Integer
 
 
 #Region "Variables"
@@ -370,8 +370,79 @@
         Me.Close()
     End Sub
 
+#End Region
 
+#Region "Color Text"
+    Private Sub RedToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RedToolStripMenuItem.Click
+        rtbContent.SelectionColor = Color.Red
+    End Sub
+
+    Private Sub OrangeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OrangeToolStripMenuItem.Click
+        rtbContent.SelectionColor = Color.Orange
+    End Sub
+
+    Private Sub YellowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles YellowToolStripMenuItem.Click
+        rtbContent.SelectionColor = Color.Yellow
+    End Sub
+
+    Private Sub GreenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GreenToolStripMenuItem.Click
+        rtbContent.SelectionColor = Color.Green
+    End Sub
+
+    Private Sub BlueToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BlueToolStripMenuItem.Click
+        rtbContent.SelectionColor = Color.Blue
+    End Sub
+
+    Private Sub PurpleToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PurpleToolStripMenuItem.Click
+        rtbContent.SelectionColor = Color.Purple
+    End Sub
+
+    Private Sub BlackDefaultColorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BlackDefaultColorToolStripMenuItem.Click
+        rtbContent.SelectionColor = Color.Black
+    End Sub
 
 #End Region
+
+    Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs) Handles ToolStripButton4.Click
+        If StatusBullet = 0 Then
+            rtbContent.SelectionBullet = True
+            StatusBullet = 1
+        ElseIf StatusBullet = 1 Then
+            rtbContent.SelectionBullet = False
+            StatusBullet = 0
+        End If
+
+    End Sub
+
+
+
+
+#Region "Highlighter Tool"
+    Private Sub PinkToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PinkToolStripMenuItem.Click
+        rtbContent.SelectionBackColor = Color.Pink
+    End Sub
+
+    Private Sub OrangeToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles OrangeToolStripMenuItem1.Click
+        rtbContent.SelectionBackColor = Color.Orange
+    End Sub
+
+    Private Sub GreenToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles GreenToolStripMenuItem1.Click
+        rtbContent.SelectionBackColor = Color.LimeGreen
+    End Sub
+
+    Private Sub YellowToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles YellowToolStripMenuItem1.Click
+        rtbContent.SelectionBackColor = Color.Yellow
+    End Sub
+
+    Private Sub NoHighlightToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NoHighlightToolStripMenuItem.Click
+        rtbContent.SelectionBackColor = Color.White
+    End Sub
+
+#End Region
+
+
+
+
+
 
 End Class

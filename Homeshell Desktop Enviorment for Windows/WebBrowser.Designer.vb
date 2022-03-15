@@ -52,6 +52,12 @@ Partial Class WebBrowser
         Me.ToolStripButton11 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripTextBox3 = New System.Windows.Forms.ToolStripTextBox()
         Me.ToolStripButton12 = New System.Windows.Forms.ToolStripButton()
+        Me.TabModesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NormalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StudyModeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MultitaskingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SourcesArticlesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NoteAppAnd2SourcesArticlesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.WebView21, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
@@ -67,7 +73,7 @@ Partial Class WebBrowser
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.WebboxToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.WebboxToolStripMenuItem, Me.TabModesToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(7, 2, 0, 2)
@@ -334,6 +340,44 @@ Partial Class WebBrowser
         Me.ToolStripButton12.Size = New System.Drawing.Size(29, 22)
         Me.ToolStripButton12.Text = "Go!"
         '
+        'TabModesToolStripMenuItem
+        '
+        Me.TabModesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NormalToolStripMenuItem, Me.StudyModeToolStripMenuItem, Me.MultitaskingToolStripMenuItem})
+        Me.TabModesToolStripMenuItem.Name = "TabModesToolStripMenuItem"
+        Me.TabModesToolStripMenuItem.Size = New System.Drawing.Size(76, 20)
+        Me.TabModesToolStripMenuItem.Text = "Tab Modes"
+        '
+        'NormalToolStripMenuItem
+        '
+        Me.NormalToolStripMenuItem.Name = "NormalToolStripMenuItem"
+        Me.NormalToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
+        Me.NormalToolStripMenuItem.Text = "Normal"
+        '
+        'StudyModeToolStripMenuItem
+        '
+        Me.StudyModeToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SourcesArticlesToolStripMenuItem, Me.NoteAppAnd2SourcesArticlesToolStripMenuItem})
+        Me.StudyModeToolStripMenuItem.Name = "StudyModeToolStripMenuItem"
+        Me.StudyModeToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
+        Me.StudyModeToolStripMenuItem.Text = "Study Mode"
+        '
+        'MultitaskingToolStripMenuItem
+        '
+        Me.MultitaskingToolStripMenuItem.Name = "MultitaskingToolStripMenuItem"
+        Me.MultitaskingToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
+        Me.MultitaskingToolStripMenuItem.Text = "Multitasking"
+        '
+        'SourcesArticlesToolStripMenuItem
+        '
+        Me.SourcesArticlesToolStripMenuItem.Name = "SourcesArticlesToolStripMenuItem"
+        Me.SourcesArticlesToolStripMenuItem.Size = New System.Drawing.Size(245, 22)
+        Me.SourcesArticlesToolStripMenuItem.Text = "3 Sources/Articles"
+        '
+        'NoteAppAnd2SourcesArticlesToolStripMenuItem
+        '
+        Me.NoteAppAnd2SourcesArticlesToolStripMenuItem.Name = "NoteAppAnd2SourcesArticlesToolStripMenuItem"
+        Me.NoteAppAnd2SourcesArticlesToolStripMenuItem.Size = New System.Drawing.Size(245, 22)
+        Me.NoteAppAnd2SourcesArticlesToolStripMenuItem.Text = "Note App and 2 Sources/Articles"
+        '
         'WebBrowser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -398,4 +442,10 @@ Partial Class WebBrowser
     Friend WithEvents ToolStripButton11 As ToolStripButton
     Friend WithEvents ToolStripTextBox3 As ToolStripTextBox
     Friend WithEvents ToolStripButton12 As ToolStripButton
+    Friend WithEvents TabModesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NormalToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents StudyModeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SourcesArticlesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NoteAppAnd2SourcesArticlesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MultitaskingToolStripMenuItem As ToolStripMenuItem
 End Class
