@@ -18,55 +18,6 @@
 #Region "Form/Control Settings"
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles Me.Load
 
-        Dim sbTaRtf As New System.Text.StringBuilder
-        sbTaRtf.Append("{\rtf1")
-        For index As Integer = 0 To 1000
-            sbTaRtf.Append("\trowd")
-            sbTaRtf.Append("\cellx1000") 'set that cell width to 1000
-            sbTaRtf.Append("\cellx2000")
-            sbTaRtf.Append("\cellx3000")
-            sbTaRtf.Append("\cellx4000")
-            sbTaRtf.Append("\cellx5000")
-            sbTaRtf.Append("\cellx6000")
-            sbTaRtf.Append("\cellx7000")
-            sbTaRtf.Append("\cellx8000")
-            sbTaRtf.Append("\cellx9000")
-            sbTaRtf.Append("\cellx10000")
-            sbTaRtf.Append("\cellx11000")
-            sbTaRtf.Append("\cellx12000")
-            sbTaRtf.Append("\cellx13000")
-            sbTaRtf.Append("\cellx14000")
-            sbTaRtf.Append("\cellx15000")
-            sbTaRtf.Append("\cellx16000")
-            sbTaRtf.Append("\cellx17000")
-            sbTaRtf.Append("\cellx18000")
-            sbTaRtf.Append("\cellx19000")
-            sbTaRtf.Append("\cellx20000")
-            sbTaRtf.Append("\cellx21000")
-            sbTaRtf.Append("\cellx22000")
-            sbTaRtf.Append("\cellx23000")
-            sbTaRtf.Append("\cellx24000")
-            sbTaRtf.Append("\cellx25000")
-            sbTaRtf.Append("\cellx26000")
-            sbTaRtf.Append("\cellx27000")
-            sbTaRtf.Append("\cellx28000")
-            sbTaRtf.Append("\cellx29000")
-            sbTaRtf.Append("\cellx30000")
-            sbTaRtf.Append("\cellx31000")
-            sbTaRtf.Append("\cellx32000")
-            sbTaRtf.Append("\cellx33000")
-            sbTaRtf.Append("\cellx34000")
-            sbTaRtf.Append("\cellx35000")
-            sbTaRtf.Append("\cellx36000")
-            sbTaRtf.Append("\cellx37000")
-            sbTaRtf.Append("\cellx38000")
-            sbTaRtf.Append("\cellx39000")
-            sbTaRtf.Append("\cellx40000")
-            sbTaRtf.Append("\intbl \cell \row")
-        Next
-        sbTaRtf.Append("\pard")
-        sbTaRtf.Append("}")
-        rtbContent.Rtf = sbTaRtf.ToString()
 
         'Set the document to not dirty
         dirty = False
@@ -225,7 +176,7 @@
 
 #End Region
 
-#Region "File"
+#Region "File (Note that the New File Code is in a different region.)"
     Private Sub PictureToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PictureToolStripMenuItem.Click
 
         'Set the file filter
@@ -310,72 +261,6 @@
 
     End Sub
 
-    Private Sub NewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewToolStripMenuItem.Click
-
-        CheckDirty()
-
-        'Setup the new text box
-        filename = ""
-        dirty = False
-        Me.Text = "T1Leap DataWorks - New Document"
-        rtbContent.ResetText()
-
-
-        Dim sbTaRtf As New System.Text.StringBuilder
-        sbTaRtf.Append("{\rtf1")
-        For index As Integer = 0 To 1000
-            sbTaRtf.Append("\trowd")
-            sbTaRtf.Append("\cellx1000") 'set that cell width to 1000
-            sbTaRtf.Append("\cellx2000")
-            sbTaRtf.Append("\cellx3000")
-            sbTaRtf.Append("\cellx4000")
-            sbTaRtf.Append("\cellx5000")
-            sbTaRtf.Append("\cellx6000")
-            sbTaRtf.Append("\cellx7000")
-            sbTaRtf.Append("\cellx8000")
-            sbTaRtf.Append("\cellx9000")
-            sbTaRtf.Append("\cellx10000")
-            sbTaRtf.Append("\cellx11000")
-            sbTaRtf.Append("\cellx12000")
-            sbTaRtf.Append("\cellx13000")
-            sbTaRtf.Append("\cellx14000")
-            sbTaRtf.Append("\cellx15000")
-            sbTaRtf.Append("\cellx16000")
-            sbTaRtf.Append("\cellx17000")
-            sbTaRtf.Append("\cellx18000")
-            sbTaRtf.Append("\cellx19000")
-            sbTaRtf.Append("\cellx20000")
-            sbTaRtf.Append("\cellx21000")
-            sbTaRtf.Append("\cellx22000")
-            sbTaRtf.Append("\cellx23000")
-            sbTaRtf.Append("\cellx24000")
-            sbTaRtf.Append("\cellx25000")
-            sbTaRtf.Append("\cellx26000")
-            sbTaRtf.Append("\cellx27000")
-            sbTaRtf.Append("\cellx28000")
-            sbTaRtf.Append("\cellx29000")
-            sbTaRtf.Append("\cellx30000")
-            sbTaRtf.Append("\cellx31000")
-            sbTaRtf.Append("\cellx32000")
-            sbTaRtf.Append("\cellx33000")
-            sbTaRtf.Append("\cellx34000")
-            sbTaRtf.Append("\cellx35000")
-            sbTaRtf.Append("\cellx36000")
-            sbTaRtf.Append("\cellx37000")
-            sbTaRtf.Append("\cellx38000")
-            sbTaRtf.Append("\cellx39000")
-            sbTaRtf.Append("\cellx40000")
-            sbTaRtf.Append("\intbl \cell \row")
-        Next
-        sbTaRtf.Append("\pard")
-        sbTaRtf.Append("}")
-        rtbContent.Rtf = sbTaRtf.ToString()
-
-        'Set the document to not dirty
-        dirty = False
-
-    End Sub
-
     Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
 
         CheckDirty()
@@ -393,12 +278,6 @@
             Me.Text = "T1Leap DataWorks - " & IO.Path.GetFileName(filename)
 
         End If
-
-    End Sub
-
-    Private Sub tsbNew_Click(sender As Object, e As EventArgs) Handles tsbNew.Click
-
-        NewToolStripMenuItem_Click(Nothing, Nothing)
 
     End Sub
 
@@ -532,7 +411,209 @@
         rtbContent.SelectionBackColor = Color.White
     End Sub
 
+
+
 #End Region
 
+#Region "New File"
+
+    Private Sub X5DataTableToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles X5DataTableToolStripMenuItem.Click
+
+        CheckDirty()
+
+        'Setup the new text box
+        filename = ""
+        dirty = False
+        Me.Text = "T1Leap DataWorks - New Document"
+        rtbContent.ResetText()
+
+
+        Dim sbTaRtf As New System.Text.StringBuilder
+        sbTaRtf.Append("{\rtf1")
+        For index As Integer = 0 To 1000
+            sbTaRtf.Append("\trowd")
+            sbTaRtf.Append("\cellx1000") 'set that cell width to 1000
+            sbTaRtf.Append("\cellx2000")
+            sbTaRtf.Append("\cellx3000")
+            sbTaRtf.Append("\cellx4000")
+            sbTaRtf.Append("\intbl \cell \row")
+        Next
+        sbTaRtf.Append("\pard")
+        sbTaRtf.Append("}")
+        rtbContent.Rtf = sbTaRtf.ToString()
+
+        'Set the document to not dirty
+        dirty = False
+
+    End Sub
+
+    Private Sub ColunmDataTableToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ColunmDataTableToolStripMenuItem.Click
+
+        CheckDirty()
+
+        'Setup the new text box
+        filename = ""
+        dirty = False
+        Me.Text = "T1Leap DataWorks - New Document"
+        rtbContent.ResetText()
+
+
+        Dim sbTaRtf As New System.Text.StringBuilder
+        sbTaRtf.Append("{\rtf1")
+        For index As Integer = 0 To 1000
+            sbTaRtf.Append("\trowd")
+            sbTaRtf.Append("\cellx1000") 'set that cell width to 1000
+            sbTaRtf.Append("\cellx2000")
+            sbTaRtf.Append("\cellx3000")
+            sbTaRtf.Append("\cellx4000")
+            sbTaRtf.Append("\cellx5000")
+            sbTaRtf.Append("\intbl \cell \row")
+        Next
+        sbTaRtf.Append("\pard")
+        sbTaRtf.Append("}")
+        rtbContent.Rtf = sbTaRtf.ToString()
+
+        'Set the document to not dirty
+        dirty = False
+
+    End Sub
+
+    Private Sub ColunmDataTableToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ColunmDataTableToolStripMenuItem1.Click
+        CheckDirty()
+
+        'Setup the new text box
+        filename = ""
+        dirty = False
+        Me.Text = "T1Leap DataWorks - New Document"
+        rtbContent.ResetText()
+
+
+        Dim sbTaRtf As New System.Text.StringBuilder
+        sbTaRtf.Append("{\rtf1")
+        For index As Integer = 0 To 1000
+            sbTaRtf.Append("\trowd")
+            sbTaRtf.Append("\cellx1000") 'set that cell width to 1000
+            sbTaRtf.Append("\cellx2000")
+            sbTaRtf.Append("\cellx3000")
+            sbTaRtf.Append("\cellx4000")
+            sbTaRtf.Append("\cellx5000")
+            sbTaRtf.Append("\cellx6000")
+            sbTaRtf.Append("\cellx7000")
+            sbTaRtf.Append("\cellx8000")
+            sbTaRtf.Append("\cellx9000")
+            sbTaRtf.Append("\cellx10000")
+            sbTaRtf.Append("\intbl \cell \row")
+        Next
+        sbTaRtf.Append("\pard")
+        sbTaRtf.Append("}")
+        rtbContent.Rtf = sbTaRtf.ToString()
+
+        'Set the document to not dirty
+        dirty = False
+    End Sub
+
+    Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
+        CheckDirty()
+
+        'Setup the new text box
+        filename = ""
+        dirty = False
+        Me.Text = "T1Leap DataWorks - New Document"
+        rtbContent.ResetText()
+
+
+        Dim sbTaRtf As New System.Text.StringBuilder
+        sbTaRtf.Append("{\rtf1")
+        For index As Integer = 0 To 1000
+            sbTaRtf.Append("\trowd")
+            sbTaRtf.Append("\cellx1000") 'set that cell width to 1000
+            sbTaRtf.Append("\cellx2000")
+            sbTaRtf.Append("\cellx3000")
+            sbTaRtf.Append("\cellx4000")
+            sbTaRtf.Append("\cellx5000")
+            sbTaRtf.Append("\cellx6000")
+            sbTaRtf.Append("\cellx7000")
+            sbTaRtf.Append("\cellx8000")
+            sbTaRtf.Append("\cellx9000")
+            sbTaRtf.Append("\cellx10000")
+            sbTaRtf.Append("\cellx11000")
+            sbTaRtf.Append("\cellx12000")
+            sbTaRtf.Append("\cellx13000")
+            sbTaRtf.Append("\cellx14000")
+            sbTaRtf.Append("\cellx15000")
+            sbTaRtf.Append("\cellx16000")
+            sbTaRtf.Append("\cellx17000")
+            sbTaRtf.Append("\cellx18000")
+            sbTaRtf.Append("\cellx19000")
+            sbTaRtf.Append("\cellx20000")
+            sbTaRtf.Append("\intbl \cell \row")
+        Next
+        sbTaRtf.Append("\pard")
+        sbTaRtf.Append("}")
+        rtbContent.Rtf = sbTaRtf.ToString()
+
+        'Set the document to not dirty
+        dirty = False
+    End Sub
+
+    Private Sub ColunmDataTableToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ColunmDataTableToolStripMenuItem2.Click
+        'Setup the new text box
+        filename = ""
+        dirty = False
+        Me.Text = "T1Leap DataWorks - New Document"
+        rtbContent.ResetText()
+
+
+        Dim sbTaRtf As New System.Text.StringBuilder
+        sbTaRtf.Append("{\rtf1")
+        For index As Integer = 0 To 1000
+            sbTaRtf.Append("\trowd")
+            sbTaRtf.Append("\cellx1000") 'set that cell width to 1000
+            sbTaRtf.Append("\cellx2000")
+            sbTaRtf.Append("\cellx3000")
+            sbTaRtf.Append("\cellx4000")
+            sbTaRtf.Append("\cellx5000")
+            sbTaRtf.Append("\cellx6000")
+            sbTaRtf.Append("\cellx7000")
+            sbTaRtf.Append("\cellx8000")
+            sbTaRtf.Append("\cellx9000")
+            sbTaRtf.Append("\cellx10000")
+            sbTaRtf.Append("\cellx11000")
+            sbTaRtf.Append("\cellx12000")
+            sbTaRtf.Append("\cellx13000")
+            sbTaRtf.Append("\cellx14000")
+            sbTaRtf.Append("\cellx15000")
+            sbTaRtf.Append("\cellx16000")
+            sbTaRtf.Append("\cellx17000")
+            sbTaRtf.Append("\cellx18000")
+            sbTaRtf.Append("\cellx19000")
+            sbTaRtf.Append("\cellx20000")
+            sbTaRtf.Append("\cellx21000")
+            sbTaRtf.Append("\cellx22000")
+            sbTaRtf.Append("\cellx23000")
+            sbTaRtf.Append("\cellx24000")
+            sbTaRtf.Append("\cellx25000")
+            sbTaRtf.Append("\cellx26000")
+            sbTaRtf.Append("\cellx27000")
+            sbTaRtf.Append("\cellx28000")
+            sbTaRtf.Append("\cellx29000")
+            sbTaRtf.Append("\cellx30000")
+            sbTaRtf.Append("\intbl \cell \row")
+        Next
+        sbTaRtf.Append("\pard")
+        sbTaRtf.Append("}")
+        rtbContent.Rtf = sbTaRtf.ToString()
+
+        'Set the document to not dirty
+        dirty = False
+    End Sub
+
+
+
+
+
+
+
+#End Region
 
 End Class

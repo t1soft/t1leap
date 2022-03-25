@@ -27,6 +27,10 @@
 
     'Changes the Greeting based on Local Time, and Greets you by grabbing the Current Windows Username
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
+
+        ClockText.Text = DateTime.Now.ToString("hh:mm tt")
+        DateText.Text = DateTime.Now.ToString("MMMM d, yyyy")
+
         If thisHour < 13 Then
             Greeting.Text = "Good Morning,"
         ElseIf thisHour > 12 And thisHour < 8 Then

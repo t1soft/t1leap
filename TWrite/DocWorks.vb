@@ -3,7 +3,9 @@
     'Homeshell Officeworks
 
     Dim StatusBullet As Integer
-
+    Dim StatusMulti As Boolean = True
+    Dim StatusAutoSave As Boolean
+    Dim DocumentSaved As Boolean
 
 #Region "Variables"
 
@@ -21,6 +23,8 @@
         'Set the document to not dirty
         dirty = False
 
+
+
     End Sub
 
     Private Sub frmMain_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
@@ -34,6 +38,7 @@
 
         'Set the document as dirty
         dirty = True
+
 
     End Sub
 
@@ -205,6 +210,7 @@
             rtbContent.SaveFile(saveFile.FileName)
             dirty = False
 
+
             'Remember the filename
             filename = saveFile.FileName
 
@@ -228,6 +234,7 @@
             'Save the file
             rtbContent.SaveFile(filename)
             dirty = False
+
 
         End If
 
@@ -285,6 +292,7 @@
             dirty = False
             filename = openFile.FileName
             Me.Text = "T1Leap DocWorks - " & IO.Path.GetFileName(filename)
+
 
         End If
 
@@ -437,6 +445,8 @@
     Private Sub NoHighlightToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NoHighlightToolStripMenuItem.Click
         rtbContent.SelectionBackColor = Color.White
     End Sub
+
+
 
 #End Region
 

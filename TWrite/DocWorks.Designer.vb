@@ -64,6 +64,8 @@ Partial Class DocWorks
         Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripLabel5 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripLabel6 = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripSeparator10 = New System.Windows.Forms.ToolStripSeparator()
         Me.rtbContent = New System.Windows.Forms.RichTextBox()
         Me.openFile = New System.Windows.Forms.OpenFileDialog()
         Me.saveFile = New System.Windows.Forms.SaveFileDialog()
@@ -89,7 +91,6 @@ Partial Class DocWorks
         Me.msMain = New System.Windows.Forms.MenuStrip()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
-        Me.ToolStripLabel6 = New System.Windows.Forms.ToolStripLabel()
         Me.tsMain.SuspendLayout()
         Me.msMain.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -98,7 +99,7 @@ Partial Class DocWorks
         '
         'tsMain
         '
-        Me.tsMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNew, Me.tsbOpen, Me.tsbSave, Me.ToolStripSeparator1, Me.tsbBold, Me.tsbItalic, Me.tsbUnderline, Me.tsbStrikeout, Me.tscSize, Me.ToolStripSeparator2, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripSeparator8, Me.ToolStripDropDownButton1, Me.ToolStripDropDownButton2, Me.ToolStripButton4, Me.ToolStripSeparator9, Me.ToolStripLabel1, Me.ToolStripSeparator7, Me.ToolStripLabel2, Me.ToolStripSeparator4, Me.ToolStripLabel3, Me.ToolStripSeparator6, Me.ToolStripLabel4, Me.ToolStripSeparator5, Me.ToolStripLabel5, Me.ToolStripSeparator3, Me.ToolStripLabel6})
+        Me.tsMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNew, Me.tsbOpen, Me.tsbSave, Me.ToolStripSeparator1, Me.tsbBold, Me.tsbItalic, Me.tsbUnderline, Me.tsbStrikeout, Me.tscSize, Me.ToolStripSeparator2, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripSeparator8, Me.ToolStripDropDownButton1, Me.ToolStripDropDownButton2, Me.ToolStripButton4, Me.ToolStripSeparator9, Me.ToolStripLabel1, Me.ToolStripSeparator7, Me.ToolStripLabel2, Me.ToolStripSeparator4, Me.ToolStripLabel3, Me.ToolStripSeparator6, Me.ToolStripLabel4, Me.ToolStripSeparator5, Me.ToolStripLabel5, Me.ToolStripSeparator3, Me.ToolStripLabel6, Me.ToolStripSeparator10})
         Me.tsMain.Location = New System.Drawing.Point(0, 24)
         Me.tsMain.Name = "tsMain"
         Me.tsMain.Size = New System.Drawing.Size(972, 33)
@@ -391,6 +392,17 @@ Partial Class DocWorks
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
         Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 33)
         '
+        'ToolStripLabel6
+        '
+        Me.ToolStripLabel6.Name = "ToolStripLabel6"
+        Me.ToolStripLabel6.Size = New System.Drawing.Size(96, 30)
+        Me.ToolStripLabel6.Text = "DocWorks Beta 3"
+        '
+        'ToolStripSeparator10
+        '
+        Me.ToolStripSeparator10.Name = "ToolStripSeparator10"
+        Me.ToolStripSeparator10.Size = New System.Drawing.Size(6, 33)
+        '
         'rtbContent
         '
         Me.rtbContent.BorderStyle = System.Windows.Forms.BorderStyle.None
@@ -603,12 +615,6 @@ Partial Class DocWorks
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(784, 640)
         Me.TableLayoutPanel3.TabIndex = 0
         '
-        'ToolStripLabel6
-        '
-        Me.ToolStripLabel6.Name = "ToolStripLabel6"
-        Me.ToolStripLabel6.Size = New System.Drawing.Size(96, 30)
-        Me.ToolStripLabel6.Text = "DocWorks Beta 3"
-        '
         'DocWorks
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -703,4 +709,5 @@ Partial Class DocWorks
     Friend WithEvents YellowToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents NoHighlightToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripLabel6 As ToolStripLabel
+    Friend WithEvents ToolStripSeparator10 As ToolStripSeparator
 End Class
