@@ -34,19 +34,19 @@ Partial Class Settings
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -148,44 +148,35 @@ Partial Class Settings
         '
         'TabPage3
         '
+        Me.TabPage3.Controls.Add(Me.Label8)
+        Me.TabPage3.Controls.Add(Me.Label5)
         Me.TabPage3.Controls.Add(Me.Button3)
-        Me.TabPage3.Controls.Add(Me.PictureBox2)
         Me.TabPage3.Controls.Add(Me.Label3)
         Me.TabPage3.Location = New System.Drawing.Point(4, 24)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Size = New System.Drawing.Size(768, 398)
         Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "Activation"
+        Me.TabPage3.Text = "Experimantal Features"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(18, 359)
+        Me.Button3.Location = New System.Drawing.Point(18, 99)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(224, 23)
         Me.Button3.TabIndex = 15
-        Me.Button3.Text = "Activated (test button)"
+        Me.Button3.Text = "Test Crash Screen"
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(18, 166)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(52, 50)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 14
-        Me.PictureBox2.TabStop = False
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(76, 184)
+        Me.Label3.Location = New System.Drawing.Point(18, 32)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(431, 32)
+        Me.Label3.Size = New System.Drawing.Size(604, 32)
         Me.Label3.TabIndex = 12
-        Me.Label3.Text = "Activation Not Needed: HDE Home M3"
+        Me.Label3.Text = "You can Test Features soon to be added into Leap Desk"
         '
         'TabPage4
         '
@@ -238,6 +229,26 @@ Partial Class Settings
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "For Windows 10/11"
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(18, 125)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(522, 15)
+        Me.Label5.TabIndex = 16
+        Me.Label5.Text = "Tests the User Interface if T1LeapDesk Crashes (will close all apps, so save work" &
+    " before continuing!)"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.ForeColor = System.Drawing.Color.Red
+        Me.Label8.Location = New System.Drawing.Point(18, 326)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(609, 45)
+        Me.Label8.TabIndex = 17
+        Me.Label8.Text = resources.GetString("Label8.Text")
+        '
         'Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -257,7 +268,6 @@ Partial Class Settings
         Me.Panel1.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage4.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -277,9 +287,10 @@ Partial Class Settings
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label10 As Label
     Friend WithEvents Button3 As Button
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label5 As Label
 End Class
