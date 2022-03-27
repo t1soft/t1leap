@@ -17,7 +17,7 @@ A Data Sheet Editor to Visualize and Organize Data from Expirments or Surveys.
 A Sidebar with Quick Shortcuts to a Note App, a Browser to Search Quickly, and to Socialize if you want to.
 
 **T1LeapDesk:**
-A Full Blown Desktop Enviornment to Get Rid of Distractions and Create a New and Always Clean Workspace.
+A Full Desktop Enviornment to Get Rid of Distractions and Create a New and Always Clean Workspace.
 
 
 
