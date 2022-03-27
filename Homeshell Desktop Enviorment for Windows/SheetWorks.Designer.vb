@@ -510,33 +510,33 @@ Partial Class SheetWorks
         '
         Me.CutToolStripMenuItem.Name = "CutToolStripMenuItem"
         Me.CutToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.CutToolStripMenuItem.Text = "C&ut"
         '
         'CopyToolStripMenuItem
         '
         Me.CopyToolStripMenuItem.Name = "CopyToolStripMenuItem"
         Me.CopyToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.CopyToolStripMenuItem.Text = "&Copy"
         '
         'PasteToolStripMenuItem
         '
         Me.PasteToolStripMenuItem.Name = "PasteToolStripMenuItem"
         Me.PasteToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.V), System.Windows.Forms.Keys)
-        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.PasteToolStripMenuItem.Text = "&Paste"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(161, 6)
         '
         'SelectAllToolStripMenuItem
         '
         Me.SelectAllToolStripMenuItem.Name = "SelectAllToolStripMenuItem"
         Me.SelectAllToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.A), System.Windows.Forms.Keys)
-        Me.SelectAllToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SelectAllToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.SelectAllToolStripMenuItem.Text = "&Select All"
         '
         'InsertToolStripMenuItem
@@ -550,7 +550,7 @@ Partial Class SheetWorks
         '
         Me.PictureToolStripMenuItem.Name = "PictureToolStripMenuItem"
         Me.PictureToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.PictureToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PictureToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
         Me.PictureToolStripMenuItem.Text = "&Picture..."
         '
         'HomeshellOfficeworksToolStripMenuItem
@@ -563,13 +563,13 @@ Partial Class SheetWorks
         'AboutOfficeworksToolStripMenuItem
         '
         Me.AboutOfficeworksToolStripMenuItem.Name = "AboutOfficeworksToolStripMenuItem"
-        Me.AboutOfficeworksToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AboutOfficeworksToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
         Me.AboutOfficeworksToolStripMenuItem.Text = "About Officeworks"
         '
         'FeedbackToolStripMenuItem
         '
         Me.FeedbackToolStripMenuItem.Name = "FeedbackToolStripMenuItem"
-        Me.FeedbackToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FeedbackToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
         Me.FeedbackToolStripMenuItem.Text = "Feedback"
         '
         'msMain
@@ -597,6 +597,7 @@ Partial Class SheetWorks
         Me.Name = "SheetWorks"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "T1Leap DataWorks - New Document"
+        Me.TopMost = True
         Me.tsMain.ResumeLayout(False)
         Me.tsMain.PerformLayout()
         Me.msMain.ResumeLayout(False)

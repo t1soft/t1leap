@@ -340,7 +340,7 @@
 
 #Region "Help/About"
     Private Sub AboutOfficeworksToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutOfficeworksToolStripMenuItem.Click
-        AboutBox1.Show()
+
     End Sub
 
     Private Sub FeedbackToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FeedbackToolStripMenuItem.Click
