@@ -24,7 +24,6 @@ Partial Class SheetWorks
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SheetWorks))
         Me.tsMain = New System.Windows.Forms.ToolStrip()
-        Me.tsbNew = New System.Windows.Forms.ToolStripButton()
         Me.tsbOpen = New System.Windows.Forms.ToolStripButton()
         Me.tsbSave = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
@@ -70,6 +69,11 @@ Partial Class SheetWorks
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.X5DataTableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ColunmDataTableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ColunmDataTableToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ColunmDataTableToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveAsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -93,21 +97,12 @@ Partial Class SheetWorks
         '
         'tsMain
         '
-        Me.tsMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNew, Me.tsbOpen, Me.tsbSave, Me.ToolStripSeparator1, Me.tsbBold, Me.tsbItalic, Me.tsbUnderline, Me.tsbStrikeout, Me.tscSize, Me.ToolStripSeparator2, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripSeparator9, Me.ToolStripDropDownButton1, Me.ToolStripDropDownButton2, Me.ToolStripSeparator8, Me.ToolStripLabel1, Me.ToolStripSeparator7, Me.ToolStripLabel2, Me.ToolStripSeparator4, Me.ToolStripLabel3, Me.ToolStripSeparator6, Me.ToolStripLabel4, Me.ToolStripSeparator5, Me.ToolStripLabel5, Me.ToolStripSeparator3, Me.ToolStripLabel6})
+        Me.tsMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbOpen, Me.tsbSave, Me.ToolStripSeparator1, Me.tsbBold, Me.tsbItalic, Me.tsbUnderline, Me.tsbStrikeout, Me.tscSize, Me.ToolStripSeparator2, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripSeparator9, Me.ToolStripDropDownButton1, Me.ToolStripDropDownButton2, Me.ToolStripSeparator8, Me.ToolStripLabel1, Me.ToolStripSeparator7, Me.ToolStripLabel2, Me.ToolStripSeparator4, Me.ToolStripLabel3, Me.ToolStripSeparator6, Me.ToolStripLabel4, Me.ToolStripSeparator5, Me.ToolStripLabel5, Me.ToolStripSeparator3, Me.ToolStripLabel6})
         Me.tsMain.Location = New System.Drawing.Point(0, 24)
         Me.tsMain.Name = "tsMain"
         Me.tsMain.Size = New System.Drawing.Size(934, 33)
         Me.tsMain.TabIndex = 1
         Me.tsMain.Text = "ToolStrip1"
-        '
-        'tsbNew
-        '
-        Me.tsbNew.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.tsbNew.Image = CType(resources.GetObject("tsbNew.Image"), System.Drawing.Image)
-        Me.tsbNew.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.tsbNew.Name = "tsbNew"
-        Me.tsbNew.Size = New System.Drawing.Size(23, 30)
-        Me.tsbNew.Text = "New Document"
         '
         'tsbOpen
         '
@@ -381,7 +376,7 @@ Partial Class SheetWorks
         '
         Me.ToolStripLabel6.Name = "ToolStripLabel6"
         Me.ToolStripLabel6.Size = New System.Drawing.Size(99, 30)
-        Me.ToolStripLabel6.Text = "DataWorks Beta 3"
+        Me.ToolStripLabel6.Text = "DataWorks Beta 4"
         '
         'rtbContent
         '
@@ -393,7 +388,9 @@ Partial Class SheetWorks
         Me.rtbContent.Name = "rtbContent"
         Me.rtbContent.Size = New System.Drawing.Size(934, 656)
         Me.rtbContent.TabIndex = 5
-        Me.rtbContent.Text = " "
+        Me.rtbContent.Text = "" & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(10) & " Welcome to DataWorks" & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(10) & " Start by Opening a Data Table, or by Creating one by g" &
+    "oing to File > New Data Table." & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(10) & " Beta 4 Changes" & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(10) & " - Added Changes to Data Table" &
+    " Creation"
         Me.rtbContent.WordWrap = False
         '
         'openFile
@@ -432,10 +429,41 @@ Partial Class SheetWorks
         '
         'NewToolStripMenuItem
         '
+        Me.NewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.X5DataTableToolStripMenuItem, Me.ColunmDataTableToolStripMenuItem, Me.ColunmDataTableToolStripMenuItem1, Me.ToolStripMenuItem4, Me.ColunmDataTableToolStripMenuItem2})
         Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
-        Me.NewToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
+        Me.NewToolStripMenuItem.ShowShortcutKeys = False
         Me.NewToolStripMenuItem.Size = New System.Drawing.Size(195, 22)
-        Me.NewToolStripMenuItem.Text = "&New"
+        Me.NewToolStripMenuItem.Text = "New Data Table"
+        '
+        'X5DataTableToolStripMenuItem
+        '
+        Me.X5DataTableToolStripMenuItem.Name = "X5DataTableToolStripMenuItem"
+        Me.X5DataTableToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
+        Me.X5DataTableToolStripMenuItem.Text = "4 Colunm Data Table"
+        '
+        'ColunmDataTableToolStripMenuItem
+        '
+        Me.ColunmDataTableToolStripMenuItem.Name = "ColunmDataTableToolStripMenuItem"
+        Me.ColunmDataTableToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
+        Me.ColunmDataTableToolStripMenuItem.Text = "5 Colunm Data Table"
+        '
+        'ColunmDataTableToolStripMenuItem1
+        '
+        Me.ColunmDataTableToolStripMenuItem1.Name = "ColunmDataTableToolStripMenuItem1"
+        Me.ColunmDataTableToolStripMenuItem1.Size = New System.Drawing.Size(189, 22)
+        Me.ColunmDataTableToolStripMenuItem1.Text = "10 Colunm Data Table"
+        '
+        'ToolStripMenuItem4
+        '
+        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(189, 22)
+        Me.ToolStripMenuItem4.Text = "20 Colunm Data Table"
+        '
+        'ColunmDataTableToolStripMenuItem2
+        '
+        Me.ColunmDataTableToolStripMenuItem2.Name = "ColunmDataTableToolStripMenuItem2"
+        Me.ColunmDataTableToolStripMenuItem2.Size = New System.Drawing.Size(189, 22)
+        Me.ColunmDataTableToolStripMenuItem2.Text = "30 Colunm Data Table"
         '
         'OpenToolStripMenuItem
         '
@@ -482,33 +510,33 @@ Partial Class SheetWorks
         '
         Me.CutToolStripMenuItem.Name = "CutToolStripMenuItem"
         Me.CutToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
+        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.CutToolStripMenuItem.Text = "C&ut"
         '
         'CopyToolStripMenuItem
         '
         Me.CopyToolStripMenuItem.Name = "CopyToolStripMenuItem"
         Me.CopyToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
+        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.CopyToolStripMenuItem.Text = "&Copy"
         '
         'PasteToolStripMenuItem
         '
         Me.PasteToolStripMenuItem.Name = "PasteToolStripMenuItem"
         Me.PasteToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.V), System.Windows.Forms.Keys)
-        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
+        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PasteToolStripMenuItem.Text = "&Paste"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(161, 6)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(177, 6)
         '
         'SelectAllToolStripMenuItem
         '
         Me.SelectAllToolStripMenuItem.Name = "SelectAllToolStripMenuItem"
         Me.SelectAllToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.A), System.Windows.Forms.Keys)
-        Me.SelectAllToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
+        Me.SelectAllToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.SelectAllToolStripMenuItem.Text = "&Select All"
         '
         'InsertToolStripMenuItem
@@ -522,7 +550,7 @@ Partial Class SheetWorks
         '
         Me.PictureToolStripMenuItem.Name = "PictureToolStripMenuItem"
         Me.PictureToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.PictureToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.PictureToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PictureToolStripMenuItem.Text = "&Picture..."
         '
         'HomeshellOfficeworksToolStripMenuItem
@@ -535,13 +563,13 @@ Partial Class SheetWorks
         'AboutOfficeworksToolStripMenuItem
         '
         Me.AboutOfficeworksToolStripMenuItem.Name = "AboutOfficeworksToolStripMenuItem"
-        Me.AboutOfficeworksToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.AboutOfficeworksToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AboutOfficeworksToolStripMenuItem.Text = "About Officeworks"
         '
         'FeedbackToolStripMenuItem
         '
         Me.FeedbackToolStripMenuItem.Name = "FeedbackToolStripMenuItem"
-        Me.FeedbackToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.FeedbackToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.FeedbackToolStripMenuItem.Text = "Feedback"
         '
         'msMain
@@ -569,7 +597,6 @@ Partial Class SheetWorks
         Me.Name = "SheetWorks"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "T1Leap DataWorks - New Document"
-        Me.TopMost = True
         Me.tsMain.ResumeLayout(False)
         Me.tsMain.PerformLayout()
         Me.msMain.ResumeLayout(False)
@@ -582,7 +609,6 @@ Partial Class SheetWorks
     Friend WithEvents rtbContent As System.Windows.Forms.RichTextBox
     Friend WithEvents openFile As System.Windows.Forms.OpenFileDialog
     Friend WithEvents saveFile As System.Windows.Forms.SaveFileDialog
-    Friend WithEvents tsbNew As System.Windows.Forms.ToolStripButton
     Friend WithEvents tsbOpen As System.Windows.Forms.ToolStripButton
     Friend WithEvents tsbSave As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
@@ -642,4 +668,9 @@ Partial Class SheetWorks
     Friend WithEvents YellowToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents NoHighlightToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripLabel6 As ToolStripLabel
+    Friend WithEvents X5DataTableToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ColunmDataTableToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ColunmDataTableToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
+    Friend WithEvents ColunmDataTableToolStripMenuItem2 As ToolStripMenuItem
 End Class
