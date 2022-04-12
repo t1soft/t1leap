@@ -6,6 +6,7 @@
     Dim StatusMulti As Boolean = True
     Dim StatusAutoSave As Boolean
     Dim DocumentSaved As Boolean
+    Dim DocumentReady As Boolean
 
 #Region "Variables"
 
@@ -288,11 +289,14 @@
         If openFile.ShowDialog = Windows.Forms.DialogResult.OK Then
 
             'Open the file
+            DocumentReady = False
+            DocumentSaved = False
             rtbContent.LoadFile(openFile.FileName)
             dirty = False
             filename = openFile.FileName
             Me.Text = "T1Leap DocWorks - " & IO.Path.GetFileName(filename)
-
+            DocumentReady = True
+            DocumentSaved = True
 
         End If
 
@@ -421,9 +425,6 @@
         End If
 
     End Sub
-
-
-
 
 #Region "Highlighter Tool"
     Private Sub PinkToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PinkToolStripMenuItem.Click
