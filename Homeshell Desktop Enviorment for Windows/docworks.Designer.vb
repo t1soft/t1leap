@@ -64,7 +64,9 @@ Partial Class DocWorks
         Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripLabel5 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripLabel6 = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripDropDownButton3 = New System.Windows.Forms.ToolStripDropDownButton()
+        Me.ᴗToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.rtbContent = New System.Windows.Forms.RichTextBox()
         Me.openFile = New System.Windows.Forms.OpenFileDialog()
         Me.saveFile = New System.Windows.Forms.SaveFileDialog()
@@ -88,6 +90,10 @@ Partial Class DocWorks
         Me.AboutOfficeworksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FeedbackToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.msMain = New System.Windows.Forms.MenuStrip()
+        Me.FONTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SegoeUIdefaultsystemFontToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TimesNewRomanessayCompatableFontToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ArialToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.tsMain.SuspendLayout()
@@ -98,7 +104,7 @@ Partial Class DocWorks
         '
         'tsMain
         '
-        Me.tsMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNew, Me.tsbOpen, Me.tsbSave, Me.ToolStripSeparator1, Me.tsbBold, Me.tsbItalic, Me.tsbUnderline, Me.tsbStrikeout, Me.tscSize, Me.ToolStripSeparator2, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripSeparator8, Me.ToolStripDropDownButton1, Me.ToolStripDropDownButton2, Me.ToolStripButton4, Me.ToolStripSeparator9, Me.ToolStripLabel1, Me.ToolStripSeparator7, Me.ToolStripLabel2, Me.ToolStripSeparator4, Me.ToolStripLabel3, Me.ToolStripSeparator6, Me.ToolStripLabel4, Me.ToolStripSeparator5, Me.ToolStripLabel5, Me.ToolStripSeparator3, Me.ToolStripLabel6})
+        Me.tsMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNew, Me.tsbOpen, Me.tsbSave, Me.ToolStripSeparator1, Me.tsbBold, Me.tsbItalic, Me.tsbUnderline, Me.tsbStrikeout, Me.tscSize, Me.ToolStripSeparator2, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripSeparator8, Me.ToolStripDropDownButton1, Me.ToolStripDropDownButton2, Me.ToolStripButton4, Me.ToolStripSeparator9, Me.ToolStripLabel1, Me.ToolStripSeparator7, Me.ToolStripLabel2, Me.ToolStripSeparator4, Me.ToolStripLabel3, Me.ToolStripSeparator6, Me.ToolStripLabel4, Me.ToolStripSeparator5, Me.ToolStripLabel5, Me.ToolStripSeparator3, Me.ToolStripDropDownButton3})
         Me.tsMain.Location = New System.Drawing.Point(0, 24)
         Me.tsMain.Name = "tsMain"
         Me.tsMain.Size = New System.Drawing.Size(972, 33)
@@ -345,9 +351,9 @@ Partial Class DocWorks
         '
         'ToolStripLabel2
         '
-        Me.ToolStripLabel2.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ToolStripLabel2.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.ToolStripLabel2.Name = "ToolStripLabel2"
-        Me.ToolStripLabel2.Size = New System.Drawing.Size(97, 30)
+        Me.ToolStripLabel2.Size = New System.Drawing.Size(104, 30)
         Me.ToolStripLabel2.Text = "Heading 1"
         '
         'ToolStripSeparator4
@@ -357,9 +363,9 @@ Partial Class DocWorks
         '
         'ToolStripLabel3
         '
-        Me.ToolStripLabel3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ToolStripLabel3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.ToolStripLabel3.Name = "ToolStripLabel3"
-        Me.ToolStripLabel3.Size = New System.Drawing.Size(85, 30)
+        Me.ToolStripLabel3.Size = New System.Drawing.Size(88, 30)
         Me.ToolStripLabel3.Text = "Heading 2"
         '
         'ToolStripSeparator6
@@ -369,9 +375,9 @@ Partial Class DocWorks
         '
         'ToolStripLabel4
         '
-        Me.ToolStripLabel4.Font = New System.Drawing.Font("Segoe UI Light", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ToolStripLabel4.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ToolStripLabel4.Name = "ToolStripLabel4"
-        Me.ToolStripLabel4.Size = New System.Drawing.Size(52, 30)
+        Me.ToolStripLabel4.Size = New System.Drawing.Size(54, 30)
         Me.ToolStripLabel4.Text = "Title"
         '
         'ToolStripSeparator5
@@ -391,11 +397,27 @@ Partial Class DocWorks
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
         Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 33)
         '
-        'ToolStripLabel6
+        'ToolStripDropDownButton3
         '
-        Me.ToolStripLabel6.Name = "ToolStripLabel6"
-        Me.ToolStripLabel6.Size = New System.Drawing.Size(96, 30)
-        Me.ToolStripLabel6.Text = "DocWorks Beta 3"
+        Me.ToolStripDropDownButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.ToolStripDropDownButton3.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ᴗToolStripMenuItem, Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem})
+        Me.ToolStripDropDownButton3.Image = CType(resources.GetObject("ToolStripDropDownButton3.Image"), System.Drawing.Image)
+        Me.ToolStripDropDownButton3.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripDropDownButton3.Name = "ToolStripDropDownButton3"
+        Me.ToolStripDropDownButton3.Size = New System.Drawing.Size(79, 30)
+        Me.ToolStripDropDownButton3.Text = "Emonicons"
+        '
+        'ᴗToolStripMenuItem
+        '
+        Me.ᴗToolStripMenuItem.Name = "ᴗToolStripMenuItem"
+        Me.ᴗToolStripMenuItem.Size = New System.Drawing.Size(291, 22)
+        Me.ᴗToolStripMenuItem.Text = " (◍•ᴗ•◍)"
+        '
+        'NoteThisEmoniconsWillNotWorkYetToolStripMenuItem
+        '
+        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem.Name = "NoteThisEmoniconsWillNotWorkYetToolStripMenuItem"
+        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem.Size = New System.Drawing.Size(291, 22)
+        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem.Text = "Note: This Emonicons will not work yet...."
         '
         'rtbContent
         '
@@ -564,13 +586,38 @@ Partial Class DocWorks
         '
         'msMain
         '
-        Me.msMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.InsertToolStripMenuItem, Me.HomeshellOfficeworksToolStripMenuItem})
+        Me.msMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.InsertToolStripMenuItem, Me.FONTToolStripMenuItem, Me.HomeshellOfficeworksToolStripMenuItem})
         Me.msMain.Location = New System.Drawing.Point(0, 0)
         Me.msMain.Name = "msMain"
         Me.msMain.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
         Me.msMain.Size = New System.Drawing.Size(972, 24)
         Me.msMain.TabIndex = 0
         Me.msMain.Text = "MenuStrip1"
+        '
+        'FONTToolStripMenuItem
+        '
+        Me.FONTToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SegoeUIdefaultsystemFontToolStripMenuItem, Me.TimesNewRomanessayCompatableFontToolStripMenuItem, Me.ArialToolStripMenuItem})
+        Me.FONTToolStripMenuItem.Name = "FONTToolStripMenuItem"
+        Me.FONTToolStripMenuItem.Size = New System.Drawing.Size(58, 20)
+        Me.FONTToolStripMenuItem.Text = "&F O N T"
+        '
+        'SegoeUIdefaultsystemFontToolStripMenuItem
+        '
+        Me.SegoeUIdefaultsystemFontToolStripMenuItem.Name = "SegoeUIdefaultsystemFontToolStripMenuItem"
+        Me.SegoeUIdefaultsystemFontToolStripMenuItem.Size = New System.Drawing.Size(303, 22)
+        Me.SegoeUIdefaultsystemFontToolStripMenuItem.Text = "Segoe UI (default) (system font)"
+        '
+        'TimesNewRomanessayCompatableFontToolStripMenuItem
+        '
+        Me.TimesNewRomanessayCompatableFontToolStripMenuItem.Name = "TimesNewRomanessayCompatableFontToolStripMenuItem"
+        Me.TimesNewRomanessayCompatableFontToolStripMenuItem.Size = New System.Drawing.Size(303, 22)
+        Me.TimesNewRomanessayCompatableFontToolStripMenuItem.Text = "Times New Roman (essay compatable font)"
+        '
+        'ArialToolStripMenuItem
+        '
+        Me.ArialToolStripMenuItem.Name = "ArialToolStripMenuItem"
+        Me.ArialToolStripMenuItem.Size = New System.Drawing.Size(303, 22)
+        Me.ArialToolStripMenuItem.Text = "Arial"
         '
         'TableLayoutPanel2
         '
@@ -703,5 +750,11 @@ Partial Class DocWorks
     Friend WithEvents GreenToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents YellowToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents NoHighlightToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripLabel6 As ToolStripLabel
+    Friend WithEvents ToolStripDropDownButton3 As ToolStripDropDownButton
+    Friend WithEvents ᴗToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FONTToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SegoeUIdefaultsystemFontToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TimesNewRomanessayCompatableFontToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ArialToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NoteThisEmoniconsWillNotWorkYetToolStripMenuItem As ToolStripMenuItem
 End Class

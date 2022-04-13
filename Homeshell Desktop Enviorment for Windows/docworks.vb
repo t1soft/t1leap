@@ -2,8 +2,6 @@
 
     'Homeshell Officeworks
 
-    Dim StatusBullet As Integer
-
 
 #Region "Variables"
 
@@ -13,6 +11,13 @@
     'Remember if the current document is dirty
     Dim dirty As Boolean
 
+    Dim StatusBullet As Integer
+    Dim StatusMulti As Boolean = True
+    Dim StatusAutoSave As Boolean
+    Dim DocumentSaved As Boolean
+    Dim DocumentReady As Boolean
+    Dim DocumentFont As String = "Segoe UI"
+
 #End Region
 
 #Region "Form/Control Settings"
@@ -20,6 +25,8 @@
 
         'Set the document to not dirty
         dirty = False
+
+
 
     End Sub
 
@@ -34,6 +41,7 @@
 
         'Set the document as dirty
         dirty = True
+
 
     End Sub
 
@@ -205,6 +213,7 @@
             rtbContent.SaveFile(saveFile.FileName)
             dirty = False
 
+
             'Remember the filename
             filename = saveFile.FileName
 
@@ -228,6 +237,7 @@
             'Save the file
             rtbContent.SaveFile(filename)
             dirty = False
+
 
         End If
 
@@ -281,10 +291,14 @@
         If openFile.ShowDialog = Windows.Forms.DialogResult.OK Then
 
             'Open the file
+            DocumentReady = False
+            DocumentSaved = False
             rtbContent.LoadFile(openFile.FileName)
             dirty = False
             filename = openFile.FileName
             Me.Text = "T1Leap DocWorks - " & IO.Path.GetFileName(filename)
+            DocumentReady = True
+            DocumentSaved = True
 
         End If
 
@@ -326,27 +340,46 @@
 
 #End Region
 
+#Region "Font Selector"
+
+    Private Sub SegoeUIdefaultsystemFontToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SegoeUIdefaultsystemFontToolStripMenuItem.Click
+        DocumentFont = "Segoe UI"
+        rtbContent.SelectionFont = New Font(DocumentFont, 10)
+    End Sub
+
+    Private Sub TimesNewRomanessayCompatableFontToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TimesNewRomanessayCompatableFontToolStripMenuItem.Click
+        DocumentFont = "Times New Roman"
+        rtbContent.SelectionFont = New Font(DocumentFont, 10)
+    End Sub
+
+    Private Sub ArialToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ArialToolStripMenuItem.Click
+        DocumentFont = "Arial"
+        rtbContent.SelectionFont = New Font(DocumentFont, 10)
+    End Sub
+
+#End Region
+
 #Region "Styles"
 
 
     Private Sub ToolStripLabel1_Click(sender As Object, e As EventArgs) Handles ToolStripLabel1.Click
-        rtbContent.SelectionFont = New Font("Segoe UI", 10)
+        rtbContent.SelectionFont = New Font(DocumentFont, 10)
     End Sub
 
     Private Sub ToolStripLabel2_Click(sender As Object, e As EventArgs) Handles ToolStripLabel2.Click
-        rtbContent.SelectionFont = New Font("Segoe UI Semibold", 14, FontStyle.Bold)
+        rtbContent.SelectionFont = New Font(DocumentFont, 14, FontStyle.Bold)
     End Sub
 
     Private Sub ToolStripLabel3_Click(sender As Object, e As EventArgs) Handles ToolStripLabel3.Click
-        rtbContent.SelectionFont = New Font("Segoe UI Semibold", 12, FontStyle.Bold)
+        rtbContent.SelectionFont = New Font(DocumentFont, 12, FontStyle.Bold)
     End Sub
 
     Private Sub ToolStripLabel4_Click(sender As Object, e As EventArgs) Handles ToolStripLabel4.Click
-        rtbContent.SelectionFont = New Font("Segoe UI Light", 16)
+        rtbContent.SelectionFont = New Font(DocumentFont, 16)
     End Sub
 
     Private Sub ToolStripLabel5_Click(sender As Object, e As EventArgs) Handles ToolStripLabel5.Click
-        rtbContent.SelectionFont = New Font("Segoe UI", 10, FontStyle.Italic)
+        rtbContent.SelectionFont = New Font(DocumentFont, 10, FontStyle.Italic)
     End Sub
 
 
@@ -403,20 +436,6 @@
 
 #End Region
 
-    Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs) Handles ToolStripButton4.Click
-        If StatusBullet = 0 Then
-            rtbContent.SelectionBullet = True
-            StatusBullet = 1
-        ElseIf StatusBullet = 1 Then
-            rtbContent.SelectionBullet = False
-            StatusBullet = 0
-        End If
-
-    End Sub
-
-
-
-
 #Region "Highlighter Tool"
     Private Sub PinkToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PinkToolStripMenuItem.Click
         rtbContent.SelectionBackColor = Color.Pink
@@ -438,9 +457,25 @@
         rtbContent.SelectionBackColor = Color.White
     End Sub
 
+
+
+
+
 #End Region
 
+#Region "misc"
+    Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs) Handles ToolStripButton4.Click
+        If StatusBullet = 0 Then
+            rtbContent.SelectionBullet = True
+            StatusBullet = 1
+        ElseIf StatusBullet = 1 Then
+            rtbContent.SelectionBullet = False
+            StatusBullet = 0
+        End If
 
+    End Sub
+
+#End Region
 
 
 
