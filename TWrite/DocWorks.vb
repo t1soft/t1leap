@@ -20,6 +20,18 @@
 
 #End Region
 
+#Region "Functions"
+
+    Function FntStyCng(ByVal font As String)
+        ToolStripLabel1.Font = New Font(font, 10)
+        ToolStripLabel2.Font = New Font(font, 14, FontStyle.Bold)
+        ToolStripLabel3.Font = New Font(font, 12, FontStyle.Bold)
+        ToolStripLabel4.Font = New Font(font, 16)
+        ToolStripLabel5.Font = New Font(font, 10, FontStyle.Italic)
+    End Function
+
+#End Region
+
 #Region "Form/Control Settings"
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles Me.Load
 
@@ -345,16 +357,20 @@
     Private Sub SegoeUIdefaultsystemFontToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SegoeUIdefaultsystemFontToolStripMenuItem.Click
         DocumentFont = "Segoe UI"
         rtbContent.SelectionFont = New Font(DocumentFont, 10)
+        FntStyCng("Segoe UI")
+
     End Sub
 
     Private Sub TimesNewRomanessayCompatableFontToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TimesNewRomanessayCompatableFontToolStripMenuItem.Click
         DocumentFont = "Times New Roman"
         rtbContent.SelectionFont = New Font(DocumentFont, 10)
+        FntStyCng("Times New Roman")
     End Sub
 
     Private Sub ArialToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ArialToolStripMenuItem.Click
         DocumentFont = "Arial"
         rtbContent.SelectionFont = New Font(DocumentFont, 10)
+        FntStyCng("Arial")
     End Sub
 
 #End Region
@@ -387,13 +403,7 @@
 #End Region
 
 #Region "Help/About"
-    Private Sub AboutOfficeworksToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutOfficeworksToolStripMenuItem.Click
 
-    End Sub
-
-    Private Sub FeedbackToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FeedbackToolStripMenuItem.Click
-
-    End Sub
 
     Private Sub ToolStripButton6_Click(sender As Object, e As EventArgs)
 

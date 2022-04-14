@@ -66,6 +66,7 @@ Partial Class DocWorks
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripDropDownButton3 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.ᴗToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.rtbContent = New System.Windows.Forms.RichTextBox()
         Me.openFile = New System.Windows.Forms.OpenFileDialog()
         Me.saveFile = New System.Windows.Forms.SaveFileDialog()
@@ -85,9 +86,6 @@ Partial Class DocWorks
         Me.SelectAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InsertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HomeshellOfficeworksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AboutOfficeworksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FeedbackToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.msMain = New System.Windows.Forms.MenuStrip()
         Me.FONTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SegoeUIdefaultsystemFontToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -95,7 +93,9 @@ Partial Class DocWorks
         Me.ArialToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
-        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.T1LEAPToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutVersionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UpdateLogToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsMain.SuspendLayout()
         Me.msMain.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -413,6 +413,12 @@ Partial Class DocWorks
         Me.ᴗToolStripMenuItem.Size = New System.Drawing.Size(291, 22)
         Me.ᴗToolStripMenuItem.Text = " (◍•ᴗ•◍)"
         '
+        'NoteThisEmoniconsWillNotWorkYetToolStripMenuItem
+        '
+        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem.Name = "NoteThisEmoniconsWillNotWorkYetToolStripMenuItem"
+        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem.Size = New System.Drawing.Size(291, 22)
+        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem.Text = "Note: This Emonicons will not work yet...."
+        '
         'rtbContent
         '
         Me.rtbContent.BorderStyle = System.Windows.Forms.BorderStyle.None
@@ -559,28 +565,9 @@ Partial Class DocWorks
         Me.PictureToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
         Me.PictureToolStripMenuItem.Text = "&Picture..."
         '
-        'HomeshellOfficeworksToolStripMenuItem
-        '
-        Me.HomeshellOfficeworksToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutOfficeworksToolStripMenuItem, Me.FeedbackToolStripMenuItem})
-        Me.HomeshellOfficeworksToolStripMenuItem.Name = "HomeshellOfficeworksToolStripMenuItem"
-        Me.HomeshellOfficeworksToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
-        Me.HomeshellOfficeworksToolStripMenuItem.Text = "TWork"
-        '
-        'AboutOfficeworksToolStripMenuItem
-        '
-        Me.AboutOfficeworksToolStripMenuItem.Name = "AboutOfficeworksToolStripMenuItem"
-        Me.AboutOfficeworksToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
-        Me.AboutOfficeworksToolStripMenuItem.Text = "About Officeworks"
-        '
-        'FeedbackToolStripMenuItem
-        '
-        Me.FeedbackToolStripMenuItem.Name = "FeedbackToolStripMenuItem"
-        Me.FeedbackToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
-        Me.FeedbackToolStripMenuItem.Text = "Feedback"
-        '
         'msMain
         '
-        Me.msMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.InsertToolStripMenuItem, Me.FONTToolStripMenuItem, Me.HomeshellOfficeworksToolStripMenuItem})
+        Me.msMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.InsertToolStripMenuItem, Me.FONTToolStripMenuItem, Me.T1LEAPToolStripMenuItem})
         Me.msMain.Location = New System.Drawing.Point(0, 0)
         Me.msMain.Name = "msMain"
         Me.msMain.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
@@ -650,11 +637,24 @@ Partial Class DocWorks
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(784, 640)
         Me.TableLayoutPanel3.TabIndex = 0
         '
-        'NoteThisEmoniconsWillNotWorkYetToolStripMenuItem
+        'T1LEAPToolStripMenuItem
         '
-        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem.Name = "NoteThisEmoniconsWillNotWorkYetToolStripMenuItem"
-        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem.Size = New System.Drawing.Size(291, 22)
-        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem.Text = "Note: This Emonicons will not work yet...."
+        Me.T1LEAPToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutVersionToolStripMenuItem, Me.UpdateLogToolStripMenuItem})
+        Me.T1LEAPToolStripMenuItem.Name = "T1LEAPToolStripMenuItem"
+        Me.T1LEAPToolStripMenuItem.Size = New System.Drawing.Size(58, 20)
+        Me.T1LEAPToolStripMenuItem.Text = "&T1LEAP"
+        '
+        'AboutVersionToolStripMenuItem
+        '
+        Me.AboutVersionToolStripMenuItem.Name = "AboutVersionToolStripMenuItem"
+        Me.AboutVersionToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AboutVersionToolStripMenuItem.Text = "About Version"
+        '
+        'UpdateLogToolStripMenuItem
+        '
+        Me.UpdateLogToolStripMenuItem.Name = "UpdateLogToolStripMenuItem"
+        Me.UpdateLogToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UpdateLogToolStripMenuItem.Text = "Update Log"
         '
         'DocWorks
         '
@@ -726,10 +726,7 @@ Partial Class DocWorks
     Friend WithEvents SelectAllToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents InsertToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PictureToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents HomeshellOfficeworksToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AboutOfficeworksToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents msMain As MenuStrip
-    Friend WithEvents FeedbackToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents tsbNew As ToolStripButton
@@ -756,4 +753,7 @@ Partial Class DocWorks
     Friend WithEvents TimesNewRomanessayCompatableFontToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ArialToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents NoteThisEmoniconsWillNotWorkYetToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents T1LEAPToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AboutVersionToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents UpdateLogToolStripMenuItem As ToolStripMenuItem
 End Class
