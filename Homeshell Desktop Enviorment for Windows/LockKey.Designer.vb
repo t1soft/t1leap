@@ -81,9 +81,9 @@ Partial Class LockKey
         Me.Label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Label6.Location = New System.Drawing.Point(12, 9)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(187, 25)
+        Me.Label6.Size = New System.Drawing.Size(111, 25)
         Me.Label6.TabIndex = 12
-        Me.Label6.Text = "LeapDesk Milestone 4" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label6.Text = "T1LeapDesk "
         '
         'Button2
         '

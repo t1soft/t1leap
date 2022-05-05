@@ -42,7 +42,7 @@ Partial Class Start
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(256, 145)
         Me.Button6.TabIndex = 16
-        Me.Button6.Text = "Apps"
+        Me.Button6.Text = "Other Apps"
         Me.Button6.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.Button6.UseVisualStyleBackColor = False
         '
@@ -56,7 +56,7 @@ Partial Class Start
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(256, 145)
         Me.Button4.TabIndex = 14
-        Me.Button4.Text = "WebBox"
+        Me.Button4.Text = "Web Browser"
         Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.Button4.UseVisualStyleBackColor = False
         '
@@ -105,7 +105,7 @@ Partial Class Start
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(256, 141)
         Me.Button7.TabIndex = 19
-        Me.Button7.Text = "!   Organizer"
+        Me.Button7.Text = "Help"
         Me.Button7.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.Button7.UseVisualStyleBackColor = False
         '

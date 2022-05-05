@@ -33,7 +33,7 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(12, 127)
+        Me.Label1.Location = New System.Drawing.Point(12, 249)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(275, 45)
         Me.Label1.TabIndex = 0
@@ -42,7 +42,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 279)
+        Me.Label2.Location = New System.Drawing.Point(400, 264)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(84, 15)
         Me.Label2.TabIndex = 1

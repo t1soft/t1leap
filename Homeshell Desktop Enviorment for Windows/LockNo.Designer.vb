@@ -67,9 +67,9 @@ Partial Class LockNo
         Me.Label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Label6.Location = New System.Drawing.Point(12, 9)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(187, 25)
+        Me.Label6.Size = New System.Drawing.Size(106, 25)
         Me.Label6.TabIndex = 18
-        Me.Label6.Text = "LeapDesk Milestone 4"
+        Me.Label6.Text = "T1LeapDesk"
         '
         'Label1
         '

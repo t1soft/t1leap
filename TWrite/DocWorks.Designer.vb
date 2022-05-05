@@ -66,6 +66,7 @@ Partial Class DocWorks
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripDropDownButton3 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.ᴗToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.rtbContent = New System.Windows.Forms.RichTextBox()
         Me.openFile = New System.Windows.Forms.OpenFileDialog()
         Me.saveFile = New System.Windows.Forms.SaveFileDialog()
@@ -95,7 +96,6 @@ Partial Class DocWorks
         Me.ArialToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
-        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsMain.SuspendLayout()
         Me.msMain.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -351,9 +351,9 @@ Partial Class DocWorks
         '
         'ToolStripLabel2
         '
-        Me.ToolStripLabel2.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ToolStripLabel2.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.ToolStripLabel2.Name = "ToolStripLabel2"
-        Me.ToolStripLabel2.Size = New System.Drawing.Size(104, 30)
+        Me.ToolStripLabel2.Size = New System.Drawing.Size(97, 30)
         Me.ToolStripLabel2.Text = "Heading 1"
         '
         'ToolStripSeparator4
@@ -363,9 +363,9 @@ Partial Class DocWorks
         '
         'ToolStripLabel3
         '
-        Me.ToolStripLabel3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ToolStripLabel3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.ToolStripLabel3.Name = "ToolStripLabel3"
-        Me.ToolStripLabel3.Size = New System.Drawing.Size(88, 30)
+        Me.ToolStripLabel3.Size = New System.Drawing.Size(85, 30)
         Me.ToolStripLabel3.Text = "Heading 2"
         '
         'ToolStripSeparator6
@@ -375,9 +375,9 @@ Partial Class DocWorks
         '
         'ToolStripLabel4
         '
-        Me.ToolStripLabel4.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ToolStripLabel4.Font = New System.Drawing.Font("Segoe UI Light", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ToolStripLabel4.Name = "ToolStripLabel4"
-        Me.ToolStripLabel4.Size = New System.Drawing.Size(54, 30)
+        Me.ToolStripLabel4.Size = New System.Drawing.Size(52, 30)
         Me.ToolStripLabel4.Text = "Title"
         '
         'ToolStripSeparator5
@@ -412,6 +412,12 @@ Partial Class DocWorks
         Me.ᴗToolStripMenuItem.Name = "ᴗToolStripMenuItem"
         Me.ᴗToolStripMenuItem.Size = New System.Drawing.Size(291, 22)
         Me.ᴗToolStripMenuItem.Text = " (◍•ᴗ•◍)"
+        '
+        'NoteThisEmoniconsWillNotWorkYetToolStripMenuItem
+        '
+        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem.Name = "NoteThisEmoniconsWillNotWorkYetToolStripMenuItem"
+        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem.Size = New System.Drawing.Size(291, 22)
+        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem.Text = "Note: This Emonicons will not work yet...."
         '
         'rtbContent
         '
@@ -563,8 +569,8 @@ Partial Class DocWorks
         '
         Me.HomeshellOfficeworksToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutOfficeworksToolStripMenuItem, Me.FeedbackToolStripMenuItem})
         Me.HomeshellOfficeworksToolStripMenuItem.Name = "HomeshellOfficeworksToolStripMenuItem"
-        Me.HomeshellOfficeworksToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
-        Me.HomeshellOfficeworksToolStripMenuItem.Text = "TWork"
+        Me.HomeshellOfficeworksToolStripMenuItem.Size = New System.Drawing.Size(51, 20)
+        Me.HomeshellOfficeworksToolStripMenuItem.Text = "t1leap"
         '
         'AboutOfficeworksToolStripMenuItem
         '
@@ -649,12 +655,6 @@ Partial Class DocWorks
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(784, 640)
         Me.TableLayoutPanel3.TabIndex = 0
-        '
-        'NoteThisEmoniconsWillNotWorkYetToolStripMenuItem
-        '
-        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem.Name = "NoteThisEmoniconsWillNotWorkYetToolStripMenuItem"
-        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem.Size = New System.Drawing.Size(291, 22)
-        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem.Text = "Note: This Emonicons will not work yet...."
         '
         'DocWorks
         '

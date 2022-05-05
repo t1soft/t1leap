@@ -1,8 +1,5 @@
 ﻿Public Class DocWorks
 
-    'Homeshell Officeworks
-
-
 #Region "Variables"
 
     'Store the filename of the document
@@ -16,7 +13,43 @@
     Dim StatusAutoSave As Boolean
     Dim DocumentSaved As Boolean
     Dim DocumentReady As Boolean
-    Dim DocumentFont As String = "Segoe UI"
+    Dim DF15 As String = "Segoe UI"
+    Dim DF23 As String = "Semibold"
+    Dim DF4 As String = "Segoe UI Light"
+   
+
+    Function FontChanger(font)
+
+        If font = "Segoe UI" Then
+            DF15 = "Segoe UI"
+            DF23 = "Segoe UI Semibold"
+            DF4 = "Segoe UI Light"
+        End If
+
+
+        If Font = "Times New Roman" Then
+            DF15 = "Times New Roman"
+            DF23 = "Times New Roman"
+            DF4 = "Times New Roman"
+        End If
+
+
+        If Font = "Arial" Then
+            DF15 = "Arial"
+            DF23 = "Arial"
+            DF4 = "Arial"
+        End If
+
+    End Function
+
+    Function StyleChanger()
+        ToolStripLabel1.Font = New Font(DF15, 10)
+        ToolStripLabel2.Font = New Font(DF23, 14)
+        ToolStripLabel3.Font = New Font(DF23, 12)
+        ToolStripLabel4.Font = New Font(DF4, 16)
+        ToolStripLabel5.Font = New Font(DF15, 10, FontStyle.Italic)
+    End Function
+
 
 #End Region
 
@@ -343,18 +376,21 @@
 #Region "Font Selector"
 
     Private Sub SegoeUIdefaultsystemFontToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SegoeUIdefaultsystemFontToolStripMenuItem.Click
-        DocumentFont = "Segoe UI"
-        rtbContent.SelectionFont = New Font(DocumentFont, 10)
+        FontChanger("Segoe UI")
+        StyleChanger()
+        rtbContent.SelectionFont = New Font(DF15, 10)
     End Sub
 
     Private Sub TimesNewRomanessayCompatableFontToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TimesNewRomanessayCompatableFontToolStripMenuItem.Click
-        DocumentFont = "Times New Roman"
-        rtbContent.SelectionFont = New Font(DocumentFont, 10)
+        FontChanger("Times New Roman")
+        StyleChanger()
+        rtbContent.SelectionFont = New Font(DF15, 10)
     End Sub
 
     Private Sub ArialToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ArialToolStripMenuItem.Click
-        DocumentFont = "Arial"
-        rtbContent.SelectionFont = New Font(DocumentFont, 10)
+        FontChanger("Arial")
+        StyleChanger()
+        rtbContent.SelectionFont = New Font(DF15, 10)
     End Sub
 
 #End Region
@@ -363,45 +399,26 @@
 
 
     Private Sub ToolStripLabel1_Click(sender As Object, e As EventArgs) Handles ToolStripLabel1.Click
-        rtbContent.SelectionFont = New Font(DocumentFont, 10)
+        rtbContent.SelectionFont = New Font(DF15, 10)
     End Sub
 
     Private Sub ToolStripLabel2_Click(sender As Object, e As EventArgs) Handles ToolStripLabel2.Click
-        rtbContent.SelectionFont = New Font(DocumentFont, 14, FontStyle.Bold)
+        rtbContent.SelectionFont = New Font(DF23, 14)
     End Sub
 
     Private Sub ToolStripLabel3_Click(sender As Object, e As EventArgs) Handles ToolStripLabel3.Click
-        rtbContent.SelectionFont = New Font(DocumentFont, 12, FontStyle.Bold)
+        rtbContent.SelectionFont = New Font(DF23, 12)
     End Sub
 
     Private Sub ToolStripLabel4_Click(sender As Object, e As EventArgs) Handles ToolStripLabel4.Click
-        rtbContent.SelectionFont = New Font(DocumentFont, 16)
+        rtbContent.SelectionFont = New Font(DF4, 16)
     End Sub
 
     Private Sub ToolStripLabel5_Click(sender As Object, e As EventArgs) Handles ToolStripLabel5.Click
-        rtbContent.SelectionFont = New Font(DocumentFont, 10, FontStyle.Italic)
+        rtbContent.SelectionFont = New Font(DF15, 10, FontStyle.Italic)
     End Sub
 
 
-
-#End Region
-
-#Region "Help/About"
-    Private Sub AboutOfficeworksToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutOfficeworksToolStripMenuItem.Click
-
-    End Sub
-
-    Private Sub FeedbackToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FeedbackToolStripMenuItem.Click
-
-    End Sub
-
-    Private Sub ToolStripButton6_Click(sender As Object, e As EventArgs)
-
-        CheckDirty()
-
-        'Close the form
-        Me.Close()
-    End Sub
 
 #End Region
 
@@ -474,10 +491,14 @@
         End If
 
     End Sub
+    Private Sub ToolStripButton6_Click(sender As Object, e As EventArgs)
+
+        CheckDirty()
+
+        'Close the form
+        Me.Close()
+    End Sub
 
 #End Region
-
-
-
 
 End Class

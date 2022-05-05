@@ -84,7 +84,7 @@ Partial Class Crash
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(7, 48)
+        Me.Panel1.Location = New System.Drawing.Point(9, 48)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(517, 446)
         Me.Panel1.TabIndex = 3
@@ -104,7 +104,6 @@ Partial Class Crash
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Homeshell Build Failsafe -  Last Point of Return."
         Me.TopMost = True
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)

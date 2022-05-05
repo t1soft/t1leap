@@ -4,9 +4,11 @@
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         TimeElapsed = TimeElapsed + 1
-        If TimeElapsed = 2 Then
+        If TimeElapsed = 1 Then
             DocWorks.Show()
             Me.Close()
         End If
     End Sub
+
+
 End Class
