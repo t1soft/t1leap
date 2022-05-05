@@ -14,7 +14,7 @@
     Dim DocumentSaved As Boolean
     Dim DocumentReady As Boolean
     Dim DF15 As String = "Segoe UI"
-    Dim DF23 As String = "Semibold"
+    Dim DF23 As String = "Segoe UI Semibold"
     Dim DF4 As String = "Segoe UI Light"
    
 

@@ -64,9 +64,6 @@ Partial Class DocWorks
         Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripLabel5 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripDropDownButton3 = New System.Windows.Forms.ToolStripDropDownButton()
-        Me.ᴗToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.rtbContent = New System.Windows.Forms.RichTextBox()
         Me.openFile = New System.Windows.Forms.OpenFileDialog()
         Me.saveFile = New System.Windows.Forms.SaveFileDialog()
@@ -104,7 +101,7 @@ Partial Class DocWorks
         '
         'tsMain
         '
-        Me.tsMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNew, Me.tsbOpen, Me.tsbSave, Me.ToolStripSeparator1, Me.tsbBold, Me.tsbItalic, Me.tsbUnderline, Me.tsbStrikeout, Me.tscSize, Me.ToolStripSeparator2, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripSeparator8, Me.ToolStripDropDownButton1, Me.ToolStripDropDownButton2, Me.ToolStripButton4, Me.ToolStripSeparator9, Me.ToolStripLabel1, Me.ToolStripSeparator7, Me.ToolStripLabel2, Me.ToolStripSeparator4, Me.ToolStripLabel3, Me.ToolStripSeparator6, Me.ToolStripLabel4, Me.ToolStripSeparator5, Me.ToolStripLabel5, Me.ToolStripSeparator3, Me.ToolStripDropDownButton3})
+        Me.tsMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNew, Me.tsbOpen, Me.tsbSave, Me.ToolStripSeparator1, Me.tsbBold, Me.tsbItalic, Me.tsbUnderline, Me.tsbStrikeout, Me.tscSize, Me.ToolStripSeparator2, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripSeparator8, Me.ToolStripDropDownButton1, Me.ToolStripDropDownButton2, Me.ToolStripButton4, Me.ToolStripSeparator9, Me.ToolStripLabel1, Me.ToolStripSeparator7, Me.ToolStripLabel2, Me.ToolStripSeparator4, Me.ToolStripLabel3, Me.ToolStripSeparator6, Me.ToolStripLabel4, Me.ToolStripSeparator5, Me.ToolStripLabel5, Me.ToolStripSeparator3})
         Me.tsMain.Location = New System.Drawing.Point(0, 24)
         Me.tsMain.Name = "tsMain"
         Me.tsMain.Size = New System.Drawing.Size(972, 33)
@@ -396,28 +393,6 @@ Partial Class DocWorks
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
         Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 33)
-        '
-        'ToolStripDropDownButton3
-        '
-        Me.ToolStripDropDownButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.ToolStripDropDownButton3.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ᴗToolStripMenuItem, Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem})
-        Me.ToolStripDropDownButton3.Image = CType(resources.GetObject("ToolStripDropDownButton3.Image"), System.Drawing.Image)
-        Me.ToolStripDropDownButton3.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripDropDownButton3.Name = "ToolStripDropDownButton3"
-        Me.ToolStripDropDownButton3.Size = New System.Drawing.Size(79, 30)
-        Me.ToolStripDropDownButton3.Text = "Emonicons"
-        '
-        'ᴗToolStripMenuItem
-        '
-        Me.ᴗToolStripMenuItem.Name = "ᴗToolStripMenuItem"
-        Me.ᴗToolStripMenuItem.Size = New System.Drawing.Size(291, 22)
-        Me.ᴗToolStripMenuItem.Text = " (◍•ᴗ•◍)"
-        '
-        'NoteThisEmoniconsWillNotWorkYetToolStripMenuItem
-        '
-        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem.Name = "NoteThisEmoniconsWillNotWorkYetToolStripMenuItem"
-        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem.Size = New System.Drawing.Size(291, 22)
-        Me.NoteThisEmoniconsWillNotWorkYetToolStripMenuItem.Text = "Note: This Emonicons will not work yet...."
         '
         'rtbContent
         '
@@ -749,11 +724,8 @@ Partial Class DocWorks
     Friend WithEvents GreenToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents YellowToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents NoHighlightToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripDropDownButton3 As ToolStripDropDownButton
-    Friend WithEvents ᴗToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FONTToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SegoeUIdefaultsystemFontToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TimesNewRomanessayCompatableFontToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ArialToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents NoteThisEmoniconsWillNotWorkYetToolStripMenuItem As ToolStripMenuItem
 End Class

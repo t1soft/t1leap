@@ -339,11 +339,11 @@
 #End Region
 
 #Region "Help/About"
-    Private Sub AboutOfficeworksToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutOfficeworksToolStripMenuItem.Click
+    Private Sub AboutOfficeworksToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         AboutBox1.Show()
     End Sub
 
-    Private Sub FeedbackToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FeedbackToolStripMenuItem.Click
+    Private Sub FeedbackToolStripMenuItem_Click(sender As Object, e As EventArgs) 
 
     End Sub
 

@@ -88,8 +88,6 @@ Partial Class SheetWorks
         Me.InsertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HomeshellOfficeworksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AboutOfficeworksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FeedbackToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.msMain = New System.Windows.Forms.MenuStrip()
         Me.tsMain.SuspendLayout()
         Me.msMain.SuspendLayout()
@@ -555,22 +553,9 @@ Partial Class SheetWorks
         '
         'HomeshellOfficeworksToolStripMenuItem
         '
-        Me.HomeshellOfficeworksToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutOfficeworksToolStripMenuItem, Me.FeedbackToolStripMenuItem})
         Me.HomeshellOfficeworksToolStripMenuItem.Name = "HomeshellOfficeworksToolStripMenuItem"
-        Me.HomeshellOfficeworksToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
-        Me.HomeshellOfficeworksToolStripMenuItem.Text = "TWork"
-        '
-        'AboutOfficeworksToolStripMenuItem
-        '
-        Me.AboutOfficeworksToolStripMenuItem.Name = "AboutOfficeworksToolStripMenuItem"
-        Me.AboutOfficeworksToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.AboutOfficeworksToolStripMenuItem.Text = "About Officeworks"
-        '
-        'FeedbackToolStripMenuItem
-        '
-        Me.FeedbackToolStripMenuItem.Name = "FeedbackToolStripMenuItem"
-        Me.FeedbackToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.FeedbackToolStripMenuItem.Text = "Feedback"
+        Me.HomeshellOfficeworksToolStripMenuItem.Size = New System.Drawing.Size(51, 20)
+        Me.HomeshellOfficeworksToolStripMenuItem.Text = "t1leap"
         '
         'msMain
         '
@@ -649,9 +634,7 @@ Partial Class SheetWorks
     Friend WithEvents InsertToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PictureToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HomeshellOfficeworksToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AboutOfficeworksToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents msMain As MenuStrip
-    Friend WithEvents FeedbackToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator9 As ToolStripSeparator
     Friend WithEvents ToolStripDropDownButton1 As ToolStripDropDownButton
     Friend WithEvents RedToolStripMenuItem As ToolStripMenuItem

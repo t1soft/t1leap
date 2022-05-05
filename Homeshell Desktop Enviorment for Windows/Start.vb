@@ -37,8 +37,8 @@
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        Organizer.WindowState = FormWindowState.Normal
-        Organizer.Show()
+        Help.WindowState = FormWindowState.Normal
+        Help.Show()
         Me.Close()
     End Sub
 
