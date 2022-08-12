@@ -31,6 +31,9 @@ Partial Class Start
         Me.Button12 = New System.Windows.Forms.Button()
         Me.Button13 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button6
@@ -40,9 +43,9 @@ Partial Class Start
         Me.Button6.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button6.Location = New System.Drawing.Point(279, 293)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(256, 145)
+        Me.Button6.Size = New System.Drawing.Size(133, 74)
         Me.Button6.TabIndex = 16
-        Me.Button6.Text = "Other Apps"
+        Me.Button6.Text = "Calculator"
         Me.Button6.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.Button6.UseVisualStyleBackColor = False
         '
@@ -138,12 +141,54 @@ Partial Class Start
         Me.Label2.TabIndex = 25
         Me.Label2.Text = "Logged In as"
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Turquoise
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.Location = New System.Drawing.Point(410, 293)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(125, 74)
+        Me.Button1.TabIndex = 26
+        Me.Button1.Text = "Notepad"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.Turquoise
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button5.Location = New System.Drawing.Point(410, 366)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(125, 72)
+        Me.Button5.TabIndex = 27
+        Me.Button5.Text = "Utility Tools"
+        Me.Button5.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'Button8
+        '
+        Me.Button8.BackColor = System.Drawing.Color.Turquoise
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button8.Location = New System.Drawing.Point(279, 366)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(132, 72)
+        Me.Button8.TabIndex = 28
+        Me.Button8.Text = "Converter"
+        Me.Button8.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.Button8.UseVisualStyleBackColor = False
+        '
         'Start
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.ClientSize = New System.Drawing.Size(560, 465)
+        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button13)
         Me.Controls.Add(Me.Button12)
@@ -171,4 +216,7 @@ Partial Class Start
     Friend WithEvents Button12 As Button
     Friend WithEvents Button13 As Button
     Friend WithEvents Label2 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button8 As Button
 End Class

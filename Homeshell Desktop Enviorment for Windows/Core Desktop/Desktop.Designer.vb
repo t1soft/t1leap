@@ -30,7 +30,6 @@ Partial Class Desktop
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.AnimationTimer = New System.Windows.Forms.Timer(Me.components)
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -46,13 +45,13 @@ Partial Class Desktop
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel2.SuspendLayout()
@@ -113,14 +112,10 @@ Partial Class Desktop
         Me.Button1.ForeColor = System.Drawing.Color.Black
         Me.Button1.Location = New System.Drawing.Point(1148, 0)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 37)
+        Me.Button1.Size = New System.Drawing.Size(76, 37)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Log Out"
         Me.Button1.UseVisualStyleBackColor = False
-        '
-        'AnimationTimer
-        '
-        Me.AnimationTimer.Interval = 1
         '
         'RichTextBox1
         '
@@ -134,7 +129,7 @@ Partial Class Desktop
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 28.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(14, 48)
+        Me.Label3.Location = New System.Drawing.Point(9, 47)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(179, 51)
         Me.Label3.TabIndex = 8
@@ -144,7 +139,7 @@ Partial Class Desktop
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(23, 98)
+        Me.Label4.Location = New System.Drawing.Point(14, 98)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(107, 19)
         Me.Label4.TabIndex = 9
@@ -241,9 +236,9 @@ Partial Class Desktop
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label5.Location = New System.Drawing.Point(14, 139)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(62, 19)
+        Me.Label5.Size = New System.Drawing.Size(78, 19)
         Me.Label5.TabIndex = 20
-        Me.Label5.Text = "NotePad"
+        Me.Label5.Text = "Quick Note"
         '
         'Label6
         '
@@ -254,16 +249,6 @@ Partial Class Desktop
         Me.Label6.Size = New System.Drawing.Size(72, 19)
         Me.Label6.TabIndex = 21
         Me.Label6.Text = "To-Do List"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label7.Location = New System.Drawing.Point(24, 24)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(42, 19)
-        Me.Label7.TabIndex = 22
-        Me.Label7.Text = "Clock"
         '
         'Label8
         '
@@ -316,12 +301,14 @@ Partial Class Desktop
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.RoyalBlue
+        Me.Panel1.Controls.Add(Me.Label7)
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Label10)
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Controls.Add(Me.Label8)
-        Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Label6)
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.TextBox5)
@@ -334,8 +321,6 @@ Partial Class Desktop
         Me.Panel1.Controls.Add(Me.CheckBox3)
         Me.Panel1.Controls.Add(Me.CheckBox2)
         Me.Panel1.Controls.Add(Me.CheckBox1)
-        Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.RichTextBox1)
         Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
@@ -344,6 +329,16 @@ Partial Class Desktop
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(200, 707)
         Me.Panel1.TabIndex = 6
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label7.Location = New System.Drawing.Point(15, 22)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(42, 19)
+        Me.Label7.TabIndex = 28
+        Me.Label7.Text = "Clock"
         '
         'Label2
         '
@@ -393,7 +388,6 @@ Partial Class Desktop
     Friend WithEvents FolderBrowserDialog1 As FolderBrowserDialog
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Button2 As Button
-    Friend WithEvents AnimationTimer As Timer
     Friend WithEvents Button1 As Button
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents Label3 As Label
@@ -410,7 +404,6 @@ Partial Class Desktop
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
@@ -420,4 +413,5 @@ Partial Class Desktop
     Friend WithEvents Button3 As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents Label7 As Label
 End Class

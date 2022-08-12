@@ -25,9 +25,9 @@ Partial Class Help
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Help))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.SuspendLayout()
@@ -55,6 +55,16 @@ Partial Class Help
         Me.TabPage1.Text = "Welcome!"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(27, 102)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(217, 28)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Welcome to t1leapdesk"
+        '
         'TabPage2
         '
         Me.TabPage2.Location = New System.Drawing.Point(4, 24)
@@ -73,15 +83,6 @@ Partial Class Help
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Support"
         Me.TabPage3.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(21, 77)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(41, 15)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
         '
         'Help
         '

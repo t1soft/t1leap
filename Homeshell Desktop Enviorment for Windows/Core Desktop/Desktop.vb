@@ -1,6 +1,6 @@
 ﻿Public Class Desktop
 
-
+    Dim RemainSec As Integer
 
 
 
@@ -41,4 +41,8 @@
         Dialog1.Show()
         Me.Hide()
     End Sub
+
+
+
+
 End Class
