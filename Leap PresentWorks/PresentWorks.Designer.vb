@@ -294,31 +294,31 @@ Partial Class PresentWorks
         'PinkToolStripMenuItem
         '
         Me.PinkToolStripMenuItem.Name = "PinkToolStripMenuItem"
-        Me.PinkToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PinkToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
         Me.PinkToolStripMenuItem.Text = "Pink"
         '
         'OrangeToolStripMenuItem1
         '
         Me.OrangeToolStripMenuItem1.Name = "OrangeToolStripMenuItem1"
-        Me.OrangeToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.OrangeToolStripMenuItem1.Size = New System.Drawing.Size(143, 22)
         Me.OrangeToolStripMenuItem1.Text = "Orange"
         '
         'GreenToolStripMenuItem1
         '
         Me.GreenToolStripMenuItem1.Name = "GreenToolStripMenuItem1"
-        Me.GreenToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.GreenToolStripMenuItem1.Size = New System.Drawing.Size(143, 22)
         Me.GreenToolStripMenuItem1.Text = "Green"
         '
         'YellowToolStripMenuItem1
         '
         Me.YellowToolStripMenuItem1.Name = "YellowToolStripMenuItem1"
-        Me.YellowToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.YellowToolStripMenuItem1.Size = New System.Drawing.Size(143, 22)
         Me.YellowToolStripMenuItem1.Text = "Yellow"
         '
         'NoHighlightToolStripMenuItem
         '
         Me.NoHighlightToolStripMenuItem.Name = "NoHighlightToolStripMenuItem"
-        Me.NoHighlightToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.NoHighlightToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
         Me.NoHighlightToolStripMenuItem.Text = "No Highlight"
         '
         'ToolStripButton4
@@ -498,53 +498,53 @@ Partial Class PresentWorks
         '
         Me.UndoToolStripMenuItem1.Name = "UndoToolStripMenuItem1"
         Me.UndoToolStripMenuItem1.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Z), System.Windows.Forms.Keys)
-        Me.UndoToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.UndoToolStripMenuItem1.Size = New System.Drawing.Size(164, 22)
         Me.UndoToolStripMenuItem1.Text = "&Undo"
         '
         'RedoToolStripMenuItem
         '
         Me.RedoToolStripMenuItem.Name = "RedoToolStripMenuItem"
         Me.RedoToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Y), System.Windows.Forms.Keys)
-        Me.RedoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.RedoToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.RedoToolStripMenuItem.Text = "&Redo"
         Me.RedoToolStripMenuItem.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
         '
         'ToolStripSeparator10
         '
         Me.ToolStripSeparator10.Name = "ToolStripSeparator10"
-        Me.ToolStripSeparator10.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator10.Size = New System.Drawing.Size(161, 6)
         '
         'CutToolStripMenuItem
         '
         Me.CutToolStripMenuItem.Name = "CutToolStripMenuItem"
         Me.CutToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.CutToolStripMenuItem.Text = "C&ut"
         '
         'CopyToolStripMenuItem
         '
         Me.CopyToolStripMenuItem.Name = "CopyToolStripMenuItem"
         Me.CopyToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.CopyToolStripMenuItem.Text = "&Copy"
         '
         'PasteToolStripMenuItem
         '
         Me.PasteToolStripMenuItem.Name = "PasteToolStripMenuItem"
         Me.PasteToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.V), System.Windows.Forms.Keys)
-        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.PasteToolStripMenuItem.Text = "&Paste"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(161, 6)
         '
         'SelectAllToolStripMenuItem
         '
         Me.SelectAllToolStripMenuItem.Name = "SelectAllToolStripMenuItem"
         Me.SelectAllToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.A), System.Windows.Forms.Keys)
-        Me.SelectAllToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SelectAllToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.SelectAllToolStripMenuItem.Text = "&Select All"
         '
         'InsertToolStripMenuItem
@@ -558,7 +558,7 @@ Partial Class PresentWorks
         '
         Me.PictureToolStripMenuItem.Name = "PictureToolStripMenuItem"
         Me.PictureToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.PictureToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PictureToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
         Me.PictureToolStripMenuItem.Text = "&Picture..."
         '
         'HomeshellOfficeworksToolStripMenuItem
@@ -571,13 +571,13 @@ Partial Class PresentWorks
         'AboutOfficeworksToolStripMenuItem
         '
         Me.AboutOfficeworksToolStripMenuItem.Name = "AboutOfficeworksToolStripMenuItem"
-        Me.AboutOfficeworksToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AboutOfficeworksToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
         Me.AboutOfficeworksToolStripMenuItem.Text = "About Officeworks"
         '
         'FeedbackToolStripMenuItem
         '
         Me.FeedbackToolStripMenuItem.Name = "FeedbackToolStripMenuItem"
-        Me.FeedbackToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FeedbackToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
         Me.FeedbackToolStripMenuItem.Text = "Feedback"
         '
         'msMain
@@ -617,7 +617,7 @@ Partial Class PresentWorks
         '
         'TableLayoutPanel2
         '
-        Me.TableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 790.0!))
@@ -652,7 +652,7 @@ Partial Class PresentWorks
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(784, 640)
         Me.TableLayoutPanel3.TabIndex = 0
         '
-        'DocWorks
+        'PresentWorks
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -665,7 +665,7 @@ Partial Class PresentWorks
         Me.MainMenuStrip = Me.msMain
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MinimumSize = New System.Drawing.Size(767, 0)
-        Me.Name = "DocWorks"
+        Me.Name = "PresentWorks"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "T1Leap DocWorks - New Document"
         Me.tsMain.ResumeLayout(False)
