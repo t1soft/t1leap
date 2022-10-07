@@ -57,4 +57,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="TextBox1.Text" xml:space="preserve">
+    <value>
+Uses the MIT License 
+
+Created the word processor using a tutorial I followed here
+(credit goes to that person!)
+https://www.youtube.com/watch?v=1gZB7eQfULk
+
+Font Styles, Highlighter, Text Color, and Font Switcher were from me
+Copyright (c) 2022 t1soft
+
+Printing controled by the VPKSoft.WinFormsRtfPrint NuGet Packege
+Copyright (c) 2020 Petteri Kautonen
+
+</value>
+  </data>
 </root>

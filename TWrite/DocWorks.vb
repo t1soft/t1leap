@@ -1,4 +1,6 @@
-﻿Public Class DocWorks
+﻿Imports VPKSoft.WinFormsRtfPrint
+
+Public Class DocWorks
 
 #Region "Variables and Functions"
 
@@ -16,6 +18,7 @@
     Dim DF15 As String = "Segoe UI"
     Dim DF23 As String = "Segoe UI Semibold"
     Dim DF4 As String = "Segoe UI Light"
+
 
 
     Function FontChanger(font)
@@ -66,7 +69,7 @@
     Private Sub Form1_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
 
         'Resize the text box
-        documentBox.Size = New Size(Me.ClientSize.Width, Me.ClientSize.Height - tsMain.Height - msMain.Height - 3)
+        documentBox.Size = New Size(Me.ClientSize.Width, Me.ClientSize.Height - toolstrip2.Height - Toolstrip1.Height - 3)
 
     End Sub
 
@@ -122,6 +125,7 @@
 #End Region
 
 #Region "Font Settings"
+
     Sub ToggleStyle(styleToToggle As FontStyle)
 
         'Backup the current font style
@@ -211,6 +215,8 @@
         'Change the font size
         documentBox.SelectionFont = New Font(documentBox.SelectionFont.FontFamily, newSize)
 
+
+
     End Sub
 
 #End Region
@@ -219,13 +225,13 @@
     Private Sub PictureToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PictureToolStripMenuItem.Click
 
         'Set the file filter
-        openFile.Filter = "Image Files|*.jpg;*.gif;*.png;*.tiff;*.bmp"
+        opendialog1.Filter = "Image Files|*.jpg;*.gif;*.png;*.tiff;*.bmp"
 
         'Check if the user presses OK button
-        If openFile.ShowDialog = Windows.Forms.DialogResult.OK Then
+        If opendialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
 
             'Load the picture
-            Dim img As Image = Image.FromFile(openFile.FileName)
+            Dim img As Image = Image.FromFile(opendialog1.FileName)
 
             'Copy into the clipboard and paste into textbox
             Clipboard.SetImage(img)
@@ -237,18 +243,18 @@
 
     Private Sub SaveAsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveAsToolStripMenuItem.Click
 
-        saveFile.Filter = "T1Leap DocWorks Documents|*.twdf"
+        savedialog1.Filter = "T1Leap DocWorks Documents|*.twdf"
 
         'Open the save file dialog
-        If saveFile.ShowDialog = Windows.Forms.DialogResult.OK Then
+        If savedialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
 
             'Save the file
-            documentBox.SaveFile(saveFile.FileName)
+            documentBox.SaveFile(savedialog1.FileName)
             change = False
 
 
             'Remember the filename
-            filename = saveFile.FileName
+            filename = savedialog1.FileName
 
             'Set the form's title to the filename
             Me.Text = "T1Leap DocWorks - " & IO.Path.GetFileName(filename)
@@ -318,17 +324,17 @@
         Checkchange()
 
         'Change the file filter
-        openFile.Filter = "T1Leap DocWorks Documents|*.twdf"
+        opendialog1.Filter = "T1Leap DocWorks Documents|*.twdf"
 
         'Show open file dialog
-        If openFile.ShowDialog = Windows.Forms.DialogResult.OK Then
+        If opendialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
 
             'Open the file
             DocumentReady = False
             DocumentSaved = False
-            documentBox.LoadFile(openFile.FileName)
+            documentBox.LoadFile(opendialog1.FileName)
             change = False
-            filename = openFile.FileName
+            filename = opendialog1.FileName
             Me.Text = "T1Leap DocWorks - " & IO.Path.GetFileName(filename)
             DocumentReady = True
             DocumentSaved = True
@@ -501,5 +507,21 @@
 
 
 #End Region
+
+#Region "Printing"
+
+    Private Sub PrintToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrintToolStripMenuItem.Click
+        documentBox.PrintWithDialog
+    End Sub
+
+    Private Sub documentBox_SelectionChanged(sender As Object, e As EventArgs) Handles documentBox.SelectionChanged
+
+    End Sub
+
+
+
+
+#End Region
+
 
 End Class

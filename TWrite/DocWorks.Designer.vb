@@ -23,7 +23,7 @@ Partial Class DocWorks
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DocWorks))
-        Me.tsMain = New System.Windows.Forms.ToolStrip()
+        Me.toolstrip2 = New System.Windows.Forms.ToolStrip()
         Me.tsbNew = New System.Windows.Forms.ToolStripButton()
         Me.tsbOpen = New System.Windows.Forms.ToolStripButton()
         Me.tsbSave = New System.Windows.Forms.ToolStripButton()
@@ -65,15 +65,17 @@ Partial Class DocWorks
         Me.ToolStripLabel5 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.documentBox = New System.Windows.Forms.RichTextBox()
-        Me.openFile = New System.Windows.Forms.OpenFileDialog()
-        Me.saveFile = New System.Windows.Forms.SaveFileDialog()
+        Me.opendialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.savedialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveAsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripSeparator12 = New System.Windows.Forms.ToolStripSeparator()
+        Me.PrintToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator11 = New System.Windows.Forms.ToolStripSeparator()
         Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UndoToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -89,27 +91,30 @@ Partial Class DocWorks
         Me.HomeshellOfficeworksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutOfficeworksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FeedbackToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.msMain = New System.Windows.Forms.MenuStrip()
+        Me.Toolstrip1 = New System.Windows.Forms.MenuStrip()
         Me.FONTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SegoeUIdefaultsystemFontToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TimesNewRomanessayCompatableFontToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ArialToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
-        Me.tsMain.SuspendLayout()
-        Me.msMain.SuspendLayout()
+        Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
+        Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.toolstrip2.SuspendLayout()
+        Me.Toolstrip1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.SuspendLayout()
         '
-        'tsMain
+        'toolstrip2
         '
-        Me.tsMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNew, Me.tsbOpen, Me.tsbSave, Me.ToolStripSeparator1, Me.tsbBold, Me.tsbItalic, Me.tsbUnderline, Me.tsbStrikeout, Me.fontSize, Me.ToolStripSeparator2, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripSeparator8, Me.ToolStripDropDownButton1, Me.ToolStripDropDownButton2, Me.ToolStripButton4, Me.ToolStripSeparator9, Me.ToolStripLabel1, Me.ToolStripSeparator7, Me.ToolStripLabel2, Me.ToolStripSeparator4, Me.ToolStripLabel3, Me.ToolStripSeparator6, Me.ToolStripLabel4, Me.ToolStripSeparator5, Me.ToolStripLabel5, Me.ToolStripSeparator3})
-        Me.tsMain.Location = New System.Drawing.Point(0, 24)
-        Me.tsMain.Name = "tsMain"
-        Me.tsMain.Size = New System.Drawing.Size(1048, 33)
-        Me.tsMain.TabIndex = 1
-        Me.tsMain.Text = "ToolStrip1"
+        Me.toolstrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNew, Me.tsbOpen, Me.tsbSave, Me.ToolStripSeparator1, Me.tsbBold, Me.tsbItalic, Me.tsbUnderline, Me.tsbStrikeout, Me.fontSize, Me.ToolStripSeparator2, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripSeparator8, Me.ToolStripDropDownButton1, Me.ToolStripDropDownButton2, Me.ToolStripButton4, Me.ToolStripSeparator9, Me.ToolStripLabel1, Me.ToolStripSeparator7, Me.ToolStripLabel2, Me.ToolStripSeparator4, Me.ToolStripLabel3, Me.ToolStripSeparator6, Me.ToolStripLabel4, Me.ToolStripSeparator5, Me.ToolStripLabel5, Me.ToolStripSeparator3})
+        Me.toolstrip2.Location = New System.Drawing.Point(0, 24)
+        Me.toolstrip2.Name = "toolstrip2"
+        Me.toolstrip2.Size = New System.Drawing.Size(1048, 33)
+        Me.toolstrip2.TabIndex = 1
+        Me.toolstrip2.Text = "ToolStrip1"
         '
         'tsbNew
         '
@@ -145,47 +150,43 @@ Partial Class DocWorks
         '
         'tsbBold
         '
-        Me.tsbBold.CheckOnClick = True
         Me.tsbBold.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.tsbBold.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.tsbBold.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.tsbBold.Image = CType(resources.GetObject("tsbBold.Image"), System.Drawing.Image)
         Me.tsbBold.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbBold.Name = "tsbBold"
-        Me.tsbBold.Size = New System.Drawing.Size(36, 30)
-        Me.tsbBold.Text = "Bold"
+        Me.tsbBold.Size = New System.Drawing.Size(23, 30)
+        Me.tsbBold.Text = "B"
         '
         'tsbItalic
         '
-        Me.tsbItalic.CheckOnClick = True
         Me.tsbItalic.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.tsbItalic.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
+        Me.tsbItalic.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
         Me.tsbItalic.Image = CType(resources.GetObject("tsbItalic.Image"), System.Drawing.Image)
         Me.tsbItalic.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbItalic.Name = "tsbItalic"
-        Me.tsbItalic.Size = New System.Drawing.Size(36, 30)
-        Me.tsbItalic.Text = "Italic"
+        Me.tsbItalic.Size = New System.Drawing.Size(23, 30)
+        Me.tsbItalic.Text = "I"
         '
         'tsbUnderline
         '
-        Me.tsbUnderline.CheckOnClick = True
         Me.tsbUnderline.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.tsbUnderline.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
+        Me.tsbUnderline.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
         Me.tsbUnderline.Image = CType(resources.GetObject("tsbUnderline.Image"), System.Drawing.Image)
         Me.tsbUnderline.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbUnderline.Name = "tsbUnderline"
-        Me.tsbUnderline.Size = New System.Drawing.Size(62, 30)
-        Me.tsbUnderline.Text = "Underline"
+        Me.tsbUnderline.Size = New System.Drawing.Size(23, 30)
+        Me.tsbUnderline.Text = "U"
         '
         'tsbStrikeout
         '
-        Me.tsbStrikeout.CheckOnClick = True
         Me.tsbStrikeout.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.tsbStrikeout.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point)
+        Me.tsbStrikeout.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point)
         Me.tsbStrikeout.Image = CType(resources.GetObject("tsbStrikeout.Image"), System.Drawing.Image)
         Me.tsbStrikeout.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbStrikeout.Name = "tsbStrikeout"
-        Me.tsbStrikeout.Size = New System.Drawing.Size(59, 30)
-        Me.tsbStrikeout.Text = "Strikeline"
+        Me.tsbStrikeout.Size = New System.Drawing.Size(23, 30)
+        Me.tsbStrikeout.Text = "S"
         '
         'fontSize
         '
@@ -409,14 +410,14 @@ Partial Class DocWorks
         Me.documentBox.TabIndex = 5
         Me.documentBox.Text = ""
         '
-        'openFile
+        'opendialog1
         '
-        Me.openFile.Title = "Select a file to open..."
+        Me.opendialog1.Title = "Select a file to open..."
         '
-        'saveFile
+        'savedialog1
         '
-        Me.saveFile.Filter = "RTF Document|*.rtf"
-        Me.saveFile.Title = "Select a file name to save..."
+        Me.savedialog1.Filter = "RTF Document|*.rtf"
+        Me.savedialog1.Title = "Select a file name to save..."
         '
         'TableLayoutPanel1
         '
@@ -441,7 +442,7 @@ Partial Class DocWorks
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.OpenToolStripMenuItem, Me.SaveToolStripMenuItem, Me.SaveAsToolStripMenuItem, Me.ToolStripMenuItem1, Me.QuitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.OpenToolStripMenuItem, Me.SaveToolStripMenuItem, Me.SaveAsToolStripMenuItem, Me.ToolStripSeparator12, Me.PrintToolStripMenuItem, Me.ToolStripSeparator11, Me.QuitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(49, 20)
         Me.FileToolStripMenuItem.Text = "&F I L E"
@@ -475,10 +476,22 @@ Partial Class DocWorks
         Me.SaveAsToolStripMenuItem.Size = New System.Drawing.Size(195, 22)
         Me.SaveAsToolStripMenuItem.Text = "Save &As..."
         '
-        'ToolStripMenuItem1
+        'ToolStripSeparator12
         '
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(192, 6)
+        Me.ToolStripSeparator12.Name = "ToolStripSeparator12"
+        Me.ToolStripSeparator12.Size = New System.Drawing.Size(192, 6)
+        '
+        'PrintToolStripMenuItem
+        '
+        Me.PrintToolStripMenuItem.Name = "PrintToolStripMenuItem"
+        Me.PrintToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
+        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(195, 22)
+        Me.PrintToolStripMenuItem.Text = "&Print "
+        '
+        'ToolStripSeparator11
+        '
+        Me.ToolStripSeparator11.Name = "ToolStripSeparator11"
+        Me.ToolStripSeparator11.Size = New System.Drawing.Size(192, 6)
         '
         'QuitToolStripMenuItem
         '
@@ -498,53 +511,53 @@ Partial Class DocWorks
         '
         Me.UndoToolStripMenuItem1.Name = "UndoToolStripMenuItem1"
         Me.UndoToolStripMenuItem1.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Z), System.Windows.Forms.Keys)
-        Me.UndoToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.UndoToolStripMenuItem1.Size = New System.Drawing.Size(164, 22)
         Me.UndoToolStripMenuItem1.Text = "&Undo"
         '
         'RedoToolStripMenuItem
         '
         Me.RedoToolStripMenuItem.Name = "RedoToolStripMenuItem"
         Me.RedoToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Y), System.Windows.Forms.Keys)
-        Me.RedoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.RedoToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.RedoToolStripMenuItem.Text = "&Redo"
         Me.RedoToolStripMenuItem.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
         '
         'ToolStripSeparator10
         '
         Me.ToolStripSeparator10.Name = "ToolStripSeparator10"
-        Me.ToolStripSeparator10.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator10.Size = New System.Drawing.Size(161, 6)
         '
         'CutToolStripMenuItem
         '
         Me.CutToolStripMenuItem.Name = "CutToolStripMenuItem"
         Me.CutToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.CutToolStripMenuItem.Text = "C&ut"
         '
         'CopyToolStripMenuItem
         '
         Me.CopyToolStripMenuItem.Name = "CopyToolStripMenuItem"
         Me.CopyToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.CopyToolStripMenuItem.Text = "&Copy"
         '
         'PasteToolStripMenuItem
         '
         Me.PasteToolStripMenuItem.Name = "PasteToolStripMenuItem"
         Me.PasteToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.V), System.Windows.Forms.Keys)
-        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.PasteToolStripMenuItem.Text = "&Paste"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(161, 6)
         '
         'SelectAllToolStripMenuItem
         '
         Me.SelectAllToolStripMenuItem.Name = "SelectAllToolStripMenuItem"
         Me.SelectAllToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.A), System.Windows.Forms.Keys)
-        Me.SelectAllToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SelectAllToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.SelectAllToolStripMenuItem.Text = "&Select All"
         '
         'InsertToolStripMenuItem
@@ -571,24 +584,24 @@ Partial Class DocWorks
         'AboutOfficeworksToolStripMenuItem
         '
         Me.AboutOfficeworksToolStripMenuItem.Name = "AboutOfficeworksToolStripMenuItem"
-        Me.AboutOfficeworksToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AboutOfficeworksToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
         Me.AboutOfficeworksToolStripMenuItem.Text = "About Officeworks"
         '
         'FeedbackToolStripMenuItem
         '
         Me.FeedbackToolStripMenuItem.Name = "FeedbackToolStripMenuItem"
-        Me.FeedbackToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FeedbackToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
         Me.FeedbackToolStripMenuItem.Text = "Feedback"
         '
-        'msMain
+        'Toolstrip1
         '
-        Me.msMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.InsertToolStripMenuItem, Me.FONTToolStripMenuItem, Me.HomeshellOfficeworksToolStripMenuItem})
-        Me.msMain.Location = New System.Drawing.Point(0, 0)
-        Me.msMain.Name = "msMain"
-        Me.msMain.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.msMain.Size = New System.Drawing.Size(1048, 24)
-        Me.msMain.TabIndex = 0
-        Me.msMain.Text = "MenuStrip1"
+        Me.Toolstrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.InsertToolStripMenuItem, Me.FONTToolStripMenuItem, Me.HomeshellOfficeworksToolStripMenuItem})
+        Me.Toolstrip1.Location = New System.Drawing.Point(0, 0)
+        Me.Toolstrip1.Name = "Toolstrip1"
+        Me.Toolstrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
+        Me.Toolstrip1.Size = New System.Drawing.Size(1048, 24)
+        Me.Toolstrip1.TabIndex = 0
+        Me.Toolstrip1.Text = "MenuStrip1"
         '
         'FONTToolStripMenuItem
         '
@@ -652,6 +665,24 @@ Partial Class DocWorks
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(784, 640)
         Me.TableLayoutPanel3.TabIndex = 0
         '
+        'PrintDialog1
+        '
+        Me.PrintDialog1.UseEXDialog = True
+        '
+        'PrintPreviewDialog1
+        '
+        Me.PrintPreviewDialog1.AutoScrollMargin = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.AutoScrollMinSize = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.ClientSize = New System.Drawing.Size(400, 300)
+        Me.PrintPreviewDialog1.Enabled = True
+        Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
+        Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        Me.PrintPreviewDialog1.Visible = False
+        '
+        'PrintDocument1
+        '
+        Me.PrintDocument1.DocumentName = "documentBox"
+        '
         'DocWorks
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -659,19 +690,19 @@ Partial Class DocWorks
         Me.ClientSize = New System.Drawing.Size(1048, 737)
         Me.Controls.Add(Me.TableLayoutPanel2)
         Me.Controls.Add(Me.TableLayoutPanel1)
-        Me.Controls.Add(Me.tsMain)
-        Me.Controls.Add(Me.msMain)
+        Me.Controls.Add(Me.toolstrip2)
+        Me.Controls.Add(Me.Toolstrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MainMenuStrip = Me.msMain
+        Me.MainMenuStrip = Me.Toolstrip1
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MinimumSize = New System.Drawing.Size(767, 0)
         Me.Name = "DocWorks"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "T1Leap DocWorks - New Document"
-        Me.tsMain.ResumeLayout(False)
-        Me.tsMain.PerformLayout()
-        Me.msMain.ResumeLayout(False)
-        Me.msMain.PerformLayout()
+        Me.toolstrip2.ResumeLayout(False)
+        Me.toolstrip2.PerformLayout()
+        Me.Toolstrip1.ResumeLayout(False)
+        Me.Toolstrip1.PerformLayout()
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
         Me.TableLayoutPanel3.ResumeLayout(False)
@@ -679,10 +710,10 @@ Partial Class DocWorks
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents tsMain As System.Windows.Forms.ToolStrip
+    Friend WithEvents toolstrip2 As System.Windows.Forms.ToolStrip
     Friend WithEvents documentBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents openFile As System.Windows.Forms.OpenFileDialog
-    Friend WithEvents saveFile As System.Windows.Forms.SaveFileDialog
+    Friend WithEvents opendialog1 As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents savedialog1 As System.Windows.Forms.SaveFileDialog
     Friend WithEvents tsbOpen As System.Windows.Forms.ToolStripButton
     Friend WithEvents tsbSave As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
@@ -712,7 +743,6 @@ Partial Class DocWorks
     Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SaveToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SaveAsToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem1 As ToolStripSeparator
     Friend WithEvents QuitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EditToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CutToolStripMenuItem As ToolStripMenuItem
@@ -724,7 +754,7 @@ Partial Class DocWorks
     Friend WithEvents PictureToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HomeshellOfficeworksToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutOfficeworksToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents msMain As MenuStrip
+    Friend WithEvents Toolstrip1 As MenuStrip
     Friend WithEvents FeedbackToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
@@ -752,4 +782,10 @@ Partial Class DocWorks
     Friend WithEvents UndoToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents RedoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator10 As ToolStripSeparator
+    Friend WithEvents ToolStripSeparator11 As ToolStripSeparator
+    Friend WithEvents PrintDialog1 As PrintDialog
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents ToolStripSeparator12 As ToolStripSeparator
+    Friend WithEvents PrintToolStripMenuItem As ToolStripMenuItem
 End Class
