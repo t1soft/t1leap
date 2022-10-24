@@ -99,7 +99,6 @@ Partial Class DocWorks
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
-        Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.toolstrip2.SuspendLayout()
         Me.Toolstrip1.SuspendLayout()
@@ -571,7 +570,7 @@ Partial Class DocWorks
         '
         Me.PictureToolStripMenuItem.Name = "PictureToolStripMenuItem"
         Me.PictureToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.PictureToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PictureToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
         Me.PictureToolStripMenuItem.Text = "&Picture..."
         '
         'HomeshellOfficeworksToolStripMenuItem
@@ -668,16 +667,6 @@ Partial Class DocWorks
         'PrintDialog1
         '
         Me.PrintDialog1.UseEXDialog = True
-        '
-        'PrintPreviewDialog1
-        '
-        Me.PrintPreviewDialog1.AutoScrollMargin = New System.Drawing.Size(0, 0)
-        Me.PrintPreviewDialog1.AutoScrollMinSize = New System.Drawing.Size(0, 0)
-        Me.PrintPreviewDialog1.ClientSize = New System.Drawing.Size(400, 300)
-        Me.PrintPreviewDialog1.Enabled = True
-        Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
-        Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
-        Me.PrintPreviewDialog1.Visible = False
         '
         'PrintDocument1
         '
@@ -784,7 +773,6 @@ Partial Class DocWorks
     Friend WithEvents ToolStripSeparator10 As ToolStripSeparator
     Friend WithEvents ToolStripSeparator11 As ToolStripSeparator
     Friend WithEvents PrintDialog1 As PrintDialog
-    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
     Friend WithEvents ToolStripSeparator12 As ToolStripSeparator
     Friend WithEvents PrintToolStripMenuItem As ToolStripMenuItem
