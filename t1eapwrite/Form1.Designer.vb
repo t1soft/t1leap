@@ -107,6 +107,8 @@ Partial Class Form1
         Me.save_dialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.SoftwareLicenceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BuildNumberToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
@@ -242,15 +244,16 @@ Partial Class Form1
         '
         'HelpToolStripMenuItem
         '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem, Me.SoftwareLicenceToolStripMenuItem})
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
         Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'AboutToolStripMenuItem
         '
+        Me.AboutToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BuildNumberToolStripMenuItem})
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'ToolStrip1
@@ -709,6 +712,18 @@ Partial Class Form1
         '
         Me.PrintDialog1.UseEXDialog = True
         '
+        'SoftwareLicenceToolStripMenuItem
+        '
+        Me.SoftwareLicenceToolStripMenuItem.Name = "SoftwareLicenceToolStripMenuItem"
+        Me.SoftwareLicenceToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.SoftwareLicenceToolStripMenuItem.Text = "Software Licence "
+        '
+        'BuildNumberToolStripMenuItem
+        '
+        Me.BuildNumberToolStripMenuItem.Name = "BuildNumberToolStripMenuItem"
+        Me.BuildNumberToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BuildNumberToolStripMenuItem.Text = "Build 10242022A"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -820,4 +835,6 @@ Partial Class Form1
     Friend WithEvents ToolStripSeparator14 As ToolStripSeparator
     Friend WithEvents ToolStripLabel5 As ToolStripLabel
     Friend WithEvents ToolStripSeparator15 As ToolStripSeparator
+    Friend WithEvents SoftwareLicenceToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BuildNumberToolStripMenuItem As ToolStripMenuItem
 End Class
