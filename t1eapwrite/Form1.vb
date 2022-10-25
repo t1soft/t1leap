@@ -384,10 +384,6 @@ Public Class Form1
         documentBox.SelectionColor = Color.Brown
     End Sub
 
-    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-
-    End Sub
-
     Private Sub SoftwareLicenceToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SoftwareLicenceToolStripMenuItem.Click
         Form2.Show()
     End Sub
