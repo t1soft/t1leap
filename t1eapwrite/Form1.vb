@@ -127,18 +127,14 @@ Public Class Form1
         If Edited = True Then
             Dim result As DialogResult = MessageBox.Show("Document has been Modified, Do you Want to Save?", "Question", MessageBoxButtons.YesNoCancel)
             If result = DialogResult.Cancel Then
-
+                e.Cancel = True
             ElseIf result = DialogResult.No Then
-                Me.Close()
+
             ElseIf result = DialogResult.Yes Then
                 savebutton1.PerformClick()
-                Me.Close()
             End If
         End If
 
-        If Edited = False Then
-            Me.Close()
-        End If
     End Sub
 
     Private Sub PrintToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrintToolStripMenuItem.Click
@@ -202,6 +198,15 @@ Public Class Form1
         Catch ex As Exception
             MsgBox("An Error has Occured While Applying Font", "Font Error", MessageBoxIcon.Error)
         End Try
+        Try
+            ToolStripLabel1.Font = New Font(CurrentFont, "11")
+            ToolStripLabel2.Font = New Font(CurrentFont, "17")
+            ToolStripLabel3.Font = New Font(CurrentFont, "15")
+            ToolStripLabel4.Font = New Font(CurrentFont, "13")
+            ToolStripLabel5.Font = New Font(CurrentFont, "9")
+        Catch ex As Exception
+            MsgBox("An Error has Occured While Applying Font Preview", "Font Preview Error", MessageBoxIcon.Error)
+        End Try
     End Sub
 
     Private Sub sizeselector_TextChanged(sender As Object, e As EventArgs) Handles sizeselector.TextChanged
@@ -249,6 +254,7 @@ Public Class Form1
 
     End Sub
 
+
     Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs) Handles ToolStripButton4.Click
         StyleChanger(FontStyle.Bold)
     End Sub
@@ -265,21 +271,7 @@ Public Class Form1
         StyleChanger(FontStyle.Strikeout)
     End Sub
 
-    Private Sub textstyle_TextChanged(sender As Object, e As EventArgs) Handles textstyle.TextChanged
-        If textstyle.Text = "Normal Text (11)" Then
-            documentBox.SelectionFont = New Font(CurrentFont, 11)
-        ElseIf textstyle.Text = "Title (20)" Then
-            documentBox.SelectionFont = New Font(CurrentFont, 11)
-        ElseIf textstyle.Text = "Heading 1 (18)" Then
-            documentBox.SelectionFont = New Font(CurrentFont, 11)
-        ElseIf textstyle.Text = "Heading 2 (16)" Then
-            documentBox.SelectionFont = New Font(CurrentFont, 11)
-        ElseIf textstyle.Text = "Heading 3 (14)" Then
-            documentBox.SelectionFont = New Font(CurrentFont, 11)
-        ElseIf textstyle.Text = "Subnote (10)" Then
-            documentBox.SelectionFont = New Font(CurrentFont, 11)
-        End If
-    End Sub
+
 
     Private Sub ToolStripButton8_Click(sender As Object, e As EventArgs) Handles ToolStripButton8.Click
         If StatusBullet = 0 Then
@@ -303,6 +295,25 @@ Public Class Form1
         documentBox.SelectionAlignment = HorizontalAlignment.Right
     End Sub
 
+    Private Sub ToolStripLabel1_Click(sender As Object, e As EventArgs) Handles ToolStripLabel1.Click
+        documentBox.SelectionFont = New Font(CurrentFont, "11")
+    End Sub
+
+    Private Sub ToolStripLabel2_Click(sender As Object, e As EventArgs) Handles ToolStripLabel2.Click
+        documentBox.SelectionFont = New Font(CurrentFont, "17")
+    End Sub
+
+    Private Sub ToolStripLabel3_Click(sender As Object, e As EventArgs) Handles ToolStripLabel3.Click
+        documentBox.SelectionFont = New Font(CurrentFont, "15")
+    End Sub
+
+    Private Sub ToolStripLabel4_Click(sender As Object, e As EventArgs) Handles ToolStripLabel4.Click
+        documentBox.SelectionFont = New Font(CurrentFont, "13")
+    End Sub
+
+    Private Sub ToolStripLabel5_Click(sender As Object, e As EventArgs) Handles ToolStripLabel5.Click
+        documentBox.SelectionFont = New Font(CurrentFont, "9")
+    End Sub
 
 #End Region
 
@@ -372,6 +383,11 @@ Public Class Form1
     Private Sub BrownToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BrownToolStripMenuItem.Click
         documentBox.SelectionColor = Color.Brown
     End Sub
+
+
+
+
+
 
 
 #End Region
