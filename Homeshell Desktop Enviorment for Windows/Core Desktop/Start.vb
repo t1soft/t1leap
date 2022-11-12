@@ -6,8 +6,8 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        DocWorks.WindowState = FormWindowState.Normal
-        DocWorks.Show()
+        leapwrite.WindowState = FormWindowState.Normal
+        leapwrite.Show()
         Me.Close()
     End Sub
 
@@ -43,8 +43,8 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        SheetWorks.WindowState = FormWindowState.Normal
-        SheetWorks.Show()
+        leaptable.WindowState = FormWindowState.Normal
+        leaptable.Show()
         Me.Close()
     End Sub
 End Class

@@ -3,13 +3,13 @@
 Public Class Dialog1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         For Each form In My.Application.OpenForms
-            If (form.name = DocWorks.Name) Then
-                DocWorks.Show()
+            If (form.name = leapwrite.Name) Then
+                leapwrite.Show()
             End If
         Next
         For Each form In My.Application.OpenForms
-            If (form.name = SheetWorks.Name) Then
-                SheetWorks.Show()
+            If (form.name = leaptable.Name) Then
+                leaptable.Show()
 
             End If
         Next

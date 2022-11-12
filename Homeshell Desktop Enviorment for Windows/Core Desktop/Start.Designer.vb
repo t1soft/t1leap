@@ -72,7 +72,7 @@ Partial Class Start
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(256, 76)
         Me.Button3.TabIndex = 13
-        Me.Button3.Text = "TData"
+        Me.Button3.Text = "leaptable"
         Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.Button3.UseVisualStyleBackColor = False
         '
@@ -85,7 +85,7 @@ Partial Class Start
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(256, 70)
         Me.Button2.TabIndex = 12
-        Me.Button2.Text = "TDoc"
+        Me.Button2.Text = "leapwrite"
         Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.Button2.UseVisualStyleBackColor = False
         '

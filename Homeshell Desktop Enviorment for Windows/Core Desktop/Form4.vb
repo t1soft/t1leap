@@ -11,8 +11,8 @@ Public Class Form4
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Form1.Close()
-        DocWorks.Close()
-        SheetWorks.Close()
+        leapwrite.Close()
+        leaptable.Close()
         Start.Close()
         Tonline.Close()
         WebBrowser.Close()
@@ -26,8 +26,8 @@ Public Class Form4
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         If Label3.Text = "none" Or Label3.Text = " " Then
             Form1.Hide()
-            DocWorks.Hide()
-            SheetWorks.Hide()
+            leapwrite.Hide()
+            leaptable.Hide()
             Start.Hide()
             Tonline.Hide()
             WebBrowser.Hide()
@@ -38,8 +38,8 @@ Public Class Form4
             Me.Hide()
         Else
             Form1.Hide()
-            DocWorks.Hide()
-            SheetWorks.Hide()
+            leapwrite.Hide()
+            leaptable.Hide()
             Start.Hide()
             Tonline.Hide()
             WebBrowser.Hide()

@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1108.44" />
+    <PackageReference Include="VPKSoft.WinFormsRtfPrint" Version="1.0.0.3" />
   </ItemGroup>
 
   <ItemGroup>

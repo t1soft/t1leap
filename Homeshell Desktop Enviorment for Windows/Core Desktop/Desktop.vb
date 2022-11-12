@@ -32,8 +32,8 @@
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Form1.Hide()
-        DocWorks.Hide()
-        SheetWorks.Hide()
+        leapwrite.Hide()
+        leaptable.Hide()
         Start.Hide()
         Tonline.Hide()
         WebBrowser.Hide()
