@@ -34,9 +34,9 @@ Partial Class Form1
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label1.Location = New System.Drawing.Point(12, 135)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(132, 32)
+        Me.Label1.Size = New System.Drawing.Size(133, 32)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "t1leapwrite"
+        Me.Label1.Text = "t1leaptable"
         '
         'Label2
         '
@@ -57,7 +57,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.BackColor = System.Drawing.Color.YellowGreen
         Me.ClientSize = New System.Drawing.Size(331, 312)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label2)

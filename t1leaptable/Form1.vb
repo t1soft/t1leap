@@ -4,7 +4,7 @@
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         TimeElapsed = TimeElapsed + 1
         If TimeElapsed = 2 Then
-            leapwrite.Show()
+            leaptable.Show()
             Me.Close()
         End If
     End Sub
