@@ -57,6 +57,7 @@ Public Class leaptable
                 sbTaRtf.Append("}")
                 documentBox.Rtf = sbTaRtf.ToString()
                 documentname1.Text = "New Document"
+                Edited = False
             End If
         End If
         If Edited = False Then

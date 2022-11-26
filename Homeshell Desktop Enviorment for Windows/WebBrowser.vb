@@ -146,6 +146,7 @@ Public Class WebBrowser
         End If
     End Sub
 
+
 #End Region
     'This is for the WebBox Browser Controls (Go Back, Go Forward, Refresh, and Navigate) For Tab 3
 End Class

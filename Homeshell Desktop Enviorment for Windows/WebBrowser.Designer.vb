@@ -27,6 +27,12 @@ Partial Class WebBrowser
         Me.WebboxToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GiveFeedbackToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TabModesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NormalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StudyModeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SourcesArticlesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NoteAppAnd2SourcesArticlesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MultitaskingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WebView21 = New Microsoft.Web.WebView2.WinForms.WebView2()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
@@ -52,12 +58,6 @@ Partial Class WebBrowser
         Me.ToolStripButton11 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripTextBox3 = New System.Windows.Forms.ToolStripTextBox()
         Me.ToolStripButton12 = New System.Windows.Forms.ToolStripButton()
-        Me.TabModesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NormalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.StudyModeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MultitaskingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SourcesArticlesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NoteAppAnd2SourcesArticlesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.WebView21, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
@@ -99,6 +99,44 @@ Partial Class WebBrowser
         Me.GiveFeedbackToolStripMenuItem.Name = "GiveFeedbackToolStripMenuItem"
         Me.GiveFeedbackToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
         Me.GiveFeedbackToolStripMenuItem.Text = "Give Feedback"
+        '
+        'TabModesToolStripMenuItem
+        '
+        Me.TabModesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NormalToolStripMenuItem, Me.StudyModeToolStripMenuItem, Me.MultitaskingToolStripMenuItem})
+        Me.TabModesToolStripMenuItem.Name = "TabModesToolStripMenuItem"
+        Me.TabModesToolStripMenuItem.Size = New System.Drawing.Size(76, 20)
+        Me.TabModesToolStripMenuItem.Text = "Tab Modes"
+        '
+        'NormalToolStripMenuItem
+        '
+        Me.NormalToolStripMenuItem.Name = "NormalToolStripMenuItem"
+        Me.NormalToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
+        Me.NormalToolStripMenuItem.Text = "Normal"
+        '
+        'StudyModeToolStripMenuItem
+        '
+        Me.StudyModeToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SourcesArticlesToolStripMenuItem, Me.NoteAppAnd2SourcesArticlesToolStripMenuItem})
+        Me.StudyModeToolStripMenuItem.Name = "StudyModeToolStripMenuItem"
+        Me.StudyModeToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
+        Me.StudyModeToolStripMenuItem.Text = "Study Mode"
+        '
+        'SourcesArticlesToolStripMenuItem
+        '
+        Me.SourcesArticlesToolStripMenuItem.Name = "SourcesArticlesToolStripMenuItem"
+        Me.SourcesArticlesToolStripMenuItem.Size = New System.Drawing.Size(245, 22)
+        Me.SourcesArticlesToolStripMenuItem.Text = "3 Sources/Articles"
+        '
+        'NoteAppAnd2SourcesArticlesToolStripMenuItem
+        '
+        Me.NoteAppAnd2SourcesArticlesToolStripMenuItem.Name = "NoteAppAnd2SourcesArticlesToolStripMenuItem"
+        Me.NoteAppAnd2SourcesArticlesToolStripMenuItem.Size = New System.Drawing.Size(245, 22)
+        Me.NoteAppAnd2SourcesArticlesToolStripMenuItem.Text = "Note App and 2 Sources/Articles"
+        '
+        'MultitaskingToolStripMenuItem
+        '
+        Me.MultitaskingToolStripMenuItem.Name = "MultitaskingToolStripMenuItem"
+        Me.MultitaskingToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
+        Me.MultitaskingToolStripMenuItem.Text = "Multitasking"
         '
         'WebView21
         '
@@ -339,44 +377,6 @@ Partial Class WebBrowser
         Me.ToolStripButton12.Name = "ToolStripButton12"
         Me.ToolStripButton12.Size = New System.Drawing.Size(29, 22)
         Me.ToolStripButton12.Text = "Go!"
-        '
-        'TabModesToolStripMenuItem
-        '
-        Me.TabModesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NormalToolStripMenuItem, Me.StudyModeToolStripMenuItem, Me.MultitaskingToolStripMenuItem})
-        Me.TabModesToolStripMenuItem.Name = "TabModesToolStripMenuItem"
-        Me.TabModesToolStripMenuItem.Size = New System.Drawing.Size(76, 20)
-        Me.TabModesToolStripMenuItem.Text = "Tab Modes"
-        '
-        'NormalToolStripMenuItem
-        '
-        Me.NormalToolStripMenuItem.Name = "NormalToolStripMenuItem"
-        Me.NormalToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
-        Me.NormalToolStripMenuItem.Text = "Normal"
-        '
-        'StudyModeToolStripMenuItem
-        '
-        Me.StudyModeToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SourcesArticlesToolStripMenuItem, Me.NoteAppAnd2SourcesArticlesToolStripMenuItem})
-        Me.StudyModeToolStripMenuItem.Name = "StudyModeToolStripMenuItem"
-        Me.StudyModeToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
-        Me.StudyModeToolStripMenuItem.Text = "Study Mode"
-        '
-        'MultitaskingToolStripMenuItem
-        '
-        Me.MultitaskingToolStripMenuItem.Name = "MultitaskingToolStripMenuItem"
-        Me.MultitaskingToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
-        Me.MultitaskingToolStripMenuItem.Text = "Multitasking"
-        '
-        'SourcesArticlesToolStripMenuItem
-        '
-        Me.SourcesArticlesToolStripMenuItem.Name = "SourcesArticlesToolStripMenuItem"
-        Me.SourcesArticlesToolStripMenuItem.Size = New System.Drawing.Size(245, 22)
-        Me.SourcesArticlesToolStripMenuItem.Text = "3 Sources/Articles"
-        '
-        'NoteAppAnd2SourcesArticlesToolStripMenuItem
-        '
-        Me.NoteAppAnd2SourcesArticlesToolStripMenuItem.Name = "NoteAppAnd2SourcesArticlesToolStripMenuItem"
-        Me.NoteAppAnd2SourcesArticlesToolStripMenuItem.Size = New System.Drawing.Size(245, 22)
-        Me.NoteAppAnd2SourcesArticlesToolStripMenuItem.Text = "Note App and 2 Sources/Articles"
         '
         'WebBrowser
         '

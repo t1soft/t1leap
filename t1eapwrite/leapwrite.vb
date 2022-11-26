@@ -43,6 +43,7 @@ Public Class leapwrite
         If Edited = False Then
             documentBox.Clear()
             documentname1.Text = "New Document"
+            Edited = False
         End If
 
 
@@ -402,5 +403,7 @@ Public Class leapwrite
 
 
 
+
 #End Region
+
 End Class

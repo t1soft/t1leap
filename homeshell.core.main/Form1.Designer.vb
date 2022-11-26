@@ -44,6 +44,7 @@ Partial Class Form1
         Me.CheckBox5 = New System.Windows.Forms.CheckBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.MenuStrip2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -249,12 +250,23 @@ Partial Class Form1
         Me.CheckBox8.TabIndex = 23
         Me.CheckBox8.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(0, 171)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(176, 60)
+        Me.Label1.TabIndex = 24
+        Me.Label1.Text = "t1leapbar's discontinuation date" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "is on December 1st, 2022." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Thanks for using t" &
+    "1leapbar."
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightSkyBlue
         Me.ClientSize = New System.Drawing.Size(184, 781)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button4)
@@ -303,4 +315,5 @@ Partial Class Form1
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents CheckBox8 As CheckBox
     Friend WithEvents FeedbackToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Label1 As Label
 End Class

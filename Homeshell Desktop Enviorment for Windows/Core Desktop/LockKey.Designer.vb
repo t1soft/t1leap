@@ -133,6 +133,7 @@ Partial Class LockKey
         Me.Button1.Size = New System.Drawing.Size(64, 23)
         Me.Button1.TabIndex = 15
         Me.Button1.Text = "Un-Lock"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox1

@@ -43,6 +43,8 @@ Partial Class leapwrite
         Me.PictureToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BuildNumberToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SoftwareLicenceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.NewToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.OpenToolStripButton = New System.Windows.Forms.ToolStripButton()
@@ -107,8 +109,6 @@ Partial Class leapwrite
         Me.save_dialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
-        Me.SoftwareLicenceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BuildNumberToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
@@ -159,31 +159,31 @@ Partial Class leapwrite
         'newbutton1
         '
         Me.newbutton1.Name = "newbutton1"
-        Me.newbutton1.Size = New System.Drawing.Size(114, 22)
+        Me.newbutton1.Size = New System.Drawing.Size(180, 22)
         Me.newbutton1.Text = "New"
         '
         'openbutton1
         '
         Me.openbutton1.Name = "openbutton1"
-        Me.openbutton1.Size = New System.Drawing.Size(114, 22)
+        Me.openbutton1.Size = New System.Drawing.Size(180, 22)
         Me.openbutton1.Text = "Open"
         '
         'savebutton1
         '
         Me.savebutton1.Name = "savebutton1"
-        Me.savebutton1.Size = New System.Drawing.Size(114, 22)
+        Me.savebutton1.Size = New System.Drawing.Size(180, 22)
         Me.savebutton1.Text = "Save"
         '
         'saveasbutton1
         '
         Me.saveasbutton1.Name = "saveasbutton1"
-        Me.saveasbutton1.Size = New System.Drawing.Size(114, 22)
+        Me.saveasbutton1.Size = New System.Drawing.Size(180, 22)
         Me.saveasbutton1.Text = "Save As"
         '
         'PrintToolStripMenuItem
         '
         Me.PrintToolStripMenuItem.Name = "PrintToolStripMenuItem"
-        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(114, 22)
+        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PrintToolStripMenuItem.Text = "Print"
         '
         'EditToolStripMenuItem
@@ -196,37 +196,37 @@ Partial Class leapwrite
         'UndoToolStripMenuItem
         '
         Me.UndoToolStripMenuItem.Name = "UndoToolStripMenuItem"
-        Me.UndoToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.UndoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.UndoToolStripMenuItem.Text = "Undo"
         '
         'RedoToolStripMenuItem
         '
         Me.RedoToolStripMenuItem.Name = "RedoToolStripMenuItem"
-        Me.RedoToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.RedoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.RedoToolStripMenuItem.Text = "Redo"
         '
         'SelectAllToolStripMenuItem
         '
         Me.SelectAllToolStripMenuItem.Name = "SelectAllToolStripMenuItem"
-        Me.SelectAllToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.SelectAllToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.SelectAllToolStripMenuItem.Text = "Select All"
         '
         'CutToolStripMenuItem
         '
         Me.CutToolStripMenuItem.Name = "CutToolStripMenuItem"
-        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.CutToolStripMenuItem.Text = "Cut"
         '
         'CopyToolStripMenuItem
         '
         Me.CopyToolStripMenuItem.Name = "CopyToolStripMenuItem"
-        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.CopyToolStripMenuItem.Text = "Copy"
         '
         'PasteToolStripMenuItem
         '
         Me.PasteToolStripMenuItem.Name = "PasteToolStripMenuItem"
-        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PasteToolStripMenuItem.Text = "Paste"
         '
         'InsertToolStripMenuItem
@@ -239,7 +239,7 @@ Partial Class leapwrite
         'PictureToolStripMenuItem
         '
         Me.PictureToolStripMenuItem.Name = "PictureToolStripMenuItem"
-        Me.PictureToolStripMenuItem.Size = New System.Drawing.Size(111, 22)
+        Me.PictureToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PictureToolStripMenuItem.Text = "Picture"
         '
         'HelpToolStripMenuItem
@@ -253,8 +253,20 @@ Partial Class leapwrite
         '
         Me.AboutToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BuildNumberToolStripMenuItem})
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AboutToolStripMenuItem.Text = "About"
+        '
+        'BuildNumberToolStripMenuItem
+        '
+        Me.BuildNumberToolStripMenuItem.Name = "BuildNumberToolStripMenuItem"
+        Me.BuildNumberToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
+        Me.BuildNumberToolStripMenuItem.Text = "Build 10242022A"
+        '
+        'SoftwareLicenceToolStripMenuItem
+        '
+        Me.SoftwareLicenceToolStripMenuItem.Name = "SoftwareLicenceToolStripMenuItem"
+        Me.SoftwareLicenceToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SoftwareLicenceToolStripMenuItem.Text = "Software Licence "
         '
         'ToolStrip1
         '
@@ -712,19 +724,7 @@ Partial Class leapwrite
         '
         Me.PrintDialog1.UseEXDialog = True
         '
-        'SoftwareLicenceToolStripMenuItem
-        '
-        Me.SoftwareLicenceToolStripMenuItem.Name = "SoftwareLicenceToolStripMenuItem"
-        Me.SoftwareLicenceToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
-        Me.SoftwareLicenceToolStripMenuItem.Text = "Software Licence "
-        '
-        'BuildNumberToolStripMenuItem
-        '
-        Me.BuildNumberToolStripMenuItem.Name = "BuildNumberToolStripMenuItem"
-        Me.BuildNumberToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.BuildNumberToolStripMenuItem.Text = "Build 10242022A"
-        '
-        'Form1
+        'leapwrite
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -735,7 +735,7 @@ Partial Class leapwrite
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "Form1"
+        Me.Name = "leapwrite"
         Me.Text = "t1leapwrite"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

@@ -113,6 +113,7 @@ Partial Class LockNo
         Me.Button1.Size = New System.Drawing.Size(289, 23)
         Me.Button1.TabIndex = 14
         Me.Button1.Text = "Click here to Un-Lock."
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label3
