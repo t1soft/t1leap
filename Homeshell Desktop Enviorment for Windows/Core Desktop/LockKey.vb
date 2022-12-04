@@ -33,7 +33,6 @@ Public Class LockKey
             Application.Exit()
             End
         Else
-            Incorrect()
             Label1.Text = "The Password is Incorrect. You will need to enter it to exit the environment."
         End If
 
