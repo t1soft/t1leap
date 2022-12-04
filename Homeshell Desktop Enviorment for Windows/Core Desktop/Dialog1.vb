@@ -1,6 +1,9 @@
 ﻿Imports System.Windows.Forms
+Imports Microsoft.Toolkit.Uwp.Notifications
 
 Public Class Dialog1
+
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         For Each form In My.Application.OpenForms
             If (form.name = leapwrite.Name) Then
@@ -21,6 +24,11 @@ Public Class Dialog1
 
         Desktop.Show()
         Me.Close()
+
+    End Sub
+
+    Private Sub Dialog1_Load(sender As Object, e As EventArgs) Handles Me.Load
+
 
     End Sub
 End Class

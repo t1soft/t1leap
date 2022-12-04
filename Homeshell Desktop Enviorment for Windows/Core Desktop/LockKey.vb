@@ -1,18 +1,12 @@
 ﻿Imports System.IO
+Imports Microsoft.Toolkit.Uwp.Notifications
 
 Public Class LockKey
 
     Dim thisHour = DateTime.Now.TimeOfDay.Hours
     Dim TempPass = Form4.Label3.Text
 
-    Function Incorrect()
 
-        NotifyIcon1.Visible = True
-        NotifyIcon1.BalloonTipTitle = "Incorrect Session Password"
-        NotifyIcon1.BalloonTipText = "Please Enter the correct password to log back in, or exit your session."
-        NotifyIcon1.ShowBalloonTip(3000)
-
-    End Function
 
     'Changes the Greeting based on Local Time, and Greets you by grabbing the Current Windows Username
     Private Sub LockKey_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -39,6 +33,7 @@ Public Class LockKey
             Application.Exit()
             End
         Else
+            Incorrect()
             Label1.Text = "The Password is Incorrect. You will need to enter it to exit the environment."
         End If
 

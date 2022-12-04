@@ -14,4 +14,8 @@
         Panel1.Left = (Panel1.Parent.Width - Panel1.Width) / 2
         Panel1.Top = (Panel1.Parent.Height - Panel1.Height) / 2
     End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
+    End Sub
 End Class
