@@ -28,7 +28,7 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        My.Settings.wallpaper = "--cleared--"
+        My.Settings.wallpaper = Nothing
         My.Settings.Save()
     End Sub
 End Class

@@ -5,9 +5,7 @@
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles Me.Load
         Form1.Close()
-        If My.Settings.wallpaper IsNot "--cleared--" Then
-            PictureBox2.ImageLocation = My.Settings.wallpaper
-        End If
+        PictureBox2.ImageLocation = My.Settings.wallpaper
         Quicknote.Text = My.Settings.quickNote
         TextBox1.Text = My.Settings.toDo1
         TextBox2.Text = My.Settings.toDo2
