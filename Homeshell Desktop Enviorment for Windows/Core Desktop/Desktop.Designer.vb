@@ -32,7 +32,6 @@ Partial Class Desktop
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
@@ -54,6 +53,7 @@ Partial Class Desktop
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Quicknote = New System.Windows.Forms.TextBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -121,6 +121,7 @@ Partial Class Desktop
         '
         'PictureBox2
         '
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox2.ErrorImage = CType(resources.GetObject("PictureBox2.ErrorImage"), System.Drawing.Image)
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
@@ -139,14 +140,6 @@ Partial Class Desktop
         Me.Label11.Size = New System.Drawing.Size(192, 15)
         Me.Label11.TabIndex = 26
         Me.Label11.Text = "_____________________________________"
-        '
-        'RichTextBox1
-        '
-        Me.RichTextBox1.Location = New System.Drawing.Point(14, 161)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(174, 159)
-        Me.RichTextBox1.TabIndex = 3
-        Me.RichTextBox1.Text = ""
         '
         'CheckBox1
         '
@@ -300,10 +293,10 @@ Partial Class Desktop
         Me.Label2.ForeColor = System.Drawing.Color.Red
         Me.Label2.Location = New System.Drawing.Point(13, 520)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(152, 60)
+        Me.Label2.Size = New System.Drawing.Size(160, 45)
         Me.Label2.TabIndex = 27
-        Me.Label2.Text = "Note: The Notepad and " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "To-Do List dont save, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "you will lose the contents " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "when" &
-    " you end the session."
+        Me.Label2.Text = "Note: Read the Instability " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Warning in Settings before " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "using Quick Note or To-" &
+    "Do"
         '
         'Label3
         '
@@ -338,6 +331,7 @@ Partial Class Desktop
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Quicknote)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label3)
@@ -358,7 +352,6 @@ Partial Class Desktop
         Me.Panel1.Controls.Add(Me.CheckBox3)
         Me.Panel1.Controls.Add(Me.CheckBox2)
         Me.Panel1.Controls.Add(Me.CheckBox1)
-        Me.Panel1.Controls.Add(Me.RichTextBox1)
         Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
         Me.Panel1.ForeColor = System.Drawing.Color.Black
@@ -366,6 +359,14 @@ Partial Class Desktop
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(200, 707)
         Me.Panel1.TabIndex = 6
+        '
+        'Quicknote
+        '
+        Me.Quicknote.Location = New System.Drawing.Point(16, 161)
+        Me.Quicknote.Multiline = True
+        Me.Quicknote.Name = "Quicknote"
+        Me.Quicknote.Size = New System.Drawing.Size(172, 159)
+        Me.Quicknote.TabIndex = 29
         '
         'Panel3
         '
@@ -404,7 +405,6 @@ Partial Class Desktop
     Friend WithEvents Button3 As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label11 As Label
-    Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents CheckBox3 As CheckBox
@@ -427,4 +427,5 @@ Partial Class Desktop
     Friend WithEvents Label7 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel3 As Panel
+    Friend WithEvents Quicknote As TextBox
 End Class

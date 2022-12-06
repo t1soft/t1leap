@@ -57,10 +57,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Label8.Text" xml:space="preserve">
-    <value>GENERAL WARNING: T1LeapDesk can Hang if you try these features, which can prevent you from using Windows.
-Please Save Any Unsaved Work before continuing and Remember to Sign out with CTRL + ALT + DEL if you end up
-with a Hanging T1LeapDesk.</value>
+  <data name="Label10.Text" xml:space="preserve">
+    <value>--- INSTABILITY WARNING ---
+
+As T1LeapDesk is still under development, it can Hang during use, which can prevent you from using Windows.
+Please Save Any Unsaved Work that you might have in other applications BEFORE Using this Application.
+
+If T1LeapDesk Hangs or is Not Responding:
+1. Press CTRL + ALT + DEL
+2. Click Sign Out (You will Lose All Unsaved Work from Other Applications
+3. Sign Back In</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -101,6 +107,9 @@ with a Hanging T1LeapDesk.</value>
         2qn+A/mBKBgt6lUdAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="open_dialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA
