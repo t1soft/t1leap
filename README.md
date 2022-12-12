@@ -1,6 +1,6 @@
 # T1-Leap-Software-Suite
 
-The T1Leap Software Suite is a Family of Programs which help boost productivity and make work done quickly.
+The T1Leap Software Suite is a Family of Programs which make doing things on the computer easier.
 
 
 
@@ -11,7 +11,7 @@ The T1Leap Software Suite is a Family of Programs which help boost productivity 
 A Easy Word Processor which helps you Write Documents without all of the Advanced or Uninportant Features.
 
 **T1Leap DataWorks:**
-A Data Sheet Editor to Visualize and Organize Data from Expirments or Surveys.
+A Data Table Editor to Visualize and Organize Data from Expirments or Surveys.
 
 **T1LeapBar:**
 A Sidebar with Quick Shortcuts to a Note App, a Browser to Search Quickly, and to Socialize if you want to.
@@ -24,7 +24,7 @@ A Full Desktop Enviornment to Get Rid of Distractions and Create a New and Alway
 
 ## Why Use Leap?
 
-T1Leap is a Suite that helps you get work done quickly and efficiantly. During Projects or Essays, you Might want to do the following...
+T1Leap is a Suite that helps you do things easily, especially working on assignments or tasks. Here is how you could use use t1leap to help you work on things...
 
 
 ```
