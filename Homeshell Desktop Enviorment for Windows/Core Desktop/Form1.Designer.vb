@@ -32,16 +32,19 @@ Partial Class Form1
         Me.Greeting = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'DateText
         '
         Me.DateText.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.DateText.AutoSize = True
-        Me.DateText.Font = New System.Drawing.Font("Segoe UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.DateText.Location = New System.Drawing.Point(36, 615)
+        Me.DateText.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.DateText.Location = New System.Drawing.Point(26, 611)
         Me.DateText.Name = "DateText"
-        Me.DateText.Size = New System.Drawing.Size(135, 25)
+        Me.DateText.Size = New System.Drawing.Size(141, 25)
         Me.DateText.TabIndex = 18
         Me.DateText.Text = "January 1, 2020"
         Me.DateText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -51,7 +54,7 @@ Partial Class Form1
         Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(952, 627)
+        Me.Button2.Location = New System.Drawing.Point(307, 614)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(111, 24)
         Me.Button2.TabIndex = 20
@@ -64,7 +67,7 @@ Partial Class Form1
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Label6.Location = New System.Drawing.Point(12, 9)
+        Me.Label6.Location = New System.Drawing.Point(19, 9)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(106, 25)
         Me.Label6.TabIndex = 19
@@ -75,7 +78,7 @@ Partial Class Form1
         Me.UserText.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.UserText.AutoSize = True
         Me.UserText.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.UserText.Location = New System.Drawing.Point(36, 325)
+        Me.UserText.Location = New System.Drawing.Point(26, 287)
         Me.UserText.Name = "UserText"
         Me.UserText.Size = New System.Drawing.Size(70, 37)
         Me.UserText.TabIndex = 16
@@ -85,10 +88,10 @@ Partial Class Form1
         '
         Me.ClockText.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.ClockText.AutoSize = True
-        Me.ClockText.Font = New System.Drawing.Font("Segoe UI Light", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.ClockText.Location = New System.Drawing.Point(36, 565)
+        Me.ClockText.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ClockText.Location = New System.Drawing.Point(19, 569)
         Me.ClockText.Name = "ClockText"
-        Me.ClockText.Size = New System.Drawing.Size(220, 50)
+        Me.ClockText.Size = New System.Drawing.Size(228, 42)
         Me.ClockText.TabIndex = 17
         Me.ClockText.Text = "00:00 AM     "
         Me.ClockText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -97,8 +100,9 @@ Partial Class Form1
         '
         Me.Greeting.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Greeting.AutoSize = True
+        Me.Greeting.BackColor = System.Drawing.Color.Transparent
         Me.Greeting.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Greeting.Location = New System.Drawing.Point(36, 288)
+        Me.Greeting.Location = New System.Drawing.Point(26, 250)
         Me.Greeting.Name = "Greeting"
         Me.Greeting.Size = New System.Drawing.Size(199, 37)
         Me.Greeting.TabIndex = 15
@@ -107,11 +111,11 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.Button1.Location = New System.Drawing.Point(37, 368)
+        Me.Button1.Location = New System.Drawing.Point(26, 365)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(289, 23)
+        Me.Button1.Size = New System.Drawing.Size(199, 23)
         Me.Button1.TabIndex = 14
-        Me.Button1.Text = "Click here to Log In."
+        Me.Button1.Text = "Log In"
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -120,26 +124,53 @@ Partial Class Form1
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 1000
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Panel1.Controls.Add(Me.TextBox1)
+        Me.Panel1.Controls.Add(Me.Greeting)
+        Me.Panel1.Controls.Add(Me.Label6)
+        Me.Panel1.Controls.Add(Me.Button2)
+        Me.Panel1.Controls.Add(Me.DateText)
+        Me.Panel1.Controls.Add(Me.UserText)
+        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.ClockText)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(445, 663)
+        Me.Panel1.TabIndex = 21
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.TextBox1.Location = New System.Drawing.Point(26, 336)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TextBox1.PlaceholderText = "Enter Password to Log In"
+        Me.TextBox1.Size = New System.Drawing.Size(264, 23)
+        Me.TextBox1.TabIndex = 21
+        Me.TextBox1.UseSystemPasswordChar = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.ClientSize = New System.Drawing.Size(1075, 663)
-        Me.Controls.Add(Me.DateText)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.UserText)
-        Me.Controls.Add(Me.ClockText)
-        Me.Controls.Add(Me.Greeting)
-        Me.Controls.Add(Me.Button1)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(1101, 663)
+        Me.Controls.Add(Me.Panel1)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "LockNoPass"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -151,4 +182,6 @@ Partial Class Form1
     Friend WithEvents Greeting As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents TextBox1 As TextBox
 End Class

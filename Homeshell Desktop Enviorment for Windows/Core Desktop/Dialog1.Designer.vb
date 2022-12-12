@@ -31,36 +31,36 @@ Partial Class Dialog1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(12, 18)
+        Me.Label1.Location = New System.Drawing.Point(12, 32)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(258, 25)
+        Me.Label1.Size = New System.Drawing.Size(377, 25)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "T1LeapDesk - Desktop Switch"
+        Me.Label1.Text = "You have switched to the Windows Desktop" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 43)
+        Me.Label3.Location = New System.Drawing.Point(12, 57)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(272, 30)
+        Me.Label3.Size = New System.Drawing.Size(328, 45)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "You have Switched Back to the Windows Desktop. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Click ""Switch Back"" to Go Back t" &
-    "o T1LeapDesk."
+        Me.Label3.Text = "Click ""Switch Back"" to Return to the t1leapdesk Enviornment." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "To Close t1leapde" &
+    "sk, Return back and Click ""Log Out"""
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(456, 12)
+        Me.Button1.Location = New System.Drawing.Point(456, 29)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(102, 71)
         Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Go Back to T1LeapDesk"
+        Me.Button1.Text = "Switch Back"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Dialog1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(570, 95)
+        Me.ClientSize = New System.Drawing.Size(570, 126)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
