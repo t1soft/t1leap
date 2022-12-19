@@ -149,6 +149,29 @@ Namespace My
                 Me("toDo5") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property password() As String
+            Get
+                Return CType(Me("password"),String)
+            End Get
+            Set
+                Me("password") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Property passwordEnabled() As Boolean
+            Get
+                Return CType(Me("passwordEnabled"),Boolean)
+            End Get
+            Set
+                Me("passwordEnabled") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

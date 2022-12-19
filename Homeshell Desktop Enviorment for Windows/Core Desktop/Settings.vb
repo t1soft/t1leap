@@ -31,4 +31,10 @@
         My.Settings.wallpaper = Nothing
         My.Settings.Save()
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        If My.Settings.passwordEnabled = False Then
+
+        End If
+    End Sub
 End Class

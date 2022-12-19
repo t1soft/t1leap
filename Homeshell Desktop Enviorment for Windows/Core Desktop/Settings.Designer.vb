@@ -39,14 +39,10 @@ Partial Class Settings
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.passwordComfirmText = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.passwordSetText = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
@@ -55,6 +51,9 @@ Partial Class Settings
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.open_dialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.passwordCurrentText = New System.Windows.Forms.TextBox()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
@@ -63,6 +62,7 @@ Partial Class Settings
         Me.Panel1.SuspendLayout()
         Me.TabPage4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -92,11 +92,11 @@ Partial Class Settings
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label10.ForeColor = System.Drawing.Color.Red
-        Me.Label10.Location = New System.Drawing.Point(6, 198)
+        Me.Label10.Location = New System.Drawing.Point(19, 246)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(737, 180)
+        Me.Label10.Size = New System.Drawing.Size(592, 135)
         Me.Label10.TabIndex = 18
         Me.Label10.Text = resources.GetString("Label10.Text")
         '
@@ -154,8 +154,7 @@ Partial Class Settings
         '
         'TabPage2
         '
-        Me.TabPage2.Controls.Add(Me.Button2)
-        Me.TabPage2.Controls.Add(Me.Button1)
+        Me.TabPage2.Controls.Add(Me.Panel2)
         Me.TabPage2.Controls.Add(Me.Label9)
         Me.TabPage2.Controls.Add(Me.Label2)
         Me.TabPage2.Controls.Add(Me.Label1)
@@ -169,16 +168,16 @@ Partial Class Settings
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(231, 110)
+        Me.Button2.Location = New System.Drawing.Point(12, 73)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(116, 24)
+        Me.Button2.Size = New System.Drawing.Size(206, 24)
         Me.Button2.TabIndex = 21
         Me.Button2.Text = "Clear Wallpaper"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(19, 111)
+        Me.Button1.Location = New System.Drawing.Point(12, 44)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(206, 23)
         Me.Button1.TabIndex = 20
@@ -230,108 +229,62 @@ Partial Class Settings
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Gainsboro
-        Me.Panel1.Controls.Add(Me.RadioButton3)
-        Me.Panel1.Controls.Add(Me.RadioButton2)
         Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Controls.Add(Me.RadioButton1)
-        Me.Panel1.Controls.Add(Me.TextBox3)
-        Me.Panel1.Controls.Add(Me.TextBox1)
+        Me.Panel1.Controls.Add(Me.passwordComfirmText)
+        Me.Panel1.Controls.Add(Me.passwordCurrentText)
         Me.Panel1.Controls.Add(Me.Label11)
-        Me.Panel1.Controls.Add(Me.TextBox2)
+        Me.Panel1.Controls.Add(Me.passwordSetText)
         Me.Panel1.Location = New System.Drawing.Point(7, 58)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(303, 266)
+        Me.Panel1.Size = New System.Drawing.Size(193, 157)
         Me.Panel1.TabIndex = 24
-        '
-        'RadioButton3
-        '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(12, 89)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(264, 19)
-        Me.RadioButton3.TabIndex = 27
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "Use a Password for Logging in and Unlocking"
-        Me.RadioButton3.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(12, 68)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(181, 19)
-        Me.RadioButton2.TabIndex = 26
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Use a Password for Unlocking"
-        Me.RadioButton2.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(12, 229)
+        Me.Button4.Location = New System.Drawing.Point(12, 124)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(216, 23)
+        Me.Button4.Size = New System.Drawing.Size(170, 23)
         Me.Button4.TabIndex = 1
         Me.Button4.Text = "Set Password"
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'passwordComfirmText
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(12, 42)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(144, 19)
-        Me.RadioButton1.TabIndex = 25
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Do not use a password"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(12, 200)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox3.PlaceholderText = "Comfirm New Password"
-        Me.TextBox3.Size = New System.Drawing.Size(216, 23)
-        Me.TextBox3.TabIndex = 23
-        Me.TextBox3.UseSystemPasswordChar = True
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(12, 142)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox1.PlaceholderText = "Enter Current Password"
-        Me.TextBox1.Size = New System.Drawing.Size(216, 23)
-        Me.TextBox1.TabIndex = 0
-        Me.TextBox1.UseSystemPasswordChar = True
+        Me.passwordComfirmText.Location = New System.Drawing.Point(12, 95)
+        Me.passwordComfirmText.Name = "passwordComfirmText"
+        Me.passwordComfirmText.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.passwordComfirmText.PlaceholderText = "Comfirm New Password"
+        Me.passwordComfirmText.Size = New System.Drawing.Size(170, 23)
+        Me.passwordComfirmText.TabIndex = 23
+        Me.passwordComfirmText.UseSystemPasswordChar = True
         '
         'Label11
         '
         Me.Label11.AutoSize = True
         Me.Label11.Location = New System.Drawing.Point(12, 11)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(105, 15)
+        Me.Label11.Size = New System.Drawing.Size(151, 15)
         Me.Label11.TabIndex = 2
-        Me.Label11.Text = "Account Password"
+        Me.Label11.Text = "Account Password: Cleared"
         '
-        'TextBox2
+        'passwordSetText
         '
-        Me.TextBox2.Location = New System.Drawing.Point(12, 171)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.PlaceholderText = "Enter New Password"
-        Me.TextBox2.Size = New System.Drawing.Size(216, 23)
-        Me.TextBox2.TabIndex = 22
-        Me.TextBox2.UseSystemPasswordChar = True
+        Me.passwordSetText.Location = New System.Drawing.Point(12, 66)
+        Me.passwordSetText.Name = "passwordSetText"
+        Me.passwordSetText.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.passwordSetText.PlaceholderText = "Enter New Password"
+        Me.passwordSetText.Size = New System.Drawing.Size(170, 23)
+        Me.passwordSetText.TabIndex = 22
+        Me.passwordSetText.UseSystemPasswordChar = True
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.Location = New System.Drawing.Point(6, 31)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(378, 15)
+        Me.Label12.Size = New System.Drawing.Size(381, 15)
         Me.Label12.TabIndex = 21
-        Me.Label12.Text = "Protect t1leapdesk from Unauthorized Usage by Setting Up a Password"
+        Me.Label12.Text = "Protect t1leapdesk from Unauthorized Usage by Setting Up a Password "
         '
         'Label13
         '
@@ -394,6 +347,37 @@ Partial Class Settings
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "For Windows 10/11"
         '
+        'passwordCurrentText
+        '
+        Me.passwordCurrentText.Location = New System.Drawing.Point(12, 37)
+        Me.passwordCurrentText.Name = "passwordCurrentText"
+        Me.passwordCurrentText.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.passwordCurrentText.PlaceholderText = "Enter Current Password "
+        Me.passwordCurrentText.ReadOnly = True
+        Me.passwordCurrentText.Size = New System.Drawing.Size(170, 23)
+        Me.passwordCurrentText.TabIndex = 0
+        Me.passwordCurrentText.UseSystemPasswordChar = True
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Gainsboro
+        Me.Panel2.Controls.Add(Me.Label14)
+        Me.Panel2.Controls.Add(Me.Button2)
+        Me.Panel2.Controls.Add(Me.Button1)
+        Me.Panel2.Location = New System.Drawing.Point(6, 64)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(289, 157)
+        Me.Panel2.TabIndex = 25
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(12, 11)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(106, 15)
+        Me.Label14.TabIndex = 2
+        Me.Label14.Text = "Desktop Wallpaper"
+        '
         'Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -418,6 +402,8 @@ Partial Class Settings
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage4.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -444,13 +430,12 @@ Partial Class Settings
     Friend WithEvents TabPage5 As TabPage
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Button4 As Button
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents passwordComfirmText As TextBox
     Friend WithEvents Label11 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents passwordSetText As TextBox
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Label14 As Label
+    Friend WithEvents passwordCurrentText As TextBox
 End Class
