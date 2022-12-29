@@ -1,10 +1,33 @@
-﻿Public Class Form1
+﻿Imports System
+Imports System.Text
+Imports System.Drawing
+Imports System.Runtime.InteropServices
+
+
+Public Class Form1
     Dim thisHour = DateTime.Now.TimeOfDay.Hours
     Dim timeElapse = 0
+    Dim password As String
+    Dim LoginReady As Boolean = False
+
+    <DllImport("shell32", EntryPoint:="#261", CharSet:=CharSet.Unicode, PreserveSig:=False)>
+    Public Shared Sub GetUserTilePath(username As String, whatever As UInt32, picpath As StringBuilder, maxLength As Integer)
+    End Sub
+
+    Public Function GetUserTilePath(username As String) As String
+        Dim sb As StringBuilder
+        sb = New StringBuilder(1000)
+        GetUserTilePath(username, 2147483648, sb, sb.Capacity)
+        Return sb.ToString()
+    End Function
+
+    Public Function GetUserTile(username As String) As Image
+        Return Image.FromFile(GetUserTilePath(username))
+    End Function
 
     Function Secret()
         If timeElapse = 10 Then
-            Label6.Text = "Welcome to T1 LeapDesk!"
+            Label6.Text = "Welcome to T1LeapDesk!"
         ElseIf timeElapse = 15 Then
             Label6.Text = "Designed for Focus"
         ElseIf timeElapse = 17 Then
@@ -20,7 +43,7 @@
         ElseIf timeElapse = 27 Then
             Label6.Text = "From T1 Software!"
         ElseIf timeElapse = 29 Then
-            Label6.Text = "LeapDesk"
+            Label6.Text = "t1leapdesk"
         End If
     End Function
 
@@ -28,18 +51,17 @@
     'Changes the Greeting based on Local Time, and Greets you by grabbing the Current Windows Username
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
 
-        ClockText.Text = DateTime.Now.ToString("hh:mm tt")
-        DateText.Text = DateTime.Now.ToString("MMMM d, yyyy")
-
-        If thisHour < 13 Then
-            Greeting.Text = "Good Morning,"
-        ElseIf thisHour > 12 And thisHour < 8 Then
-            Greeting.Text = "Good Afternoon,"
-        ElseIf thisHour > 7 Then
-            Greeting.Text = "Good Evening,"
-        End If
-
         UserText.Text = Environment.UserName
+        PictureBox1.Image = GetUserTile(System.Security.Principal.WindowsIdentity.GetCurrent().Name)
+
+        If My.Settings.passwordEnabled = True Then
+            password = My.Settings.password
+            TextBox1.PlaceholderText = "Enter your Password here"
+            LoginReady = True
+        ElseIf My.Settings.passwordEnabled = False Then
+            TextBox1.PlaceholderText = "Press Enter or Login to Start, no password needed"
+            LoginReady = True
+        End If
 
         Dim MatchingNames As System.Diagnostics.Process()
 
@@ -59,7 +81,18 @@
     End Sub
 
 
-
+    Function PasswordCheck()
+        If My.Settings.passwordEnabled = True And LoginReady = True And TextBox1.Text = My.Settings.password Then
+            Desktop.Show()
+            Me.Hide()
+        ElseIf My.Settings.passwordEnabled = False And LoginReady = True Then
+            Desktop.Show()
+            Me.Hide()
+        Else
+            TextBox1.Text = Nothing
+            TextBox1.PlaceholderText = "Incorrect Password or Failed to Verify"
+        End If
+    End Function
 
 
 
@@ -67,8 +100,7 @@
 
     Private Sub Form1_KeyPress(sender As Object, e As KeyPressEventArgs)
         If e.KeyChar = Microsoft.VisualBasic.ChrW(Keys.Return) Then
-            Desktop.Show()
-            Me.Hide()
+            PasswordCheck()
         End If
 
     End Sub
@@ -76,8 +108,7 @@
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Desktop.Show()
-        Me.Hide()
+        PasswordCheck()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -88,7 +119,6 @@
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         timeElapse = timeElapse + 1
         Secret()
-        ClockText.Text = DateTime.Now.ToString("hh:mm tt")
-        DateText.Text = DateTime.Now.ToString("MMMM d, yyyy")
     End Sub
+
 End Class

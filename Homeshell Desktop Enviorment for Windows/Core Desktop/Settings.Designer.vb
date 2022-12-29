@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Settings
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Settings
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Settings))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
@@ -32,11 +32,21 @@ Partial Class Settings
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.passwordComfirmText = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.passwordSetText = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -47,6 +57,9 @@ Partial Class Settings
         Me.TabPage1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        Me.TabPage5.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.TabPage4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -56,6 +69,7 @@ Partial Class Settings
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.TabPage5)
         Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Location = New System.Drawing.Point(12, 12)
         Me.TabControl1.Name = "TabControl1"
@@ -77,11 +91,11 @@ Partial Class Settings
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label10.ForeColor = System.Drawing.Color.Red
-        Me.Label10.Location = New System.Drawing.Point(6, 198)
+        Me.Label10.Location = New System.Drawing.Point(19, 246)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(737, 180)
+        Me.Label10.Size = New System.Drawing.Size(592, 135)
         Me.Label10.TabIndex = 18
         Me.Label10.Text = resources.GetString("Label10.Text")
         '
@@ -139,8 +153,7 @@ Partial Class Settings
         '
         'TabPage2
         '
-        Me.TabPage2.Controls.Add(Me.Button2)
-        Me.TabPage2.Controls.Add(Me.Button1)
+        Me.TabPage2.Controls.Add(Me.Panel2)
         Me.TabPage2.Controls.Add(Me.Label9)
         Me.TabPage2.Controls.Add(Me.Label2)
         Me.TabPage2.Controls.Add(Me.Label1)
@@ -152,9 +165,29 @@ Partial Class Settings
         Me.TabPage2.Text = "Personalisation"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Gainsboro
+        Me.Panel2.Controls.Add(Me.Label14)
+        Me.Panel2.Controls.Add(Me.Button2)
+        Me.Panel2.Controls.Add(Me.Button1)
+        Me.Panel2.Location = New System.Drawing.Point(6, 64)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(289, 157)
+        Me.Panel2.TabIndex = 25
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(12, 11)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(106, 15)
+        Me.Label14.TabIndex = 2
+        Me.Label14.Text = "Desktop Wallpaper"
+        '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(19, 140)
+        Me.Button2.Location = New System.Drawing.Point(12, 73)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(206, 24)
         Me.Button2.TabIndex = 21
@@ -163,7 +196,7 @@ Partial Class Settings
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(19, 111)
+        Me.Button1.Location = New System.Drawing.Point(12, 44)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(206, 23)
         Me.Button1.TabIndex = 20
@@ -173,7 +206,7 @@ Partial Class Settings
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(19, 84)
+        Me.Label9.Location = New System.Drawing.Point(6, 31)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(206, 15)
         Me.Label9.TabIndex = 19
@@ -193,11 +226,93 @@ Partial Class Settings
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(19, 44)
+        Me.Label1.Location = New System.Drawing.Point(6, 3)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(144, 28)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Personalization"
+        '
+        'TabPage5
+        '
+        Me.TabPage5.Controls.Add(Me.Panel1)
+        Me.TabPage5.Controls.Add(Me.Label12)
+        Me.TabPage5.Controls.Add(Me.Label13)
+        Me.TabPage5.Location = New System.Drawing.Point(4, 24)
+        Me.TabPage5.Name = "TabPage5"
+        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage5.Size = New System.Drawing.Size(768, 398)
+        Me.TabPage5.TabIndex = 5
+        Me.TabPage5.Text = "Security"
+        Me.TabPage5.UseVisualStyleBackColor = True
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Gainsboro
+        Me.Panel1.Controls.Add(Me.Button4)
+        Me.Panel1.Controls.Add(Me.passwordComfirmText)
+        Me.Panel1.Controls.Add(Me.Label11)
+        Me.Panel1.Controls.Add(Me.passwordSetText)
+        Me.Panel1.Location = New System.Drawing.Point(7, 58)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(193, 133)
+        Me.Panel1.TabIndex = 24
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(12, 98)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(170, 23)
+        Me.Button4.TabIndex = 1
+        Me.Button4.Text = "Set Password"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'passwordComfirmText
+        '
+        Me.passwordComfirmText.Location = New System.Drawing.Point(12, 69)
+        Me.passwordComfirmText.Name = "passwordComfirmText"
+        Me.passwordComfirmText.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.passwordComfirmText.PlaceholderText = "Comfirm New Password"
+        Me.passwordComfirmText.Size = New System.Drawing.Size(170, 23)
+        Me.passwordComfirmText.TabIndex = 23
+        Me.passwordComfirmText.UseSystemPasswordChar = True
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(12, 11)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(111, 15)
+        Me.Label11.TabIndex = 2
+        Me.Label11.Text = "Account Password: "
+        '
+        'passwordSetText
+        '
+        Me.passwordSetText.Location = New System.Drawing.Point(12, 40)
+        Me.passwordSetText.Name = "passwordSetText"
+        Me.passwordSetText.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.passwordSetText.PlaceholderText = "Enter New Password"
+        Me.passwordSetText.Size = New System.Drawing.Size(170, 23)
+        Me.passwordSetText.TabIndex = 22
+        Me.passwordSetText.UseSystemPasswordChar = True
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(6, 31)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(381, 15)
+        Me.Label12.TabIndex = 21
+        Me.Label12.Text = "Protect t1leapdesk from Unauthorized Usage by Setting Up a Password "
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label13.Location = New System.Drawing.Point(6, 3)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(158, 28)
+        Me.Label13.TabIndex = 20
+        Me.Label13.Text = "Security Settings"
         '
         'TabPage4
         '
@@ -267,6 +382,12 @@ Partial Class Settings
         Me.TabPage3.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        Me.TabPage5.ResumeLayout(False)
+        Me.TabPage5.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage4.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -293,4 +414,14 @@ Partial Class Settings
     Friend WithEvents Button1 As Button
     Friend WithEvents open_dialog1 As OpenFileDialog
     Friend WithEvents Button2 As Button
+    Friend WithEvents TabPage5 As TabPage
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Button4 As Button
+    Friend WithEvents passwordComfirmText As TextBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents passwordSetText As TextBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Label14 As Label
 End Class

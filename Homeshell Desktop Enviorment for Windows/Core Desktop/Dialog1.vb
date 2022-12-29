@@ -1,5 +1,6 @@
 ﻿Imports System.Windows.Forms
-Imports Microsoft.Toolkit.Uwp.Notifications
+Imports System.ComponentModel
+
 
 Public Class Dialog1
 
@@ -31,4 +32,5 @@ Public Class Dialog1
 
 
     End Sub
+
 End Class
