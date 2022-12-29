@@ -34,40 +34,40 @@ Partial Class WebBrowser
         Me.NoteAppAnd2SourcesArticlesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MultitaskingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.WebView3 = New Microsoft.Web.WebView2.WinForms.WebView2()
         Me.ToolStrip3 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton9 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton10 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton11 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripTextBox3 = New System.Windows.Forms.ToolStripTextBox()
         Me.ToolStripButton12 = New System.Windows.Forms.ToolStripButton()
-        Me.WebView3 = New Microsoft.Web.WebView2.WinForms.WebView2()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.WebView2 = New Microsoft.Web.WebView2.WinForms.WebView2()
         Me.ToolStrip2 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton6 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton7 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripTextBox2 = New System.Windows.Forms.ToolStripTextBox()
         Me.ToolStripButton8 = New System.Windows.Forms.ToolStripButton()
-        Me.WebView2 = New Microsoft.Web.WebView2.WinForms.WebView2()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.WebView21 = New Microsoft.Web.WebView2.WinForms.WebView2()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripTextBox1 = New System.Windows.Forms.ToolStripTextBox()
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
-        Me.WebView21 = New Microsoft.Web.WebView2.WinForms.WebView2()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.MenuStrip1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
-        Me.ToolStrip3.SuspendLayout()
         CType(Me.WebView3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ToolStrip3.SuspendLayout()
         Me.TabPage2.SuspendLayout()
-        Me.ToolStrip2.SuspendLayout()
         CType(Me.WebView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ToolStrip2.SuspendLayout()
         Me.TabPage1.SuspendLayout()
-        Me.ToolStrip1.SuspendLayout()
         CType(Me.WebView21, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ToolStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -150,6 +150,19 @@ Partial Class WebBrowser
         Me.TabPage3.Text = "TabPage3"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
+        'WebView3
+        '
+        Me.WebView3.CreationProperties = Nothing
+        Me.WebView3.DefaultBackgroundColor = System.Drawing.Color.White
+        Me.WebView3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.WebView3.Location = New System.Drawing.Point(3, 28)
+        Me.WebView3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.WebView3.Name = "WebView3"
+        Me.WebView3.Size = New System.Drawing.Size(1061, 560)
+        Me.WebView3.Source = New System.Uri("https://google.com", System.UriKind.Absolute)
+        Me.WebView3.TabIndex = 7
+        Me.WebView3.ZoomFactor = 1.0R
+        '
         'ToolStrip3
         '
         Me.ToolStrip3.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton9, Me.ToolStripButton10, Me.ToolStripButton11, Me.ToolStripTextBox3, Me.ToolStripButton12})
@@ -201,19 +214,6 @@ Partial Class WebBrowser
         Me.ToolStripButton12.Size = New System.Drawing.Size(29, 22)
         Me.ToolStripButton12.Text = "Go!"
         '
-        'WebView3
-        '
-        Me.WebView3.CreationProperties = Nothing
-        Me.WebView3.DefaultBackgroundColor = System.Drawing.Color.White
-        Me.WebView3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.WebView3.Location = New System.Drawing.Point(3, 28)
-        Me.WebView3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.WebView3.Name = "WebView3"
-        Me.WebView3.Size = New System.Drawing.Size(1061, 560)
-        Me.WebView3.Source = New System.Uri("https://google.com", System.UriKind.Absolute)
-        Me.WebView3.TabIndex = 7
-        Me.WebView3.ZoomFactor = 1.0R
-        '
         'TabPage2
         '
         Me.TabPage2.Controls.Add(Me.WebView2)
@@ -225,6 +225,19 @@ Partial Class WebBrowser
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "TabPage2"
         Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'WebView2
+        '
+        Me.WebView2.CreationProperties = Nothing
+        Me.WebView2.DefaultBackgroundColor = System.Drawing.Color.White
+        Me.WebView2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.WebView2.Location = New System.Drawing.Point(3, 28)
+        Me.WebView2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.WebView2.Name = "WebView2"
+        Me.WebView2.Size = New System.Drawing.Size(1061, 560)
+        Me.WebView2.Source = New System.Uri("https://google.com", System.UriKind.Absolute)
+        Me.WebView2.TabIndex = 6
+        Me.WebView2.ZoomFactor = 1.0R
         '
         'ToolStrip2
         '
@@ -277,19 +290,6 @@ Partial Class WebBrowser
         Me.ToolStripButton8.Size = New System.Drawing.Size(29, 22)
         Me.ToolStripButton8.Text = "Go!"
         '
-        'WebView2
-        '
-        Me.WebView2.CreationProperties = Nothing
-        Me.WebView2.DefaultBackgroundColor = System.Drawing.Color.White
-        Me.WebView2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.WebView2.Location = New System.Drawing.Point(3, 28)
-        Me.WebView2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.WebView2.Name = "WebView2"
-        Me.WebView2.Size = New System.Drawing.Size(1061, 560)
-        Me.WebView2.Source = New System.Uri("https://google.com", System.UriKind.Absolute)
-        Me.WebView2.TabIndex = 6
-        Me.WebView2.ZoomFactor = 1.0R
-        '
         'TabPage1
         '
         Me.TabPage1.Controls.Add(Me.WebView21)
@@ -301,6 +301,19 @@ Partial Class WebBrowser
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "TabPage1"
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'WebView21
+        '
+        Me.WebView21.CreationProperties = Nothing
+        Me.WebView21.DefaultBackgroundColor = System.Drawing.Color.White
+        Me.WebView21.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.WebView21.Location = New System.Drawing.Point(3, 28)
+        Me.WebView21.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.WebView21.Name = "WebView21"
+        Me.WebView21.Size = New System.Drawing.Size(1061, 560)
+        Me.WebView21.Source = New System.Uri("https://google.com", System.UriKind.Absolute)
+        Me.WebView21.TabIndex = 3
+        Me.WebView21.ZoomFactor = 1.0R
         '
         'ToolStrip1
         '
@@ -353,19 +366,6 @@ Partial Class WebBrowser
         Me.ToolStripButton4.Size = New System.Drawing.Size(29, 22)
         Me.ToolStripButton4.Text = "Go!"
         '
-        'WebView21
-        '
-        Me.WebView21.CreationProperties = Nothing
-        Me.WebView21.DefaultBackgroundColor = System.Drawing.Color.White
-        Me.WebView21.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.WebView21.Location = New System.Drawing.Point(3, 28)
-        Me.WebView21.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.WebView21.Name = "WebView21"
-        Me.WebView21.Size = New System.Drawing.Size(1061, 560)
-        Me.WebView21.Source = New System.Uri("https://google.com", System.UriKind.Absolute)
-        Me.WebView21.TabIndex = 3
-        Me.WebView21.ZoomFactor = 1.0R
-        '
         'TabControl1
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
@@ -395,19 +395,19 @@ Partial Class WebBrowser
         Me.MenuStrip1.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
+        CType(Me.WebView3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip3.ResumeLayout(False)
         Me.ToolStrip3.PerformLayout()
-        CType(Me.WebView3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
+        CType(Me.WebView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip2.ResumeLayout(False)
         Me.ToolStrip2.PerformLayout()
-        CType(Me.WebView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
+        CType(Me.WebView21, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
-        CType(Me.WebView21, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()

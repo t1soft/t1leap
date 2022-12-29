@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Settings
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Settings
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Settings))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
@@ -32,6 +32,8 @@ Partial Class Settings
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -51,18 +53,15 @@ Partial Class Settings
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.open_dialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.passwordCurrentText = New System.Windows.Forms.TextBox()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label14 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.TabPage5.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.TabPage4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -166,6 +165,26 @@ Partial Class Settings
         Me.TabPage2.Text = "Personalisation"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Gainsboro
+        Me.Panel2.Controls.Add(Me.Label14)
+        Me.Panel2.Controls.Add(Me.Button2)
+        Me.Panel2.Controls.Add(Me.Button1)
+        Me.Panel2.Location = New System.Drawing.Point(6, 64)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(289, 157)
+        Me.Panel2.TabIndex = 25
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(12, 11)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(106, 15)
+        Me.Label14.TabIndex = 2
+        Me.Label14.Text = "Desktop Wallpaper"
+        '
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(12, 73)
@@ -231,17 +250,16 @@ Partial Class Settings
         Me.Panel1.BackColor = System.Drawing.Color.Gainsboro
         Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.passwordComfirmText)
-        Me.Panel1.Controls.Add(Me.passwordCurrentText)
         Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Controls.Add(Me.passwordSetText)
         Me.Panel1.Location = New System.Drawing.Point(7, 58)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(193, 157)
+        Me.Panel1.Size = New System.Drawing.Size(193, 133)
         Me.Panel1.TabIndex = 24
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(12, 124)
+        Me.Button4.Location = New System.Drawing.Point(12, 98)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(170, 23)
         Me.Button4.TabIndex = 1
@@ -250,7 +268,7 @@ Partial Class Settings
         '
         'passwordComfirmText
         '
-        Me.passwordComfirmText.Location = New System.Drawing.Point(12, 95)
+        Me.passwordComfirmText.Location = New System.Drawing.Point(12, 69)
         Me.passwordComfirmText.Name = "passwordComfirmText"
         Me.passwordComfirmText.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.passwordComfirmText.PlaceholderText = "Comfirm New Password"
@@ -263,13 +281,13 @@ Partial Class Settings
         Me.Label11.AutoSize = True
         Me.Label11.Location = New System.Drawing.Point(12, 11)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(151, 15)
+        Me.Label11.Size = New System.Drawing.Size(111, 15)
         Me.Label11.TabIndex = 2
-        Me.Label11.Text = "Account Password: Cleared"
+        Me.Label11.Text = "Account Password: "
         '
         'passwordSetText
         '
-        Me.passwordSetText.Location = New System.Drawing.Point(12, 66)
+        Me.passwordSetText.Location = New System.Drawing.Point(12, 40)
         Me.passwordSetText.Name = "passwordSetText"
         Me.passwordSetText.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.passwordSetText.PlaceholderText = "Enter New Password"
@@ -347,37 +365,6 @@ Partial Class Settings
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "For Windows 10/11"
         '
-        'passwordCurrentText
-        '
-        Me.passwordCurrentText.Location = New System.Drawing.Point(12, 37)
-        Me.passwordCurrentText.Name = "passwordCurrentText"
-        Me.passwordCurrentText.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.passwordCurrentText.PlaceholderText = "Enter Current Password "
-        Me.passwordCurrentText.ReadOnly = True
-        Me.passwordCurrentText.Size = New System.Drawing.Size(170, 23)
-        Me.passwordCurrentText.TabIndex = 0
-        Me.passwordCurrentText.UseSystemPasswordChar = True
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.Gainsboro
-        Me.Panel2.Controls.Add(Me.Label14)
-        Me.Panel2.Controls.Add(Me.Button2)
-        Me.Panel2.Controls.Add(Me.Button1)
-        Me.Panel2.Location = New System.Drawing.Point(6, 64)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(289, 157)
-        Me.Panel2.TabIndex = 25
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(12, 11)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(106, 15)
-        Me.Label14.TabIndex = 2
-        Me.Label14.Text = "Desktop Wallpaper"
-        '
         'Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -395,6 +382,8 @@ Partial Class Settings
         Me.TabPage3.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.TabPage5.ResumeLayout(False)
         Me.TabPage5.PerformLayout()
         Me.Panel1.ResumeLayout(False)
@@ -402,8 +391,6 @@ Partial Class Settings
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage4.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -437,5 +424,4 @@ Partial Class Settings
     Friend WithEvents Label13 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label14 As Label
-    Friend WithEvents passwordCurrentText As TextBox
 End Class
