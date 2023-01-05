@@ -5,8 +5,6 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "LeapDesk", "Homeshell Desktop Enviorment for Windows\LeapDesk.vbproj", "{05AA9CC8-13E4-4CA0-969E-07C77EA6ACB4}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "LeapBar", "homeshell.core.main\LeapBar.vbproj", "{94AF532E-7EFD-41AC-94F9-924158E308BF}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{79D6AA5B-AA28-42D8-B394-CA6DF2B7CB4D}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
@@ -38,18 +36,6 @@ Global
 		{05AA9CC8-13E4-4CA0-969E-07C77EA6ACB4}.Release|x64.Build.0 = Release|x64
 		{05AA9CC8-13E4-4CA0-969E-07C77EA6ACB4}.Release|x86.ActiveCfg = Release|x86
 		{05AA9CC8-13E4-4CA0-969E-07C77EA6ACB4}.Release|x86.Build.0 = Release|x86
-		{94AF532E-7EFD-41AC-94F9-924158E308BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{94AF532E-7EFD-41AC-94F9-924158E308BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{94AF532E-7EFD-41AC-94F9-924158E308BF}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{94AF532E-7EFD-41AC-94F9-924158E308BF}.Debug|x64.Build.0 = Debug|Any CPU
-		{94AF532E-7EFD-41AC-94F9-924158E308BF}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{94AF532E-7EFD-41AC-94F9-924158E308BF}.Debug|x86.Build.0 = Debug|Any CPU
-		{94AF532E-7EFD-41AC-94F9-924158E308BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{94AF532E-7EFD-41AC-94F9-924158E308BF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{94AF532E-7EFD-41AC-94F9-924158E308BF}.Release|x64.ActiveCfg = Release|Any CPU
-		{94AF532E-7EFD-41AC-94F9-924158E308BF}.Release|x64.Build.0 = Release|Any CPU
-		{94AF532E-7EFD-41AC-94F9-924158E308BF}.Release|x86.ActiveCfg = Release|Any CPU
-		{94AF532E-7EFD-41AC-94F9-924158E308BF}.Release|x86.Build.0 = Release|Any CPU
 		{770B3764-DFBE-4EBC-AC1F-D91A600B67E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{770B3764-DFBE-4EBC-AC1F-D91A600B67E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{770B3764-DFBE-4EBC-AC1F-D91A600B67E6}.Debug|x64.ActiveCfg = Debug|Any CPU
