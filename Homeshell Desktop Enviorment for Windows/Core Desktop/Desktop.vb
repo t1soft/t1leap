@@ -38,7 +38,6 @@
         leapwrite.Hide()
         leaptable.Hide()
         Start.Hide()
-        Tonline.Hide()
         WebBrowser.Hide()
 
         Dialog1.Show()

@@ -14,7 +14,6 @@ Public Class Form4
         leapwrite.Close()
         leaptable.Close()
         Start.Close()
-        Tonline.Close()
         WebBrowser.Close()
 
         Dialog1.Close()

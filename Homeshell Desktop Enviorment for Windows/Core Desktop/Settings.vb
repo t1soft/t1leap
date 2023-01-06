@@ -8,7 +8,6 @@
         leapwrite.Close()
         leaptable.Close()
         Start.Close()
-        Tonline.Close()
         WebBrowser.Close()
 
         Dialog1.Close()
@@ -47,16 +46,16 @@
         End If
     End Function
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        If My.Settings.passwordEnabled = False Then
+        If My.Settings.passwordEnabled = True Then
             If passwordComfirmText.Text = passwordSetText.Text Then
-                ChangePass()
+                PasswordComfirm.ShowDialog()
             Else
                 Label11.Text = "Passwords do not Match!"
             End If
         End If
-        If My.Settings.passwordEnabled = True Then
+        If My.Settings.passwordEnabled = False Then
             If passwordComfirmText.Text = passwordSetText.Text Then
-                PasswordComfirm.ShowDialog()
+                ChangePass()
             Else
                 Label11.Text = "Passwords do not Match!"
             End If

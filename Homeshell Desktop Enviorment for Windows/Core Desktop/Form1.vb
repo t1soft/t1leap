@@ -27,23 +27,15 @@ Public Class Form1
 
     Function Secret()
         If timeElapse = 10 Then
-            Label6.Text = "Welcome to T1LeapDesk!"
+            Label6.Text = "t1"
         ElseIf timeElapse = 15 Then
-            Label6.Text = "Designed for Focus"
+            Label6.Text = "leapdesk"
         ElseIf timeElapse = 17 Then
-            Label6.Text = "Simple, Elegant"
+            Label6.Text = "milestone"
         ElseIf timeElapse = 19 Then
-            Label6.Text = "For Hard Workers"
+            Label6.Text = "seven"
         ElseIf timeElapse = 21 Then
-            Label6.Text = "With Safety in Mind"
-        ElseIf timeElapse = 23 Then
-            Label6.Text = "Getting Ready for the Next Generation"
-        ElseIf timeElapse = 25 Then
-            Label6.Text = "With T1Leap <3"
-        ElseIf timeElapse = 27 Then
-            Label6.Text = "From T1 Software!"
-        ElseIf timeElapse = 29 Then
-            Label6.Text = "t1leapdesk"
+            Label6.Text = "T1LeapDesk"
         End If
     End Function
 
@@ -52,14 +44,14 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
 
         UserText.Text = Environment.UserName
-        PictureBox1.Image = GetUserTile(System.Security.Principal.WindowsIdentity.GetCurrent().Name)
+        Label2.Text = Environment.MachineName
 
         If My.Settings.passwordEnabled = True Then
             password = My.Settings.password
-            TextBox1.PlaceholderText = "Enter your Password here"
+            Label3.Text = "Welcome! Enter your password, then Press Enter or Login to Start using t1leapdesk"
             LoginReady = True
         ElseIf My.Settings.passwordEnabled = False Then
-            TextBox1.PlaceholderText = "Press Enter or Login to Start, no password needed"
+            Label3.Text = "Welcome! Press Enter or Login to Start using t1leapdesk"
             LoginReady = True
         End If
 
@@ -120,5 +112,6 @@ Public Class Form1
         timeElapse = timeElapse + 1
         Secret()
     End Sub
+
 
 End Class

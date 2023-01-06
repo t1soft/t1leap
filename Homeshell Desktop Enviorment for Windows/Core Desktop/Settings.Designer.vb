@@ -32,6 +32,7 @@ Partial Class Settings
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Label16 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -40,6 +41,8 @@ Partial Class Settings
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.passwordComfirmText = New System.Windows.Forms.TextBox()
@@ -153,6 +156,7 @@ Partial Class Settings
         '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.Label16)
         Me.TabPage2.Controls.Add(Me.Panel2)
         Me.TabPage2.Controls.Add(Me.Label9)
         Me.TabPage2.Controls.Add(Me.Label2)
@@ -165,6 +169,15 @@ Partial Class Settings
         Me.TabPage2.Text = "Personalisation"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(19, 355)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(434, 15)
+        Me.Label16.TabIndex = 26
+        Me.Label16.Text = "Notice: You must close and reopen t1leapdesk for these changes to go into effect"
+        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Gainsboro
@@ -173,7 +186,7 @@ Partial Class Settings
         Me.Panel2.Controls.Add(Me.Button1)
         Me.Panel2.Location = New System.Drawing.Point(6, 64)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(289, 157)
+        Me.Panel2.Size = New System.Drawing.Size(234, 114)
         Me.Panel2.TabIndex = 25
         '
         'Label14
@@ -234,6 +247,8 @@ Partial Class Settings
         '
         'TabPage5
         '
+        Me.TabPage5.Controls.Add(Me.Label17)
+        Me.TabPage5.Controls.Add(Me.Label15)
         Me.TabPage5.Controls.Add(Me.Panel1)
         Me.TabPage5.Controls.Add(Me.Label12)
         Me.TabPage5.Controls.Add(Me.Label13)
@@ -244,6 +259,25 @@ Partial Class Settings
         Me.TabPage5.TabIndex = 5
         Me.TabPage5.Text = "Security"
         Me.TabPage5.UseVisualStyleBackColor = True
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.ForeColor = System.Drawing.Color.Red
+        Me.Label17.Location = New System.Drawing.Point(7, 371)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(423, 15)
+        Me.Label17.TabIndex = 26
+        Me.Label17.Text = "INSTABILITY WARNING: Read the Notice in the Home Tab for More Information"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(7, 356)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(434, 15)
+        Me.Label15.TabIndex = 25
+        Me.Label15.Text = "Notice: You must close and reopen t1leapdesk for these changes to go into effect"
         '
         'Panel1
         '
@@ -424,4 +458,7 @@ Partial Class Settings
     Friend WithEvents Label13 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label14 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label15 As Label
 End Class

@@ -28,6 +28,7 @@ Partial Class Help
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.SuspendLayout()
@@ -46,6 +47,7 @@ Partial Class Help
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.Label2)
         Me.TabPage1.Controls.Add(Me.Label1)
         Me.TabPage1.Location = New System.Drawing.Point(4, 24)
         Me.TabPage1.Name = "TabPage1"
@@ -59,7 +61,7 @@ Partial Class Help
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(33, 125)
+        Me.Label1.Location = New System.Drawing.Point(25, 35)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(217, 28)
         Me.Label1.TabIndex = 0
@@ -84,6 +86,15 @@ Partial Class Help
         Me.TabPage3.Text = "Support"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(25, 63)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(387, 30)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "A More Streamlined Enviornment to Work, Play, and Browse the Internet" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
         'Help
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -106,4 +117,5 @@ Partial Class Help
     Friend WithEvents Label1 As Label
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents TabPage3 As TabPage
+    Friend WithEvents Label2 As Label
 End Class

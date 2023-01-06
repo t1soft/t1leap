@@ -31,21 +31,22 @@ Partial Class Form1
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button2
         '
         Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(86, 567)
+        Me.Button2.Location = New System.Drawing.Point(0, 621)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(165, 42)
+        Me.Button2.Size = New System.Drawing.Size(130, 42)
         Me.Button2.TabIndex = 20
         Me.Button2.Text = " Exit Enviorment"
         Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -66,8 +67,10 @@ Partial Class Form1
         '
         Me.UserText.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.UserText.AutoSize = True
+        Me.UserText.BackColor = System.Drawing.Color.SkyBlue
         Me.UserText.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.UserText.Location = New System.Drawing.Point(275, 285)
+        Me.UserText.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.UserText.Location = New System.Drawing.Point(179, 286)
         Me.UserText.Name = "UserText"
         Me.UserText.Size = New System.Drawing.Size(70, 37)
         Me.UserText.TabIndex = 16
@@ -76,14 +79,16 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.Location = New System.Drawing.Point(182, 361)
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.Location = New System.Drawing.Point(487, 326)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(147, 32)
+        Me.Button1.Size = New System.Drawing.Size(93, 27)
         Me.Button1.TabIndex = 14
         Me.Button1.Text = "Log In"
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Timer1
         '
@@ -104,33 +109,46 @@ Partial Class Form1
         '
         Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox1.Location = New System.Drawing.Point(182, 328)
+        Me.TextBox1.Location = New System.Drawing.Point(179, 326)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox1.PlaceholderText = "Preparing Login"
-        Me.TextBox1.Size = New System.Drawing.Size(368, 27)
+        Me.TextBox1.Size = New System.Drawing.Size(311, 27)
         Me.TextBox1.TabIndex = 21
         Me.TextBox1.UseSystemPasswordChar = True
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.PictureBox1.Location = New System.Drawing.Point(182, 237)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(87, 85)
-        Me.PictureBox1.TabIndex = 22
-        Me.PictureBox1.TabStop = False
         '
         'Label1
         '
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(831, 582)
+        Me.Label1.Location = New System.Drawing.Point(818, 567)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(258, 60)
+        Me.Label1.Size = New System.Drawing.Size(271, 75)
         Me.Label1.TabIndex = 23
-        Me.Label1.Text = "Is this not your account? " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "If so, you can access your own account by just" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "loggi" &
-    "ng in to your Windows User Account, then" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "opening t1leapdesk there"
+        Me.Label1.Text = resources.GetString("Label1.Text")
+        '
+        'Label2
+        '
+        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.SkyBlue
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 50.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.ForeColor = System.Drawing.Color.LightSeaGreen
+        Me.Label2.Location = New System.Drawing.Point(136, 574)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(244, 89)
+        Me.Label2.TabIndex = 24
+        Me.Label2.Text = "Label2"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label3
+        '
+        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(179, 356)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(157, 15)
+        Me.Label3.TabIndex = 25
+        Me.Label3.Text = "Preparing Login, Please Wait"
         '
         'Form1
         '
@@ -139,13 +157,14 @@ Partial Class Form1
         Me.BackColor = System.Drawing.Color.SkyBlue
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1101, 663)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.UserText)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.UserText)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -155,7 +174,6 @@ Partial Class Form1
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -167,6 +185,7 @@ Partial Class Form1
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Panel1 As Panel
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
 End Class
