@@ -38,11 +38,13 @@
             My.Settings.Save()
             Label11.Text = "Account Password: Not Set"
             My.Settings.passwordEnabled = False
+            My.Settings.Save()
         Else
             My.Settings.password = passwordSetText.Text
             My.Settings.Save()
             Label11.Text = "Account Password: Set"
             My.Settings.passwordEnabled = True
+            My.Settings.Save()
         End If
     End Function
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
