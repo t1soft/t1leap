@@ -58,9 +58,9 @@ Partial Class PasswordComfirm
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(12, 95)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(240, 15)
+        Me.Label2.Size = New System.Drawing.Size(321, 15)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Your Password is needed before Proceeding " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label2.Text = "Your Password is needed before Proceeding with this action" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label3
         '
