@@ -3,6 +3,8 @@ Imports VPKSoft.WinFormsRtfPrint
 
 Public Class leapwrite
 
+    Dim IMG As String
+
     Dim CurrentFont As String = "Calibri"
     Dim CurrentSize As String = "11"
     Dim documentname As String = ""
@@ -397,12 +399,31 @@ Public Class leapwrite
         Form2.Show()
     End Sub
 
+#End Region
 
+#Region "Personalization"
+    Private Sub ChangeBackgroundToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ChangeBackgroundToolStripMenuItem.Click
+        open_dialog1.Filter = "Image/Picture Files|*.jpg;*.gif;*.png;*.tiff;*.bmp"
 
+        If open_dialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
+            IMG = open_dialog1.FileName
+            My.Settings.BckgLocation = IMG
+            My.Settings.Save()
+            TableLayoutPanel2.BackgroundImage = Image.FromFile(My.Settings.BckgLocation)
+        End If
+    End Sub
 
+    Private Sub ClearBackgroundToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClearBackgroundToolStripMenuItem.Click
+        My.Settings.BckgLocation = "0"
+        My.Settings.Save()
+        TableLayoutPanel2.BackgroundImage = Nothing
+    End Sub
 
-
-
+    Private Sub leapwrite_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If My.Settings.BckgSet = True Then
+            TableLayoutPanel2.BackgroundImage = Image.FromFile(My.Settings.BckgLocation)
+        End If
+    End Sub
 
 #End Region
 

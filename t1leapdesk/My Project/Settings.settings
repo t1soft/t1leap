@@ -32,5 +32,11 @@
     <Setting Name="passwordEnabled" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="BckgLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BckgSet" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

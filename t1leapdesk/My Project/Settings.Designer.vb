@@ -172,6 +172,30 @@ Namespace My
                 Me("passwordEnabled") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property BckgLocation() As String
+            Get
+                Return CType(Me("BckgLocation"),String)
+            End Get
+            Set
+                Me("BckgLocation") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property BckgSet() As Boolean
+            Get
+                Return CType(Me("BckgSet"),Boolean)
+            End Get
+            Set
+                Me("BckgSet") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

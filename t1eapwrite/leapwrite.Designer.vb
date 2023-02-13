@@ -102,18 +102,23 @@ Partial Class leapwrite
         Me.ToolStripSeparator14 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripLabel5 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripSeparator15 = New System.Windows.Forms.ToolStripSeparator()
-        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
-        Me.documentBox = New System.Windows.Forms.RichTextBox()
         Me.open_dialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.save_dialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
+        Me.documentBox = New System.Windows.Forms.RichTextBox()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.ToolStripSeparator16 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripSeparator17 = New System.Windows.Forms.ToolStripSeparator()
+        Me.CustomiseT1leapwriteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ChangeBackgroundToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ClearBackgroundToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
-        Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
+        Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -151,7 +156,7 @@ Partial Class leapwrite
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.newbutton1, Me.openbutton1, Me.savebutton1, Me.saveasbutton1, Me.PrintToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.newbutton1, Me.openbutton1, Me.savebutton1, Me.saveasbutton1, Me.ToolStripSeparator16, Me.PrintToolStripMenuItem, Me.ToolStripSeparator17, Me.CustomiseT1leapwriteToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
@@ -159,31 +164,31 @@ Partial Class leapwrite
         'newbutton1
         '
         Me.newbutton1.Name = "newbutton1"
-        Me.newbutton1.Size = New System.Drawing.Size(180, 22)
+        Me.newbutton1.Size = New System.Drawing.Size(114, 22)
         Me.newbutton1.Text = "New"
         '
         'openbutton1
         '
         Me.openbutton1.Name = "openbutton1"
-        Me.openbutton1.Size = New System.Drawing.Size(180, 22)
+        Me.openbutton1.Size = New System.Drawing.Size(114, 22)
         Me.openbutton1.Text = "Open"
         '
         'savebutton1
         '
         Me.savebutton1.Name = "savebutton1"
-        Me.savebutton1.Size = New System.Drawing.Size(180, 22)
+        Me.savebutton1.Size = New System.Drawing.Size(114, 22)
         Me.savebutton1.Text = "Save"
         '
         'saveasbutton1
         '
         Me.saveasbutton1.Name = "saveasbutton1"
-        Me.saveasbutton1.Size = New System.Drawing.Size(180, 22)
+        Me.saveasbutton1.Size = New System.Drawing.Size(114, 22)
         Me.saveasbutton1.Text = "Save As"
         '
         'PrintToolStripMenuItem
         '
         Me.PrintToolStripMenuItem.Name = "PrintToolStripMenuItem"
-        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(114, 22)
         Me.PrintToolStripMenuItem.Text = "Print"
         '
         'EditToolStripMenuItem
@@ -196,37 +201,37 @@ Partial Class leapwrite
         'UndoToolStripMenuItem
         '
         Me.UndoToolStripMenuItem.Name = "UndoToolStripMenuItem"
-        Me.UndoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UndoToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
         Me.UndoToolStripMenuItem.Text = "Undo"
         '
         'RedoToolStripMenuItem
         '
         Me.RedoToolStripMenuItem.Name = "RedoToolStripMenuItem"
-        Me.RedoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.RedoToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
         Me.RedoToolStripMenuItem.Text = "Redo"
         '
         'SelectAllToolStripMenuItem
         '
         Me.SelectAllToolStripMenuItem.Name = "SelectAllToolStripMenuItem"
-        Me.SelectAllToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SelectAllToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
         Me.SelectAllToolStripMenuItem.Text = "Select All"
         '
         'CutToolStripMenuItem
         '
         Me.CutToolStripMenuItem.Name = "CutToolStripMenuItem"
-        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
         Me.CutToolStripMenuItem.Text = "Cut"
         '
         'CopyToolStripMenuItem
         '
         Me.CopyToolStripMenuItem.Name = "CopyToolStripMenuItem"
-        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
         Me.CopyToolStripMenuItem.Text = "Copy"
         '
         'PasteToolStripMenuItem
         '
         Me.PasteToolStripMenuItem.Name = "PasteToolStripMenuItem"
-        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
         Me.PasteToolStripMenuItem.Text = "Paste"
         '
         'InsertToolStripMenuItem
@@ -239,7 +244,7 @@ Partial Class leapwrite
         'PictureToolStripMenuItem
         '
         Me.PictureToolStripMenuItem.Name = "PictureToolStripMenuItem"
-        Me.PictureToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PictureToolStripMenuItem.Size = New System.Drawing.Size(111, 22)
         Me.PictureToolStripMenuItem.Text = "Picture"
         '
         'HelpToolStripMenuItem
@@ -253,7 +258,7 @@ Partial Class leapwrite
         '
         Me.AboutToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BuildNumberToolStripMenuItem})
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'BuildNumberToolStripMenuItem
@@ -265,7 +270,7 @@ Partial Class leapwrite
         'SoftwareLicenceToolStripMenuItem
         '
         Me.SoftwareLicenceToolStripMenuItem.Name = "SoftwareLicenceToolStripMenuItem"
-        Me.SoftwareLicenceToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SoftwareLicenceToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
         Me.SoftwareLicenceToolStripMenuItem.Text = "Software Licence "
         '
         'ToolStrip1
@@ -669,22 +674,9 @@ Partial Class leapwrite
         Me.ToolStripSeparator15.Name = "ToolStripSeparator15"
         Me.ToolStripSeparator15.Size = New System.Drawing.Size(6, 34)
         '
-        'TableLayoutPanel2
+        'PrintDialog1
         '
-        Me.TableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.TableLayoutPanel2.ColumnCount = 3
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 787.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel3, 1, 1)
-        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 123)
-        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
-        Me.TableLayoutPanel2.RowCount = 2
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 95.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1324, 522)
-        Me.TableLayoutPanel2.TabIndex = 7
+        Me.PrintDialog1.UseEXDialog = True
         '
         'TableLayoutPanel3
         '
@@ -720,9 +712,51 @@ Partial Class leapwrite
         Me.documentBox.TabIndex = 5
         Me.documentBox.Text = ""
         '
-        'PrintDialog1
+        'TableLayoutPanel2
         '
-        Me.PrintDialog1.UseEXDialog = True
+        Me.TableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.TableLayoutPanel2.ColumnCount = 3
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 787.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel3, 1, 1)
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 123)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 2
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 95.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1324, 522)
+        Me.TableLayoutPanel2.TabIndex = 7
+        '
+        'ToolStripSeparator16
+        '
+        Me.ToolStripSeparator16.Name = "ToolStripSeparator16"
+        Me.ToolStripSeparator16.Size = New System.Drawing.Size(188, 6)
+        '
+        'ToolStripSeparator17
+        '
+        Me.ToolStripSeparator17.Name = "ToolStripSeparator17"
+        Me.ToolStripSeparator17.Size = New System.Drawing.Size(188, 6)
+        '
+        'CustomiseT1leapwriteToolStripMenuItem
+        '
+        Me.CustomiseT1leapwriteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ChangeBackgroundToolStripMenuItem, Me.ClearBackgroundToolStripMenuItem})
+        Me.CustomiseT1leapwriteToolStripMenuItem.Name = "CustomiseT1leapwriteToolStripMenuItem"
+        Me.CustomiseT1leapwriteToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.CustomiseT1leapwriteToolStripMenuItem.Text = "Personalize t1leapwrite"
+        '
+        'ChangeBackgroundToolStripMenuItem
+        '
+        Me.ChangeBackgroundToolStripMenuItem.Name = "ChangeBackgroundToolStripMenuItem"
+        Me.ChangeBackgroundToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
+        Me.ChangeBackgroundToolStripMenuItem.Text = "Change Background"
+        '
+        'ClearBackgroundToolStripMenuItem
+        '
+        Me.ClearBackgroundToolStripMenuItem.Name = "ClearBackgroundToolStripMenuItem"
+        Me.ClearBackgroundToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
+        Me.ClearBackgroundToolStripMenuItem.Text = "Clear Background"
         '
         'leapwrite
         '
@@ -743,9 +777,9 @@ Partial Class leapwrite
         Me.MenuStrip1.PerformLayout()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
+        Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
-        Me.TableLayoutPanel3.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -774,9 +808,6 @@ Partial Class leapwrite
     Friend WithEvents newbutton1 As ToolStripMenuItem
     Friend WithEvents openbutton1 As ToolStripMenuItem
     Friend WithEvents saveasbutton1 As ToolStripMenuItem
-    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
-    Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
-    Friend WithEvents documentBox As RichTextBox
     Friend WithEvents NewToolStripButton As ToolStripButton
     Friend WithEvents OpenToolStripButton As ToolStripButton
     Friend WithEvents SaveToolStripButton As ToolStripButton
@@ -837,4 +868,12 @@ Partial Class leapwrite
     Friend WithEvents ToolStripSeparator15 As ToolStripSeparator
     Friend WithEvents SoftwareLicenceToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BuildNumberToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
+    Friend WithEvents documentBox As RichTextBox
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+    Friend WithEvents ToolStripSeparator16 As ToolStripSeparator
+    Friend WithEvents ToolStripSeparator17 As ToolStripSeparator
+    Friend WithEvents CustomiseT1leapwriteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ChangeBackgroundToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ClearBackgroundToolStripMenuItem As ToolStripMenuItem
 End Class
