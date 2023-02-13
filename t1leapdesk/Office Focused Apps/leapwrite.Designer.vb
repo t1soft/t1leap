@@ -31,7 +31,12 @@ Partial Class leapwrite
         Me.openbutton1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.savebutton1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.saveasbutton1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator16 = New System.Windows.Forms.ToolStripSeparator()
         Me.PrintToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator17 = New System.Windows.Forms.ToolStripSeparator()
+        Me.CustomiseT1leapwriteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ChangeBackgroundToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ClearBackgroundToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UndoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RedoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -109,11 +114,6 @@ Partial Class leapwrite
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.documentBox = New System.Windows.Forms.RichTextBox()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.ToolStripSeparator16 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator17 = New System.Windows.Forms.ToolStripSeparator()
-        Me.CustomiseT1leapwriteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ChangeBackgroundToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ClearBackgroundToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
@@ -164,32 +164,61 @@ Partial Class leapwrite
         'newbutton1
         '
         Me.newbutton1.Name = "newbutton1"
-        Me.newbutton1.Size = New System.Drawing.Size(114, 22)
+        Me.newbutton1.Size = New System.Drawing.Size(194, 22)
         Me.newbutton1.Text = "New"
         '
         'openbutton1
         '
         Me.openbutton1.Name = "openbutton1"
-        Me.openbutton1.Size = New System.Drawing.Size(114, 22)
+        Me.openbutton1.Size = New System.Drawing.Size(194, 22)
         Me.openbutton1.Text = "Open"
         '
         'savebutton1
         '
         Me.savebutton1.Name = "savebutton1"
-        Me.savebutton1.Size = New System.Drawing.Size(114, 22)
+        Me.savebutton1.Size = New System.Drawing.Size(194, 22)
         Me.savebutton1.Text = "Save"
         '
         'saveasbutton1
         '
         Me.saveasbutton1.Name = "saveasbutton1"
-        Me.saveasbutton1.Size = New System.Drawing.Size(114, 22)
+        Me.saveasbutton1.Size = New System.Drawing.Size(194, 22)
         Me.saveasbutton1.Text = "Save As"
+        '
+        'ToolStripSeparator16
+        '
+        Me.ToolStripSeparator16.Name = "ToolStripSeparator16"
+        Me.ToolStripSeparator16.Size = New System.Drawing.Size(191, 6)
         '
         'PrintToolStripMenuItem
         '
         Me.PrintToolStripMenuItem.Name = "PrintToolStripMenuItem"
-        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(114, 22)
+        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
         Me.PrintToolStripMenuItem.Text = "Print"
+        '
+        'ToolStripSeparator17
+        '
+        Me.ToolStripSeparator17.Name = "ToolStripSeparator17"
+        Me.ToolStripSeparator17.Size = New System.Drawing.Size(191, 6)
+        '
+        'CustomiseT1leapwriteToolStripMenuItem
+        '
+        Me.CustomiseT1leapwriteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ChangeBackgroundToolStripMenuItem, Me.ClearBackgroundToolStripMenuItem})
+        Me.CustomiseT1leapwriteToolStripMenuItem.Name = "CustomiseT1leapwriteToolStripMenuItem"
+        Me.CustomiseT1leapwriteToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.CustomiseT1leapwriteToolStripMenuItem.Text = "Personalize t1leapwrite"
+        '
+        'ChangeBackgroundToolStripMenuItem
+        '
+        Me.ChangeBackgroundToolStripMenuItem.Name = "ChangeBackgroundToolStripMenuItem"
+        Me.ChangeBackgroundToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
+        Me.ChangeBackgroundToolStripMenuItem.Text = "Change Background"
+        '
+        'ClearBackgroundToolStripMenuItem
+        '
+        Me.ClearBackgroundToolStripMenuItem.Name = "ClearBackgroundToolStripMenuItem"
+        Me.ClearBackgroundToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
+        Me.ClearBackgroundToolStripMenuItem.Text = "Clear Background"
         '
         'EditToolStripMenuItem
         '
@@ -715,6 +744,7 @@ Partial Class leapwrite
         'TableLayoutPanel2
         '
         Me.TableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.TableLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 787.0!))
@@ -728,35 +758,6 @@ Partial Class leapwrite
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 95.0!))
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(1324, 522)
         Me.TableLayoutPanel2.TabIndex = 7
-        '
-        'ToolStripSeparator16
-        '
-        Me.ToolStripSeparator16.Name = "ToolStripSeparator16"
-        Me.ToolStripSeparator16.Size = New System.Drawing.Size(188, 6)
-        '
-        'ToolStripSeparator17
-        '
-        Me.ToolStripSeparator17.Name = "ToolStripSeparator17"
-        Me.ToolStripSeparator17.Size = New System.Drawing.Size(188, 6)
-        '
-        'CustomiseT1leapwriteToolStripMenuItem
-        '
-        Me.CustomiseT1leapwriteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ChangeBackgroundToolStripMenuItem, Me.ClearBackgroundToolStripMenuItem})
-        Me.CustomiseT1leapwriteToolStripMenuItem.Name = "CustomiseT1leapwriteToolStripMenuItem"
-        Me.CustomiseT1leapwriteToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
-        Me.CustomiseT1leapwriteToolStripMenuItem.Text = "Personalize t1leapwrite"
-        '
-        'ChangeBackgroundToolStripMenuItem
-        '
-        Me.ChangeBackgroundToolStripMenuItem.Name = "ChangeBackgroundToolStripMenuItem"
-        Me.ChangeBackgroundToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
-        Me.ChangeBackgroundToolStripMenuItem.Text = "Change Background"
-        '
-        'ClearBackgroundToolStripMenuItem
-        '
-        Me.ClearBackgroundToolStripMenuItem.Name = "ClearBackgroundToolStripMenuItem"
-        Me.ClearBackgroundToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
-        Me.ClearBackgroundToolStripMenuItem.Text = "Clear Background"
         '
         'leapwrite
         '
