@@ -772,6 +772,7 @@ Partial Class leapwrite
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "leapwrite"
         Me.Text = "t1leapwrite"
+        Me.TopMost = True
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)

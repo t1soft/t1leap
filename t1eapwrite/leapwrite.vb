@@ -408,6 +408,7 @@ Public Class leapwrite
         If open_dialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
             IMG = open_dialog1.FileName
             My.Settings.BckgLocation = IMG
+            My.Settings.BckgSet = True
             My.Settings.Save()
             TableLayoutPanel2.BackgroundImage = Image.FromFile(My.Settings.BckgLocation)
         End If
@@ -415,6 +416,7 @@ Public Class leapwrite
 
     Private Sub ClearBackgroundToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClearBackgroundToolStripMenuItem.Click
         My.Settings.BckgLocation = "0"
+        My.Settings.BckgSet = False
         My.Settings.Save()
         TableLayoutPanel2.BackgroundImage = Nothing
     End Sub
