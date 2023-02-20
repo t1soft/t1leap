@@ -135,7 +135,7 @@ Partial Class leapwrite
         'documentname1
         '
         Me.documentname1.AutoSize = True
-        Me.documentname1.BackColor = System.Drawing.Color.Transparent
+        Me.documentname1.BackColor = System.Drawing.Color.RoyalBlue
         Me.documentname1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.documentname1.ForeColor = System.Drawing.Color.White
         Me.documentname1.Location = New System.Drawing.Point(0, 33)
@@ -211,14 +211,14 @@ Partial Class leapwrite
         'ChangeBackgroundToolStripMenuItem
         '
         Me.ChangeBackgroundToolStripMenuItem.Name = "ChangeBackgroundToolStripMenuItem"
-        Me.ChangeBackgroundToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
-        Me.ChangeBackgroundToolStripMenuItem.Text = "Change Background"
+        Me.ChangeBackgroundToolStripMenuItem.Size = New System.Drawing.Size(219, 22)
+        Me.ChangeBackgroundToolStripMenuItem.Text = "Change Title Bar to a Image"
         '
         'ClearBackgroundToolStripMenuItem
         '
         Me.ClearBackgroundToolStripMenuItem.Name = "ClearBackgroundToolStripMenuItem"
-        Me.ClearBackgroundToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
-        Me.ClearBackgroundToolStripMenuItem.Text = "Clear Background"
+        Me.ClearBackgroundToolStripMenuItem.Size = New System.Drawing.Size(219, 22)
+        Me.ClearBackgroundToolStripMenuItem.Text = "Clear Image from Title Bar"
         '
         'EditToolStripMenuItem
         '
