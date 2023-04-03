@@ -134,7 +134,7 @@ Public Class leapwrite
         savebutton1.PerformClick()
     End Sub
 
-    Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+    Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles MyBase.Closing
         If Edited = True Then
             Dim result As DialogResult = MessageBox.Show("Document has been Modified, Do you Want to Save?", "Question", MessageBoxButtons.YesNoCancel)
             If result = DialogResult.Cancel Then
@@ -149,6 +149,10 @@ Public Class leapwrite
     End Sub
 
     Private Sub PrintToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrintToolStripMenuItem.Click
+        documentBox.PrintWithDialog
+    End Sub
+
+    Private Sub PrintToolStripButton_Click(sender As Object, e As EventArgs) Handles PrintToolStripButton.Click
         documentBox.PrintWithDialog
     End Sub
 
@@ -426,6 +430,7 @@ Public Class leapwrite
             Panel1.BackgroundImage = Image.FromFile(My.Settings.BckgLocation)
         End If
     End Sub
+
 
 #End Region
 

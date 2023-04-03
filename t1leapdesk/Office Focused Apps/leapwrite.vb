@@ -152,6 +152,10 @@ Public Class leapwrite
         documentBox.PrintWithDialog
     End Sub
 
+    Private Sub PrintToolStripButton_Click(sender As Object, e As EventArgs) Handles PrintToolStripButton.Click
+        documentBox.PrintWithDialog
+    End Sub
+
 #End Region
 
 #Region "Basic Edit"
