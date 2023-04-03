@@ -22,161 +22,165 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.UserText = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Panel1.SuspendLayout()
-        Me.SuspendLayout()
-        '
-        'Button2
-        '
-        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(0, 621)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(130, 42)
-        Me.Button2.TabIndex = 20
-        Me.Button2.Text = " Exit Enviorment"
-        Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Label6.Location = New System.Drawing.Point(12, 9)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(106, 25)
-        Me.Label6.TabIndex = 19
-        Me.Label6.Text = "T1LeapDesk"
-        '
-        'UserText
-        '
-        Me.UserText.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.UserText.AutoSize = True
-        Me.UserText.BackColor = System.Drawing.Color.SkyBlue
-        Me.UserText.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.UserText.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.UserText.Location = New System.Drawing.Point(179, 286)
-        Me.UserText.Name = "UserText"
-        Me.UserText.Size = New System.Drawing.Size(70, 37)
-        Me.UserText.TabIndex = 16
-        Me.UserText.Text = "User"
-        '
-        'Button1
-        '
-        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.Location = New System.Drawing.Point(487, 326)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(93, 27)
-        Me.Button1.TabIndex = 14
-        Me.Button1.Text = "Log In"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Timer1
-        '
-        Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 1000
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(130, 663)
-        Me.Panel1.TabIndex = 21
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox1.Location = New System.Drawing.Point(179, 326)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox1.Size = New System.Drawing.Size(311, 27)
-        Me.TextBox1.TabIndex = 21
-        Me.TextBox1.UseSystemPasswordChar = True
-        '
-        'Label1
-        '
-        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(818, 567)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(271, 75)
-        Me.Label1.TabIndex = 23
-        Me.Label1.Text = resources.GetString("Label1.Text")
-        '
-        'Label2
-        '
-        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.SkyBlue
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 50.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.ForeColor = System.Drawing.Color.LightSeaGreen
-        Me.Label2.Location = New System.Drawing.Point(136, 574)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(244, 89)
-        Me.Label2.TabIndex = 24
-        Me.Label2.Text = "Label2"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label3
-        '
-        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(179, 356)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(157, 15)
-        Me.Label3.TabIndex = 25
-        Me.Label3.Text = "Preparing Login, Please Wait"
-        '
-        'Form1
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.SkyBlue
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1101, 663)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.UserText)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Panel1)
-        Me.DoubleBuffered = True
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Form1"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
-        Me.Text = "LockNoPass"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        components = New ComponentModel.Container()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
+        Button2 = New Button()
+        Label6 = New Label()
+        UserText = New Label()
+        Button1 = New Button()
+        Timer1 = New Timer(components)
+        Panel1 = New Panel()
+        TextBox1 = New TextBox()
+        Label1 = New Label()
+        Label2 = New Label()
+        Label3 = New Label()
+        Panel1.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' Button2
+        ' 
+        Button2.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        Button2.Image = CType(resources.GetObject("Button2.Image"), Image)
+        Button2.ImageAlign = ContentAlignment.MiddleLeft
+        Button2.Location = New Point(0, 828)
+        Button2.Margin = New Padding(3, 4, 3, 4)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(149, 56)
+        Button2.TabIndex = 20
+        Button2.Text = " Exit Leapdesk"
+        Button2.TextImageRelation = TextImageRelation.ImageBeforeText
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Font = New Font("Segoe UI Light", 14F, FontStyle.Regular, GraphicsUnit.Point)
+        Label6.ImageAlign = ContentAlignment.MiddleLeft
+        Label6.Location = New Point(14, 12)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(131, 32)
+        Label6.TabIndex = 19
+        Label6.Text = "T1LeapDesk"
+        ' 
+        ' UserText
+        ' 
+        UserText.Anchor = AnchorStyles.Left
+        UserText.AutoSize = True
+        UserText.BackColor = Color.SkyBlue
+        UserText.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point)
+        UserText.ForeColor = SystemColors.ControlText
+        UserText.Location = New Point(205, 381)
+        UserText.Name = "UserText"
+        UserText.Size = New Size(87, 46)
+        UserText.TabIndex = 16
+        UserText.Text = "User"
+        ' 
+        ' Button1
+        ' 
+        Button1.Anchor = AnchorStyles.Left
+        Button1.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Font = New Font("Segoe UI", 9.5F, FontStyle.Regular, GraphicsUnit.Point)
+        Button1.Location = New Point(557, 435)
+        Button1.Margin = New Padding(3, 4, 3, 4)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(106, 36)
+        Button1.TabIndex = 14
+        Button1.Text = "Log In"
+        Button1.TextAlign = ContentAlignment.MiddleLeft
+        Button1.UseVisualStyleBackColor = False
+        ' 
+        ' Timer1
+        ' 
+        Timer1.Enabled = True
+        Timer1.Interval = 1000
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.DeepSkyBlue
+        Panel1.Controls.Add(Label6)
+        Panel1.Dock = DockStyle.Left
+        Panel1.Location = New Point(0, 0)
+        Panel1.Margin = New Padding(3, 4, 3, 4)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(149, 884)
+        Panel1.TabIndex = 21
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Anchor = AnchorStyles.Left
+        TextBox1.Font = New Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point)
+        TextBox1.Location = New Point(205, 435)
+        TextBox1.Margin = New Padding(3, 4, 3, 4)
+        TextBox1.Name = "TextBox1"
+        TextBox1.PasswordChar = "*"c
+        TextBox1.Size = New Size(355, 32)
+        TextBox1.TabIndex = 21
+        TextBox1.UseSystemPasswordChar = True
+        ' 
+        ' Label1
+        ' 
+        Label1.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
+        Label1.AutoSize = True
+        Label1.Location = New Point(888, 765)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(335, 100)
+        Label1.TabIndex = 23
+        Label1.Text = resources.GetString("Label1.Text")
+        ' 
+        ' Label2
+        ' 
+        Label2.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
+        Label2.AutoSize = True
+        Label2.BackColor = Color.SkyBlue
+        Label2.Font = New Font("Segoe UI", 50F, FontStyle.Bold, GraphicsUnit.Point)
+        Label2.ForeColor = Color.LightSeaGreen
+        Label2.Location = New Point(155, 765)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(304, 112)
+        Label2.TabIndex = 24
+        Label2.Text = "Label2"
+        Label2.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Label3
+        ' 
+        Label3.Anchor = AnchorStyles.Left
+        Label3.AutoSize = True
+        Label3.Location = New Point(205, 475)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(197, 20)
+        Label3.TabIndex = 25
+        Label3.Text = "Preparing Login, Please Wait"
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.SkyBlue
+        BackgroundImageLayout = ImageLayout.Stretch
+        ClientSize = New Size(1258, 884)
+        Controls.Add(Label3)
+        Controls.Add(Button1)
+        Controls.Add(Label2)
+        Controls.Add(Label1)
+        Controls.Add(UserText)
+        Controls.Add(TextBox1)
+        Controls.Add(Button2)
+        Controls.Add(Panel1)
+        DoubleBuffered = True
+        FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        Margin = New Padding(3, 4, 3, 4)
+        Name = "Form1"
+        StartPosition = FormStartPosition.Manual
+        Text = "LockNoPass"
+        WindowState = FormWindowState.Maximized
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
     Friend WithEvents Button2 As Button
     Friend WithEvents Label6 As Label

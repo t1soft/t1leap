@@ -41,7 +41,7 @@ Public Class Form1
 
 
     'Changes the Greeting based on Local Time, and Greets you by grabbing the Current Windows Username
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         UserText.Text = Environment.UserName
         Label2.Text = Environment.MachineName
