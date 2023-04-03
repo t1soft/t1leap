@@ -22,54 +22,53 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(12, 135)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(133, 32)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "t1leaptable"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 243)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(199, 60)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Build Created on November 11, 2022" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Copyright (c) 2022 t1software" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Copyright (c) " &
-    "2020 Petteri Kautonen" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Software Uses the MIT Licence. "
-        '
-        'Timer1
-        '
-        Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 1000
-        '
-        'Form1
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.YellowGreen
-        Me.ClientSize = New System.Drawing.Size(331, 312)
-        Me.ControlBox = False
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Cursor = System.Windows.Forms.Cursors.AppStarting
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Form1"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        components = New ComponentModel.Container()
+        Label1 = New Label()
+        Label2 = New Label()
+        Timer1 = New Timer(components)
+        SuspendLayout()
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point)
+        Label1.Location = New Point(14, 180)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(166, 41)
+        Label1.TabIndex = 0
+        Label1.Text = "t1leaptable"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(12, 347)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(321, 60)
+        Label2.TabIndex = 1
+        Label2.Text = "(c) t1leapsoft 2023 " & vbCrLf & "Licences, including Third Party Notices/Licences" & vbCrLf & "are accessable by going to Help -> Licences"
+        ' 
+        ' Timer1
+        ' 
+        Timer1.Enabled = True
+        Timer1.Interval = 1000
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.YellowGreen
+        ClientSize = New Size(378, 416)
+        ControlBox = False
+        Controls.Add(Label2)
+        Controls.Add(Label1)
+        Cursor = Cursors.AppStarting
+        FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(3, 4, 3, 4)
+        Name = "Form1"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "Form1"
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents Label1 As Label

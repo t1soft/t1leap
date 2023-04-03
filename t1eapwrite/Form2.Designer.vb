@@ -22,30 +22,31 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.SuspendLayout()
-        '
-        'RichTextBox1
-        '
-        Me.RichTextBox1.Location = New System.Drawing.Point(12, 12)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.ReadOnly = True
-        Me.RichTextBox1.Size = New System.Drawing.Size(556, 426)
-        Me.RichTextBox1.TabIndex = 0
-        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
-        '
-        'Form2
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(583, 450)
-        Me.Controls.Add(Me.RichTextBox1)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Form2"
-        Me.Text = "Software License"
-        Me.ResumeLayout(False)
-
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form2))
+        RichTextBox1 = New RichTextBox()
+        SuspendLayout()
+        ' 
+        ' RichTextBox1
+        ' 
+        RichTextBox1.Location = New Point(14, 16)
+        RichTextBox1.Margin = New Padding(3, 4, 3, 4)
+        RichTextBox1.Name = "RichTextBox1"
+        RichTextBox1.ReadOnly = True
+        RichTextBox1.Size = New Size(635, 567)
+        RichTextBox1.TabIndex = 0
+        RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
+        ' 
+        ' Form2
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(666, 600)
+        Controls.Add(RichTextBox1)
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        Margin = New Padding(3, 4, 3, 4)
+        Name = "Form2"
+        Text = "Software License"
+        ResumeLayout(False)
     End Sub
 
     Friend WithEvents RichTextBox1 As RichTextBox

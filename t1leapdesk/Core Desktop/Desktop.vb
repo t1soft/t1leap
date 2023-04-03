@@ -41,6 +41,7 @@
         WebBrowser.Hide()
 
         Dialog1.Show()
+        Settings.Hide()
         Me.Hide()
     End Sub
 

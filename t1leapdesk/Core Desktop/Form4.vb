@@ -18,6 +18,7 @@ Public Class Form4
 
         Dialog1.Close()
         Desktop.Close()
+        Settings.Close()
         Form1.Show()
         Me.Close()
     End Sub

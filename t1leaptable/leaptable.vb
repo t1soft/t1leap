@@ -544,7 +544,7 @@ Public Class leaptable
         savebutton1.PerformClick()
     End Sub
 
-    Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+    Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles MyBase.Closing
         If Edited = True Then
             Dim result As DialogResult = MessageBox.Show("Document has been Modified, Do you Want to Save?", "Question", MessageBoxButtons.YesNoCancel)
             If result = DialogResult.Cancel Then

@@ -290,7 +290,7 @@ Partial Class leapwrite
         ' 
         AboutToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {BuildNumberToolStripMenuItem})
         AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        AboutToolStripMenuItem.Size = New Size(208, 26)
+        AboutToolStripMenuItem.Size = New Size(224, 26)
         AboutToolStripMenuItem.Text = "About"
         ' 
         ' BuildNumberToolStripMenuItem
@@ -302,8 +302,8 @@ Partial Class leapwrite
         ' SoftwareLicenceToolStripMenuItem
         ' 
         SoftwareLicenceToolStripMenuItem.Name = "SoftwareLicenceToolStripMenuItem"
-        SoftwareLicenceToolStripMenuItem.Size = New Size(208, 26)
-        SoftwareLicenceToolStripMenuItem.Text = "Software Licence "
+        SoftwareLicenceToolStripMenuItem.Size = New Size(224, 26)
+        SoftwareLicenceToolStripMenuItem.Text = "Licences"
         ' 
         ' ToolStrip1
         ' 
