@@ -214,14 +214,14 @@ Partial Class leapwrite
         ' ChangeBackgroundToolStripMenuItem
         ' 
         ChangeBackgroundToolStripMenuItem.Name = "ChangeBackgroundToolStripMenuItem"
-        ChangeBackgroundToolStripMenuItem.Size = New Size(277, 26)
-        ChangeBackgroundToolStripMenuItem.Text = "Change Title Bar to a Image"
+        ChangeBackgroundToolStripMenuItem.Size = New Size(225, 26)
+        ChangeBackgroundToolStripMenuItem.Text = "Change Background"
         ' 
         ' ClearBackgroundToolStripMenuItem
         ' 
         ClearBackgroundToolStripMenuItem.Name = "ClearBackgroundToolStripMenuItem"
-        ClearBackgroundToolStripMenuItem.Size = New Size(277, 26)
-        ClearBackgroundToolStripMenuItem.Text = "Clear Image from Title Bar "
+        ClearBackgroundToolStripMenuItem.Size = New Size(225, 26)
+        ClearBackgroundToolStripMenuItem.Text = "Clear Background"
         ' 
         ' EditToolStripMenuItem
         ' 
@@ -290,7 +290,7 @@ Partial Class leapwrite
         ' 
         AboutToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {BuildNumberToolStripMenuItem})
         AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        AboutToolStripMenuItem.Size = New Size(224, 26)
+        AboutToolStripMenuItem.Size = New Size(147, 26)
         AboutToolStripMenuItem.Text = "About"
         ' 
         ' BuildNumberToolStripMenuItem
@@ -302,16 +302,17 @@ Partial Class leapwrite
         ' SoftwareLicenceToolStripMenuItem
         ' 
         SoftwareLicenceToolStripMenuItem.Name = "SoftwareLicenceToolStripMenuItem"
-        SoftwareLicenceToolStripMenuItem.Size = New Size(224, 26)
+        SoftwareLicenceToolStripMenuItem.Size = New Size(147, 26)
         SoftwareLicenceToolStripMenuItem.Text = "Licences"
         ' 
         ' ToolStrip1
         ' 
+        ToolStrip1.AutoSize = False
         ToolStrip1.ImageScalingSize = New Size(20, 20)
         ToolStrip1.Items.AddRange(New ToolStripItem() {NewToolStripButton, OpenToolStripButton, SaveToolStripButton, PrintToolStripButton, ToolStripSeparator1, undo2, redo2, ToolStripSeparator2, CutToolStripButton, CopyToolStripButton, PasteToolStripButton, ToolStripSeparator9, fontselector, sizeselector, ToolStripSeparator4, ToolStripButton4, ToolStripSeparator6, ToolStripButton5, ToolStripSeparator5, ToolStripButton6, ToolStripSeparator7, ToolStripButton7, ToolStripSeparator8, ToolStripButton1, ToolStripButton2, ToolStripButton3, ToolStripSeparator11, ToolStripButton8, ToolStripSplitButton1, ToolStripSplitButton2, ToolStripSeparator10, ToolStripLabel1, ToolStripSeparator12, ToolStripLabel2, ToolStripSeparator13, ToolStripLabel3, ToolStripSeparator3, ToolStripLabel4, ToolStripSeparator14, ToolStripLabel5, ToolStripSeparator15})
         ToolStrip1.Location = New Point(0, 117)
         ToolStrip1.Name = "ToolStrip1"
-        ToolStrip1.Size = New Size(1513, 39)
+        ToolStrip1.Size = New Size(1513, 45)
         ToolStrip1.TabIndex = 2
         ToolStrip1.Text = "ToolStrip1"
         ' 
@@ -321,7 +322,7 @@ Partial Class leapwrite
         NewToolStripButton.Image = CType(resources.GetObject("NewToolStripButton.Image"), Image)
         NewToolStripButton.ImageTransparentColor = Color.Magenta
         NewToolStripButton.Name = "NewToolStripButton"
-        NewToolStripButton.Size = New Size(29, 36)
+        NewToolStripButton.Size = New Size(29, 42)
         NewToolStripButton.Text = "&New"
         ' 
         ' OpenToolStripButton
@@ -330,7 +331,7 @@ Partial Class leapwrite
         OpenToolStripButton.Image = CType(resources.GetObject("OpenToolStripButton.Image"), Image)
         OpenToolStripButton.ImageTransparentColor = Color.Magenta
         OpenToolStripButton.Name = "OpenToolStripButton"
-        OpenToolStripButton.Size = New Size(29, 36)
+        OpenToolStripButton.Size = New Size(29, 42)
         OpenToolStripButton.Text = "&Open"
         ' 
         ' SaveToolStripButton
@@ -339,7 +340,7 @@ Partial Class leapwrite
         SaveToolStripButton.Image = CType(resources.GetObject("SaveToolStripButton.Image"), Image)
         SaveToolStripButton.ImageTransparentColor = Color.Magenta
         SaveToolStripButton.Name = "SaveToolStripButton"
-        SaveToolStripButton.Size = New Size(29, 36)
+        SaveToolStripButton.Size = New Size(29, 42)
         SaveToolStripButton.Text = "&Save"
         ' 
         ' PrintToolStripButton
@@ -348,13 +349,13 @@ Partial Class leapwrite
         PrintToolStripButton.Image = CType(resources.GetObject("PrintToolStripButton.Image"), Image)
         PrintToolStripButton.ImageTransparentColor = Color.Magenta
         PrintToolStripButton.Name = "PrintToolStripButton"
-        PrintToolStripButton.Size = New Size(29, 36)
+        PrintToolStripButton.Size = New Size(29, 42)
         PrintToolStripButton.Text = "&Print"
         ' 
         ' ToolStripSeparator1
         ' 
         ToolStripSeparator1.Name = "ToolStripSeparator1"
-        ToolStripSeparator1.Size = New Size(6, 39)
+        ToolStripSeparator1.Size = New Size(6, 45)
         ' 
         ' undo2
         ' 
@@ -362,7 +363,7 @@ Partial Class leapwrite
         undo2.Image = CType(resources.GetObject("undo2.Image"), Image)
         undo2.ImageTransparentColor = Color.Magenta
         undo2.Name = "undo2"
-        undo2.Size = New Size(29, 36)
+        undo2.Size = New Size(29, 42)
         undo2.Text = "Undo"
         ' 
         ' redo2
@@ -371,13 +372,13 @@ Partial Class leapwrite
         redo2.Image = CType(resources.GetObject("redo2.Image"), Image)
         redo2.ImageTransparentColor = Color.Magenta
         redo2.Name = "redo2"
-        redo2.Size = New Size(29, 36)
+        redo2.Size = New Size(29, 42)
         redo2.Text = "Redo"
         ' 
         ' ToolStripSeparator2
         ' 
         ToolStripSeparator2.Name = "ToolStripSeparator2"
-        ToolStripSeparator2.Size = New Size(6, 39)
+        ToolStripSeparator2.Size = New Size(6, 45)
         ' 
         ' CutToolStripButton
         ' 
@@ -385,7 +386,7 @@ Partial Class leapwrite
         CutToolStripButton.Image = CType(resources.GetObject("CutToolStripButton.Image"), Image)
         CutToolStripButton.ImageTransparentColor = Color.Magenta
         CutToolStripButton.Name = "CutToolStripButton"
-        CutToolStripButton.Size = New Size(29, 36)
+        CutToolStripButton.Size = New Size(29, 42)
         CutToolStripButton.Text = "C&ut"
         ' 
         ' CopyToolStripButton
@@ -394,7 +395,7 @@ Partial Class leapwrite
         CopyToolStripButton.Image = CType(resources.GetObject("CopyToolStripButton.Image"), Image)
         CopyToolStripButton.ImageTransparentColor = Color.Magenta
         CopyToolStripButton.Name = "CopyToolStripButton"
-        CopyToolStripButton.Size = New Size(29, 36)
+        CopyToolStripButton.Size = New Size(29, 42)
         CopyToolStripButton.Text = "&Copy"
         ' 
         ' PasteToolStripButton
@@ -403,32 +404,32 @@ Partial Class leapwrite
         PasteToolStripButton.Image = CType(resources.GetObject("PasteToolStripButton.Image"), Image)
         PasteToolStripButton.ImageTransparentColor = Color.Magenta
         PasteToolStripButton.Name = "PasteToolStripButton"
-        PasteToolStripButton.Size = New Size(29, 36)
+        PasteToolStripButton.Size = New Size(29, 42)
         PasteToolStripButton.Text = "&Paste"
         ' 
         ' ToolStripSeparator9
         ' 
         ToolStripSeparator9.Name = "ToolStripSeparator9"
-        ToolStripSeparator9.Size = New Size(6, 39)
+        ToolStripSeparator9.Size = New Size(6, 45)
         ' 
         ' fontselector
         ' 
         fontselector.Items.AddRange(New Object() {"Arial", "Calibri", "Segoe UI", "Times New Roman"})
         fontselector.Name = "fontselector"
-        fontselector.Size = New Size(138, 39)
+        fontselector.Size = New Size(138, 45)
         fontselector.Text = "Calibri"
         ' 
         ' sizeselector
         ' 
         sizeselector.Items.AddRange(New Object() {"8", "9", "10", "11", "12", "14", "16", "18", "20", "22", "24", "26", "28", "26", "36", "48", "72"})
         sizeselector.Name = "sizeselector"
-        sizeselector.Size = New Size(85, 39)
+        sizeselector.Size = New Size(85, 45)
         sizeselector.Text = "11"
         ' 
         ' ToolStripSeparator4
         ' 
         ToolStripSeparator4.Name = "ToolStripSeparator4"
-        ToolStripSeparator4.Size = New Size(6, 39)
+        ToolStripSeparator4.Size = New Size(6, 45)
         ' 
         ' ToolStripButton4
         ' 
@@ -437,13 +438,13 @@ Partial Class leapwrite
         ToolStripButton4.Image = CType(resources.GetObject("ToolStripButton4.Image"), Image)
         ToolStripButton4.ImageTransparentColor = Color.Magenta
         ToolStripButton4.Name = "ToolStripButton4"
-        ToolStripButton4.Size = New Size(31, 36)
+        ToolStripButton4.Size = New Size(31, 42)
         ToolStripButton4.Text = " B "
         ' 
         ' ToolStripSeparator6
         ' 
         ToolStripSeparator6.Name = "ToolStripSeparator6"
-        ToolStripSeparator6.Size = New Size(6, 39)
+        ToolStripSeparator6.Size = New Size(6, 45)
         ' 
         ' ToolStripButton5
         ' 
@@ -452,13 +453,13 @@ Partial Class leapwrite
         ToolStripButton5.Image = CType(resources.GetObject("ToolStripButton5.Image"), Image)
         ToolStripButton5.ImageTransparentColor = Color.Magenta
         ToolStripButton5.Name = "ToolStripButton5"
-        ToolStripButton5.Size = New Size(29, 36)
+        ToolStripButton5.Size = New Size(29, 42)
         ToolStripButton5.Text = " I "
         ' 
         ' ToolStripSeparator5
         ' 
         ToolStripSeparator5.Name = "ToolStripSeparator5"
-        ToolStripSeparator5.Size = New Size(6, 39)
+        ToolStripSeparator5.Size = New Size(6, 45)
         ' 
         ' ToolStripButton6
         ' 
@@ -467,13 +468,13 @@ Partial Class leapwrite
         ToolStripButton6.Image = CType(resources.GetObject("ToolStripButton6.Image"), Image)
         ToolStripButton6.ImageTransparentColor = Color.Magenta
         ToolStripButton6.Name = "ToolStripButton6"
-        ToolStripButton6.Size = New Size(31, 36)
+        ToolStripButton6.Size = New Size(31, 42)
         ToolStripButton6.Text = " U "
         ' 
         ' ToolStripSeparator7
         ' 
         ToolStripSeparator7.Name = "ToolStripSeparator7"
-        ToolStripSeparator7.Size = New Size(6, 39)
+        ToolStripSeparator7.Size = New Size(6, 45)
         ' 
         ' ToolStripButton7
         ' 
@@ -482,13 +483,13 @@ Partial Class leapwrite
         ToolStripButton7.Image = CType(resources.GetObject("ToolStripButton7.Image"), Image)
         ToolStripButton7.ImageTransparentColor = Color.Magenta
         ToolStripButton7.Name = "ToolStripButton7"
-        ToolStripButton7.Size = New Size(29, 36)
+        ToolStripButton7.Size = New Size(29, 42)
         ToolStripButton7.Text = " S "
         ' 
         ' ToolStripSeparator8
         ' 
         ToolStripSeparator8.Name = "ToolStripSeparator8"
-        ToolStripSeparator8.Size = New Size(6, 39)
+        ToolStripSeparator8.Size = New Size(6, 45)
         ' 
         ' ToolStripButton1
         ' 
@@ -496,7 +497,7 @@ Partial Class leapwrite
         ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), Image)
         ToolStripButton1.ImageTransparentColor = Color.Magenta
         ToolStripButton1.Name = "ToolStripButton1"
-        ToolStripButton1.Size = New Size(29, 36)
+        ToolStripButton1.Size = New Size(29, 42)
         ToolStripButton1.Text = "ToolStripButton1"
         ' 
         ' ToolStripButton2
@@ -505,7 +506,7 @@ Partial Class leapwrite
         ToolStripButton2.Image = CType(resources.GetObject("ToolStripButton2.Image"), Image)
         ToolStripButton2.ImageTransparentColor = Color.Magenta
         ToolStripButton2.Name = "ToolStripButton2"
-        ToolStripButton2.Size = New Size(29, 36)
+        ToolStripButton2.Size = New Size(29, 42)
         ToolStripButton2.Text = "ToolStripButton2"
         ' 
         ' ToolStripButton3
@@ -514,13 +515,13 @@ Partial Class leapwrite
         ToolStripButton3.Image = CType(resources.GetObject("ToolStripButton3.Image"), Image)
         ToolStripButton3.ImageTransparentColor = Color.Magenta
         ToolStripButton3.Name = "ToolStripButton3"
-        ToolStripButton3.Size = New Size(29, 36)
+        ToolStripButton3.Size = New Size(29, 42)
         ToolStripButton3.Text = "ToolStripButton3"
         ' 
         ' ToolStripSeparator11
         ' 
         ToolStripSeparator11.Name = "ToolStripSeparator11"
-        ToolStripSeparator11.Size = New Size(6, 39)
+        ToolStripSeparator11.Size = New Size(6, 45)
         ' 
         ' ToolStripButton8
         ' 
@@ -528,7 +529,7 @@ Partial Class leapwrite
         ToolStripButton8.Image = CType(resources.GetObject("ToolStripButton8.Image"), Image)
         ToolStripButton8.ImageTransparentColor = Color.Magenta
         ToolStripButton8.Name = "ToolStripButton8"
-        ToolStripButton8.Size = New Size(29, 36)
+        ToolStripButton8.Size = New Size(29, 42)
         ToolStripButton8.Text = "Bullet Points"
         ' 
         ' ToolStripSplitButton1
@@ -540,7 +541,7 @@ Partial Class leapwrite
         ToolStripSplitButton1.Image = CType(resources.GetObject("ToolStripSplitButton1.Image"), Image)
         ToolStripSplitButton1.ImageTransparentColor = Color.Magenta
         ToolStripSplitButton1.Name = "ToolStripSplitButton1"
-        ToolStripSplitButton1.Size = New Size(103, 36)
+        ToolStripSplitButton1.Size = New Size(103, 42)
         ToolStripSplitButton1.Text = "Highlighter"
         ' 
         ' DefaultnoneToolStripMenuItem
@@ -586,7 +587,7 @@ Partial Class leapwrite
         ToolStripSplitButton2.Image = CType(resources.GetObject("ToolStripSplitButton2.Image"), Image)
         ToolStripSplitButton2.ImageTransparentColor = Color.Magenta
         ToolStripSplitButton2.Name = "ToolStripSplitButton2"
-        ToolStripSplitButton2.Size = New Size(95, 36)
+        ToolStripSplitButton2.Size = New Size(95, 42)
         ToolStripSplitButton2.Text = "Text Color"
         ' 
         ' DefaultBlackToolStripMenuItem
@@ -646,67 +647,67 @@ Partial Class leapwrite
         ' ToolStripSeparator10
         ' 
         ToolStripSeparator10.Name = "ToolStripSeparator10"
-        ToolStripSeparator10.Size = New Size(6, 39)
+        ToolStripSeparator10.Size = New Size(6, 45)
         ' 
         ' ToolStripLabel1
         ' 
         ToolStripLabel1.Font = New Font("Calibri", 11F, FontStyle.Regular, GraphicsUnit.Point)
         ToolStripLabel1.Name = "ToolStripLabel1"
-        ToolStripLabel1.Size = New Size(67, 36)
+        ToolStripLabel1.Size = New Size(67, 42)
         ToolStripLabel1.Text = "Normal"
         ' 
         ' ToolStripSeparator12
         ' 
         ToolStripSeparator12.Name = "ToolStripSeparator12"
-        ToolStripSeparator12.Size = New Size(6, 39)
+        ToolStripSeparator12.Size = New Size(6, 45)
         ' 
         ' ToolStripLabel2
         ' 
         ToolStripLabel2.Font = New Font("Calibri", 17F, FontStyle.Regular, GraphicsUnit.Point)
         ToolStripLabel2.Name = "ToolStripLabel2"
-        ToolStripLabel2.Size = New Size(67, 36)
+        ToolStripLabel2.Size = New Size(67, 42)
         ToolStripLabel2.Text = "Title"
         ' 
         ' ToolStripSeparator13
         ' 
         ToolStripSeparator13.Name = "ToolStripSeparator13"
-        ToolStripSeparator13.Size = New Size(6, 39)
+        ToolStripSeparator13.Size = New Size(6, 45)
         ' 
         ' ToolStripLabel3
         ' 
         ToolStripLabel3.Font = New Font("Calibri", 15F, FontStyle.Regular, GraphicsUnit.Point)
         ToolStripLabel3.Name = "ToolStripLabel3"
-        ToolStripLabel3.Size = New Size(98, 36)
+        ToolStripLabel3.Size = New Size(98, 42)
         ToolStripLabel3.Text = "Heading"
         ' 
         ' ToolStripSeparator3
         ' 
         ToolStripSeparator3.Name = "ToolStripSeparator3"
-        ToolStripSeparator3.Size = New Size(6, 39)
+        ToolStripSeparator3.Size = New Size(6, 45)
         ' 
         ' ToolStripLabel4
         ' 
         ToolStripLabel4.Font = New Font("Calibri", 13F, FontStyle.Regular, GraphicsUnit.Point)
         ToolStripLabel4.Name = "ToolStripLabel4"
-        ToolStripLabel4.Size = New Size(128, 36)
+        ToolStripLabel4.Size = New Size(128, 42)
         ToolStripLabel4.Text = "Sub-Heading"
         ' 
         ' ToolStripSeparator14
         ' 
         ToolStripSeparator14.Name = "ToolStripSeparator14"
-        ToolStripSeparator14.Size = New Size(6, 39)
+        ToolStripSeparator14.Size = New Size(6, 45)
         ' 
         ' ToolStripLabel5
         ' 
         ToolStripLabel5.Font = New Font("Calibri", 9F, FontStyle.Regular, GraphicsUnit.Point)
         ToolStripLabel5.Name = "ToolStripLabel5"
-        ToolStripLabel5.Size = New Size(59, 36)
+        ToolStripLabel5.Size = New Size(59, 42)
         ToolStripLabel5.Text = "subnote"
         ' 
         ' ToolStripSeparator15
         ' 
         ToolStripSeparator15.Name = "ToolStripSeparator15"
-        ToolStripSeparator15.Size = New Size(6, 39)
+        ToolStripSeparator15.Size = New Size(6, 45)
         ' 
         ' PrintDialog1
         ' 
@@ -724,13 +725,13 @@ Partial Class leapwrite
         TableLayoutPanel3.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel3.Controls.Add(documentBox, 1, 1)
         TableLayoutPanel3.Dock = DockStyle.Fill
-        TableLayoutPanel3.Location = New Point(310, 39)
+        TableLayoutPanel3.Location = New Point(310, 38)
         TableLayoutPanel3.Margin = New Padding(3, 4, 3, 4)
         TableLayoutPanel3.Name = "TableLayoutPanel3"
         TableLayoutPanel3.RowCount = 2
         TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Absolute, 53F))
         TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
-        TableLayoutPanel3.Size = New Size(893, 661)
+        TableLayoutPanel3.Size = New Size(893, 656)
         TableLayoutPanel3.TabIndex = 0
         ' 
         ' documentBox
@@ -743,7 +744,7 @@ Partial Class leapwrite
         documentBox.Margin = New Padding(2, 3, 2, 3)
         documentBox.Name = "documentBox"
         documentBox.ScrollBars = RichTextBoxScrollBars.Vertical
-        documentBox.Size = New Size(771, 602)
+        documentBox.Size = New Size(771, 597)
         documentBox.TabIndex = 5
         documentBox.Text = ""
         ' 
@@ -757,13 +758,13 @@ Partial Class leapwrite
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel2.Controls.Add(TableLayoutPanel3, 1, 1)
         TableLayoutPanel2.Dock = DockStyle.Fill
-        TableLayoutPanel2.Location = New Point(0, 156)
+        TableLayoutPanel2.Location = New Point(0, 162)
         TableLayoutPanel2.Margin = New Padding(3, 4, 3, 4)
         TableLayoutPanel2.Name = "TableLayoutPanel2"
         TableLayoutPanel2.RowCount = 2
         TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 5F))
         TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 95F))
-        TableLayoutPanel2.Size = New Size(1513, 704)
+        TableLayoutPanel2.Size = New Size(1513, 698)
         TableLayoutPanel2.TabIndex = 7
         ' 
         ' leapwrite

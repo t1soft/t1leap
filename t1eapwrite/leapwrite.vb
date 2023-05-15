@@ -414,7 +414,7 @@ Public Class leapwrite
             My.Settings.BckgLocation = IMG
             My.Settings.BckgSet = True
             My.Settings.Save()
-            Panel1.BackgroundImage = Image.FromFile(My.Settings.BckgLocation)
+            TableLayoutPanel2.BackgroundImage = Image.FromFile(My.Settings.BckgLocation)
         End If
     End Sub
 
@@ -422,12 +422,12 @@ Public Class leapwrite
         My.Settings.BckgLocation = "0"
         My.Settings.BckgSet = False
         My.Settings.Save()
-        Panel1.BackgroundImage = Nothing
+        TableLayoutPanel2.BackgroundImage = Nothing
     End Sub
 
     Private Sub leapwrite_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If My.Settings.BckgSet = True Then
-            Panel1.BackgroundImage = Image.FromFile(My.Settings.BckgLocation)
+            TableLayoutPanel2.BackgroundImage = Image.FromFile(My.Settings.BckgLocation)
         End If
     End Sub
 

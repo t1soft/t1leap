@@ -22,352 +22,385 @@ Partial Class Desktop
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Desktop))
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Quicknote = New System.Windows.Forms.TextBox()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.SuspendLayout()
-        '
-        'Timer1
-        '
-        Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 1000
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.Button3)
-        Me.Panel2.Controls.Add(Me.Button2)
-        Me.Panel2.Controls.Add(Me.Button1)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(0, 707)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1224, 37)
-        Me.Panel2.TabIndex = 27
-        '
-        'Button3
-        '
-        Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(1024, 0)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(124, 37)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Switch Desktop"
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button2.Location = New System.Drawing.Point(0, 0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(76, 38)
-        Me.Button2.TabIndex = 0
-        Me.Button2.Text = "Menu"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(1148, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(76, 37)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Log Out"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox2.ErrorImage = CType(resources.GetObject("PictureBox2.ErrorImage"), System.Drawing.Image)
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(1024, 707)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 3
-        Me.PictureBox2.TabStop = False
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(5, 0)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(192, 15)
-        Me.Label11.TabIndex = 26
-        Me.Label11.Text = "_____________________________________"
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(16, 374)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(85, 19)
-        Me.CheckBox1.TabIndex = 10
-        Me.CheckBox1.Text = "CheckBox1"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(16, 399)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(85, 19)
-        Me.CheckBox2.TabIndex = 11
-        Me.CheckBox2.Text = "CheckBox2"
-        Me.CheckBox2.UseVisualStyleBackColor = True
-        '
-        'CheckBox3
-        '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(16, 424)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(85, 19)
-        Me.CheckBox3.TabIndex = 12
-        Me.CheckBox3.Text = "CheckBox3"
-        Me.CheckBox3.UseVisualStyleBackColor = True
-        '
-        'CheckBox4
-        '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(16, 449)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(85, 19)
-        Me.CheckBox4.TabIndex = 13
-        Me.CheckBox4.Text = "CheckBox4"
-        Me.CheckBox4.UseVisualStyleBackColor = True
-        '
-        'CheckBox5
-        '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Location = New System.Drawing.Point(16, 474)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(85, 19)
-        Me.CheckBox5.TabIndex = 14
-        Me.CheckBox5.Text = "CheckBox5"
-        Me.CheckBox5.UseVisualStyleBackColor = True
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(33, 370)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(155, 23)
-        Me.TextBox1.TabIndex = 15
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(33, 395)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(155, 23)
-        Me.TextBox2.TabIndex = 16
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(33, 420)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(155, 23)
-        Me.TextBox3.TabIndex = 17
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(33, 445)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(155, 23)
-        Me.TextBox4.TabIndex = 18
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(33, 470)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(155, 23)
-        Me.TextBox5.TabIndex = 19
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.Location = New System.Drawing.Point(14, 139)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(78, 19)
-        Me.Label5.TabIndex = 20
-        Me.Label5.Text = "Quick Note"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.Location = New System.Drawing.Point(16, 346)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(72, 19)
-        Me.Label6.TabIndex = 21
-        Me.Label6.Text = "To-Do List"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label8.Location = New System.Drawing.Point(0, 117)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(231, 19)
-        Me.Label8.TabIndex = 23
-        Me.Label8.Text = "_____________________________________"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(0, 323)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(192, 15)
-        Me.Label9.TabIndex = 24
-        Me.Label9.Text = "_____________________________________"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(5, 495)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(192, 15)
-        Me.Label10.TabIndex = 25
-        Me.Label10.Text = "_____________________________________"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 28.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(9, 47)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(179, 51)
-        Me.Label3.TabIndex = 8
-        Me.Label3.Text = "00:00 AM"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(14, 98)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(107, 19)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "January 1, 2020"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label7.Location = New System.Drawing.Point(15, 22)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(42, 19)
-        Me.Label7.TabIndex = 28
-        Me.Label7.Text = "Clock"
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.Quicknote)
-        Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.Label10)
-        Me.Panel1.Controls.Add(Me.Label9)
-        Me.Panel1.Controls.Add(Me.Label8)
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.TextBox5)
-        Me.Panel1.Controls.Add(Me.TextBox4)
-        Me.Panel1.Controls.Add(Me.TextBox3)
-        Me.Panel1.Controls.Add(Me.TextBox2)
-        Me.Panel1.Controls.Add(Me.TextBox1)
-        Me.Panel1.Controls.Add(Me.CheckBox5)
-        Me.Panel1.Controls.Add(Me.CheckBox4)
-        Me.Panel1.Controls.Add(Me.CheckBox3)
-        Me.Panel1.Controls.Add(Me.CheckBox2)
-        Me.Panel1.Controls.Add(Me.CheckBox1)
-        Me.Panel1.Controls.Add(Me.Label11)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel1.ForeColor = System.Drawing.Color.Black
-        Me.Panel1.Location = New System.Drawing.Point(1024, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(200, 707)
-        Me.Panel1.TabIndex = 6
-        '
-        'Quicknote
-        '
-        Me.Quicknote.Location = New System.Drawing.Point(16, 161)
-        Me.Quicknote.Multiline = True
-        Me.Quicknote.Name = "Quicknote"
-        Me.Quicknote.Size = New System.Drawing.Size(172, 159)
-        Me.Quicknote.TabIndex = 29
-        '
-        'Panel3
-        '
-        Me.Panel3.Controls.Add(Me.PictureBox2)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1024, 707)
-        Me.Panel3.TabIndex = 28
-        '
-        'Desktop
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1224, 744)
-        Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Panel2)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Desktop"
-        Me.Text = "Homeshell Desktop - Desktop"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.Panel2.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
-        Me.ResumeLayout(False)
-
+        components = New ComponentModel.Container()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Desktop))
+        Timer1 = New Timer(components)
+        FolderBrowserDialog1 = New FolderBrowserDialog()
+        Panel2 = New Panel()
+        Button3 = New Button()
+        Button2 = New Button()
+        Button1 = New Button()
+        PictureBox2 = New PictureBox()
+        Label11 = New Label()
+        CheckBox1 = New CheckBox()
+        CheckBox2 = New CheckBox()
+        CheckBox3 = New CheckBox()
+        CheckBox4 = New CheckBox()
+        CheckBox5 = New CheckBox()
+        TextBox1 = New TextBox()
+        TextBox2 = New TextBox()
+        TextBox3 = New TextBox()
+        TextBox4 = New TextBox()
+        TextBox5 = New TextBox()
+        Label5 = New Label()
+        Label6 = New Label()
+        Label8 = New Label()
+        Label9 = New Label()
+        Label10 = New Label()
+        Label3 = New Label()
+        Label4 = New Label()
+        Label7 = New Label()
+        Panel1 = New Panel()
+        Label1 = New Label()
+        Quicknote = New TextBox()
+        Panel3 = New Panel()
+        Panel2.SuspendLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        Panel1.SuspendLayout()
+        Panel3.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' Timer1
+        ' 
+        Timer1.Enabled = True
+        Timer1.Interval = 1000
+        ' 
+        ' Panel2
+        ' 
+        Panel2.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
+        Panel2.Controls.Add(Button3)
+        Panel2.Controls.Add(Button2)
+        Panel2.Controls.Add(Button1)
+        Panel2.Dock = DockStyle.Bottom
+        Panel2.Location = New Point(0, 943)
+        Panel2.Margin = New Padding(3, 4, 3, 4)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(1399, 49)
+        Panel2.TabIndex = 27
+        ' 
+        ' Button3
+        ' 
+        Button3.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
+        Button3.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Button3.FlatStyle = FlatStyle.Flat
+        Button3.Location = New Point(1170, 0)
+        Button3.Margin = New Padding(3, 4, 3, 4)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(142, 49)
+        Button3.TabIndex = 2
+        Button3.Text = "Switch Desktop"
+        Button3.UseVisualStyleBackColor = False
+        ' 
+        ' Button2
+        ' 
+        Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), Image)
+        Button2.BackgroundImageLayout = ImageLayout.Zoom
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.Font = New Font("Segoe UI Light", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Button2.ImageAlign = ContentAlignment.BottomLeft
+        Button2.Location = New Point(0, 0)
+        Button2.Margin = New Padding(3, 4, 3, 4)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(87, 51)
+        Button2.TabIndex = 0
+        Button2.Text = "Menu"
+        Button2.TextAlign = ContentAlignment.MiddleRight
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' Button1
+        ' 
+        Button1.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
+        Button1.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Button1.ForeColor = Color.Black
+        Button1.Location = New Point(1312, 0)
+        Button1.Margin = New Padding(3, 4, 3, 4)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(87, 49)
+        Button1.TabIndex = 0
+        Button1.Text = "Log Out"
+        Button1.UseVisualStyleBackColor = False
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.BackgroundImageLayout = ImageLayout.Stretch
+        PictureBox2.Dock = DockStyle.Fill
+        PictureBox2.ErrorImage = CType(resources.GetObject("PictureBox2.ErrorImage"), Image)
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
+        PictureBox2.Location = New Point(0, 0)
+        PictureBox2.Margin = New Padding(3, 4, 3, 4)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(1170, 943)
+        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox2.TabIndex = 3
+        PictureBox2.TabStop = False
+        ' 
+        ' Label11
+        ' 
+        Label11.AutoSize = True
+        Label11.Location = New Point(6, 0)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(231, 20)
+        Label11.TabIndex = 26
+        Label11.Text = "_____________________________________"
+        ' 
+        ' CheckBox1
+        ' 
+        CheckBox1.AutoSize = True
+        CheckBox1.Location = New Point(18, 499)
+        CheckBox1.Margin = New Padding(3, 4, 3, 4)
+        CheckBox1.Name = "CheckBox1"
+        CheckBox1.Size = New Size(103, 24)
+        CheckBox1.TabIndex = 10
+        CheckBox1.Text = "CheckBox1"
+        CheckBox1.UseVisualStyleBackColor = True
+        ' 
+        ' CheckBox2
+        ' 
+        CheckBox2.AutoSize = True
+        CheckBox2.Location = New Point(18, 532)
+        CheckBox2.Margin = New Padding(3, 4, 3, 4)
+        CheckBox2.Name = "CheckBox2"
+        CheckBox2.Size = New Size(103, 24)
+        CheckBox2.TabIndex = 11
+        CheckBox2.Text = "CheckBox2"
+        CheckBox2.UseVisualStyleBackColor = True
+        ' 
+        ' CheckBox3
+        ' 
+        CheckBox3.AutoSize = True
+        CheckBox3.Location = New Point(18, 565)
+        CheckBox3.Margin = New Padding(3, 4, 3, 4)
+        CheckBox3.Name = "CheckBox3"
+        CheckBox3.Size = New Size(103, 24)
+        CheckBox3.TabIndex = 12
+        CheckBox3.Text = "CheckBox3"
+        CheckBox3.UseVisualStyleBackColor = True
+        ' 
+        ' CheckBox4
+        ' 
+        CheckBox4.AutoSize = True
+        CheckBox4.Location = New Point(18, 599)
+        CheckBox4.Margin = New Padding(3, 4, 3, 4)
+        CheckBox4.Name = "CheckBox4"
+        CheckBox4.Size = New Size(103, 24)
+        CheckBox4.TabIndex = 13
+        CheckBox4.Text = "CheckBox4"
+        CheckBox4.UseVisualStyleBackColor = True
+        ' 
+        ' CheckBox5
+        ' 
+        CheckBox5.AutoSize = True
+        CheckBox5.Location = New Point(18, 632)
+        CheckBox5.Margin = New Padding(3, 4, 3, 4)
+        CheckBox5.Name = "CheckBox5"
+        CheckBox5.Size = New Size(103, 24)
+        CheckBox5.TabIndex = 14
+        CheckBox5.Text = "CheckBox5"
+        CheckBox5.UseVisualStyleBackColor = True
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Location = New Point(38, 493)
+        TextBox1.Margin = New Padding(3, 4, 3, 4)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(177, 27)
+        TextBox1.TabIndex = 15
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.Location = New Point(38, 527)
+        TextBox2.Margin = New Padding(3, 4, 3, 4)
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(177, 27)
+        TextBox2.TabIndex = 16
+        ' 
+        ' TextBox3
+        ' 
+        TextBox3.Location = New Point(38, 560)
+        TextBox3.Margin = New Padding(3, 4, 3, 4)
+        TextBox3.Name = "TextBox3"
+        TextBox3.Size = New Size(177, 27)
+        TextBox3.TabIndex = 17
+        ' 
+        ' TextBox4
+        ' 
+        TextBox4.Location = New Point(38, 593)
+        TextBox4.Margin = New Padding(3, 4, 3, 4)
+        TextBox4.Name = "TextBox4"
+        TextBox4.Size = New Size(177, 27)
+        TextBox4.TabIndex = 18
+        ' 
+        ' TextBox5
+        ' 
+        TextBox5.Location = New Point(38, 627)
+        TextBox5.Margin = New Padding(3, 4, 3, 4)
+        TextBox5.Name = "TextBox5"
+        TextBox5.Size = New Size(177, 27)
+        TextBox5.TabIndex = 19
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        Label5.Location = New Point(16, 185)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(96, 23)
+        Label5.TabIndex = 20
+        Label5.Text = "Quick Note"
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        Label6.Location = New Point(18, 461)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(86, 23)
+        Label6.TabIndex = 21
+        Label6.Text = "To-Do List"
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Font = New Font("Segoe UI Light", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        Label8.Location = New Point(0, 156)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(269, 23)
+        Label8.TabIndex = 23
+        Label8.Text = "_____________________________________"
+        ' 
+        ' Label9
+        ' 
+        Label9.AutoSize = True
+        Label9.Location = New Point(0, 431)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(231, 20)
+        Label9.TabIndex = 24
+        Label9.Text = "_____________________________________"
+        ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.Location = New Point(6, 660)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(231, 20)
+        Label10.TabIndex = 25
+        Label10.Text = "_____________________________________"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI", 28F, FontStyle.Regular, GraphicsUnit.Point)
+        Label3.Location = New Point(7, 63)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(222, 62)
+        Label3.TabIndex = 8
+        Label3.Text = "00:00 AM"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        Label4.Location = New Point(16, 131)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(127, 23)
+        Label4.TabIndex = 9
+        Label4.Text = "January 1, 2020"
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        Label7.Location = New Point(17, 29)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(51, 23)
+        Label7.TabIndex = 28
+        Label7.Text = "Clock"
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
+        Panel1.Controls.Add(Label1)
+        Panel1.Controls.Add(Quicknote)
+        Panel1.Controls.Add(Label7)
+        Panel1.Controls.Add(Label4)
+        Panel1.Controls.Add(Label3)
+        Panel1.Controls.Add(Label10)
+        Panel1.Controls.Add(Label9)
+        Panel1.Controls.Add(Label8)
+        Panel1.Controls.Add(Label6)
+        Panel1.Controls.Add(Label5)
+        Panel1.Controls.Add(TextBox5)
+        Panel1.Controls.Add(TextBox4)
+        Panel1.Controls.Add(TextBox3)
+        Panel1.Controls.Add(TextBox2)
+        Panel1.Controls.Add(TextBox1)
+        Panel1.Controls.Add(CheckBox5)
+        Panel1.Controls.Add(CheckBox4)
+        Panel1.Controls.Add(CheckBox3)
+        Panel1.Controls.Add(CheckBox2)
+        Panel1.Controls.Add(CheckBox1)
+        Panel1.Controls.Add(Label11)
+        Panel1.Dock = DockStyle.Right
+        Panel1.ForeColor = Color.Black
+        Panel1.Location = New Point(1170, 0)
+        Panel1.Margin = New Padding(3, 4, 3, 4)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(229, 943)
+        Panel1.TabIndex = 6
+        ' 
+        ' Label1
+        ' 
+        Label1.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
+        Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Verdana", 7.8F, FontStyle.Regular, GraphicsUnit.Point)
+        Label1.Location = New Point(20, 888)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(206, 48)
+        Label1.TabIndex = 30
+        Label1.Text = "t1leapdesk 2022 Preview Build" & vbCrLf & "Build 2021-23-0419" & vbCrLf & "Dev Build. May be Unstable"
+        Label1.TextAlign = ContentAlignment.MiddleRight
+        ' 
+        ' Quicknote
+        ' 
+        Quicknote.Location = New Point(18, 215)
+        Quicknote.Margin = New Padding(3, 4, 3, 4)
+        Quicknote.Multiline = True
+        Quicknote.Name = "Quicknote"
+        Quicknote.Size = New Size(196, 211)
+        Quicknote.TabIndex = 29
+        ' 
+        ' Panel3
+        ' 
+        Panel3.Controls.Add(PictureBox2)
+        Panel3.Dock = DockStyle.Fill
+        Panel3.Location = New Point(0, 0)
+        Panel3.Margin = New Padding(3, 4, 3, 4)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(1170, 943)
+        Panel3.TabIndex = 28
+        ' 
+        ' Desktop
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(1399, 992)
+        Controls.Add(Panel3)
+        Controls.Add(Panel1)
+        Controls.Add(Panel2)
+        FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(3, 4, 3, 4)
+        Name = "Desktop"
+        Text = "Homeshell Desktop - Desktop"
+        WindowState = FormWindowState.Maximized
+        Panel2.ResumeLayout(False)
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
+        Panel3.ResumeLayout(False)
+        ResumeLayout(False)
     End Sub
     Friend WithEvents Timer1 As Timer
     Friend WithEvents FolderBrowserDialog1 As FolderBrowserDialog
@@ -398,4 +431,5 @@ Partial Class Desktop
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Quicknote As TextBox
+    Friend WithEvents Label1 As Label
 End Class
