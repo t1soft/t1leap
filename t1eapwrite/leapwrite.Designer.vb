@@ -739,7 +739,7 @@ Partial Class leapwrite
         documentBox.BorderStyle = BorderStyle.None
         documentBox.Dock = DockStyle.Fill
         documentBox.EnableAutoDragDrop = True
-        documentBox.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        documentBox.Font = New Font("Calibri", 11F, FontStyle.Regular, GraphicsUnit.Point)
         documentBox.Location = New Point(61, 56)
         documentBox.Margin = New Padding(2, 3, 2, 3)
         documentBox.Name = "documentBox"
@@ -750,7 +750,7 @@ Partial Class leapwrite
         ' 
         ' TableLayoutPanel2
         ' 
-        TableLayoutPanel2.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        TableLayoutPanel2.BackColor = Color.WhiteSmoke
         TableLayoutPanel2.BackgroundImageLayout = ImageLayout.Stretch
         TableLayoutPanel2.ColumnCount = 3
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
@@ -771,6 +771,8 @@ Partial Class leapwrite
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.White
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1513, 860)
         Controls.Add(TableLayoutPanel2)
         Controls.Add(ToolStrip1)
