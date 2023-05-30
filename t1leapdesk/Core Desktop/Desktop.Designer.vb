@@ -360,7 +360,7 @@ Partial Class Desktop
         Label1.Name = "Label1"
         Label1.Size = New Size(206, 48)
         Label1.TabIndex = 30
-        Label1.Text = "t1leapdesk 2022 Preview Build" & vbCrLf & "Build 2021-23-0419" & vbCrLf & "Dev Build. May be Unstable"
+        Label1.Text = "t1leapdesk 2022 Preview Build" & vbCrLf & "Build 2021-23-0529" & vbCrLf & "Dev Build. May be Unstable"
         Label1.TextAlign = ContentAlignment.MiddleRight
         ' 
         ' Quicknote
