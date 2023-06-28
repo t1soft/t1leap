@@ -37,6 +37,7 @@ Public Class leapwrite
             ElseIf result = DialogResult.Yes Then
                 savebutton1.PerformClick()
                 documentBox.Clear()
+                documentname = Nothing
                 documentname1.Text = "New Document"
                 Edited = False
             End If

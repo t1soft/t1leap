@@ -38,6 +38,7 @@ Public Class leaptable
                 sbTaRtf.Append("\pard")
                 sbTaRtf.Append("}")
                 documentBox.Rtf = sbTaRtf.ToString()
+                documentname = Nothing
                 documentname1.Text = "New Document"
                 Edited = False
             ElseIf result = DialogResult.Yes Then
@@ -56,8 +57,8 @@ Public Class leaptable
                 sbTaRtf.Append("\pard")
                 sbTaRtf.Append("}")
                 documentBox.Rtf = sbTaRtf.ToString()
+                documentname = Nothing
                 documentname1.Text = "New Document"
-                Edited = False
             End If
         End If
         If Edited = False Then
@@ -75,6 +76,7 @@ Public Class leaptable
             sbTaRtf.Append("\pard")
             sbTaRtf.Append("}")
             documentBox.Rtf = sbTaRtf.ToString()
+            documentname = Nothing
             documentname1.Text = "New Document"
             Edited = False
         End If
@@ -100,6 +102,7 @@ Public Class leaptable
                 sbTaRtf.Append("\pard")
                 sbTaRtf.Append("}")
                 documentBox.Rtf = sbTaRtf.ToString()
+                documentname = Nothing
                 documentname1.Text = "New Document"
                 Edited = False
             ElseIf result = DialogResult.Yes Then
@@ -119,6 +122,7 @@ Public Class leaptable
                 sbTaRtf.Append("\pard")
                 sbTaRtf.Append("}")
                 documentBox.Rtf = sbTaRtf.ToString()
+                documentname = Nothing
                 documentname1.Text = "New Document"
                 Edited = False
             End If
@@ -139,6 +143,7 @@ Public Class leaptable
             sbTaRtf.Append("\pard")
             sbTaRtf.Append("}")
             documentBox.Rtf = sbTaRtf.ToString()
+            documentname = Nothing
             documentname1.Text = "New Document"
             Edited = False
         End If
@@ -169,6 +174,7 @@ Public Class leaptable
                 sbTaRtf.Append("\pard")
                 sbTaRtf.Append("}")
                 documentBox.Rtf = sbTaRtf.ToString()
+                documentname = Nothing
                 documentname1.Text = "New Document"
                 Edited = False
             ElseIf result = DialogResult.Yes Then
@@ -193,6 +199,7 @@ Public Class leaptable
                 sbTaRtf.Append("\pard")
                 sbTaRtf.Append("}")
                 documentBox.Rtf = sbTaRtf.ToString()
+                documentname = Nothing
                 documentname1.Text = "New Document"
                 Edited = False
             End If
@@ -218,6 +225,7 @@ Public Class leaptable
             sbTaRtf.Append("\pard")
             sbTaRtf.Append("}")
             documentBox.Rtf = sbTaRtf.ToString()
+            documentname = Nothing
             documentname1.Text = "New Document"
             Edited = False
         End If
@@ -258,6 +266,7 @@ Public Class leaptable
                 sbTaRtf.Append("\pard")
                 sbTaRtf.Append("}")
                 documentBox.Rtf = sbTaRtf.ToString()
+                documentname = Nothing
                 documentname1.Text = "New Document"
                 Edited = False
             ElseIf result = DialogResult.Yes Then
@@ -292,6 +301,7 @@ Public Class leaptable
                 sbTaRtf.Append("\pard")
                 sbTaRtf.Append("}")
                 documentBox.Rtf = sbTaRtf.ToString()
+                documentname = Nothing
                 documentname1.Text = "New Document"
                 Edited = False
             End If
@@ -327,6 +337,7 @@ Public Class leaptable
             sbTaRtf.Append("\pard")
             sbTaRtf.Append("}")
             documentBox.Rtf = sbTaRtf.ToString()
+            documentname = Nothing
             documentname1.Text = "New Document"
             Edited = False
         End If
@@ -377,6 +388,7 @@ Public Class leaptable
                 sbTaRtf.Append("\pard")
                 sbTaRtf.Append("}")
                 documentBox.Rtf = sbTaRtf.ToString()
+                documentname = Nothing
                 documentname1.Text = "New Document"
                 Edited = False
             ElseIf result = DialogResult.Yes Then
@@ -421,6 +433,7 @@ Public Class leaptable
                 sbTaRtf.Append("\pard")
                 sbTaRtf.Append("}")
                 documentBox.Rtf = sbTaRtf.ToString()
+                documentname = Nothing
                 documentname1.Text = "New Document"
                 Edited = False
             End If
@@ -466,6 +479,7 @@ Public Class leaptable
             sbTaRtf.Append("\pard")
             sbTaRtf.Append("}")
             documentBox.Rtf = sbTaRtf.ToString()
+            documentname = Nothing
             documentname1.Text = "New Document"
             Edited = False
         End If
